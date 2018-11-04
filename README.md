@@ -1,4 +1,4 @@
-# Duke CAPS Web App
+# duke-caps-web-app
 
 > A Vue.js project
 
