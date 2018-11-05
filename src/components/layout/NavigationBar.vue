@@ -1,29 +1,29 @@
 <template>
-<b-navbar toggleable="md" type="dark" variant="info">
+<b-navbar class="main-nav" toggleable="md" fixed="top">
 
     <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-    <b-navbar-brand href="#">NavBar</b-navbar-brand>
+    <b-navbar-brand><router-link to="/">boop</router-link></b-navbar-brand>
 
     <b-collapse is-nav id="nav_collapse">
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-            <b-nav-item>
-                <router-link to="/">Home</router-link>
-            </b-nav-item>
-            <b-nav-item>
-                <router-link to="/about-us">About Us</router-link>
-            </b-nav-item>
-            <b-nav-item>
-                <router-link to="/get-started">Get Started</router-link>
-            </b-nav-item>
-            <b-nav-item>
-                <router-link to="/services">Our Services</router-link>
-            </b-nav-item>
-            <b-nav-item>
-                <router-link to="/resources">Resources</router-link>
-            </b-nav-item>
+            <li class="nav-item px-1">
+                <router-link class="nav-link" to="/">Home</router-link>
+            </li>
+            <li class="nav-item px-1">
+                <router-link class="nav-link" to="/about-us">About Us</router-link>
+            </li>
+            <li class="nav-item px-1">
+                <router-link class="nav-link" to="/get-started">Get Started</router-link>
+            </li>
+            <li class="nav-item px-1">
+                <router-link class="nav-link" to="/services">Services</router-link>
+            </li>
+            <li class="nav-item px-1">
+                <router-link class="nav-link" to="/resources">Resources</router-link>
+            </li>
         </b-navbar-nav>
     </b-collapse>
 </b-navbar>
@@ -41,5 +41,21 @@ export default {
 </script>
 
 <style>
+.main-nav {
+    background-color: #0F2F62;
+}
 
+.main-nav .nav-link {
+    color: white !important;
+    font-family: "Montserrat", "sans-serif";
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.main-nav .nav-link:hover {
+    color: #2FA4EE !important;
+}
 </style>
