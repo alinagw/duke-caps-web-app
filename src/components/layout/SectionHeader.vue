@@ -1,17 +1,13 @@
 <template>
   <div>
-
   </div>
 </template>
 
 <script>
-
+import SectionTabs from "./../layout/SectionTabs"
 
 export default {
-  name: 'AboutUs',
-  components: {
-    SectionTabs
-  },
+  name: 'SectionHeader',
   data () {
     return {
       

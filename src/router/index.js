@@ -2,9 +2,14 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import Homepage from '@/components/pages/Homepage'
+
 import AboutUs from '@/components/pages/AboutUs'
+import StaffBios from '@/components/pages/about-us-pages/StaffBios'
+
 import GetStarted from '@/components/pages/GetStarted'
+
 import OurServices from '@/components/pages/OurServices'
+
 import Resources from '@/components/pages/Resources'
 
 Vue.use(Router)
@@ -22,8 +27,8 @@ export default new Router({
       component: AboutUs,
       children: [
         {
-          path: 'child',
-          component: AboutUs
+          path: 'staff',
+          component: StaffBios
         }
       ]
     },

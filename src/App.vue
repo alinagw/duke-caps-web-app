@@ -1,6 +1,10 @@
 <template>
   <div id="app">
     <navigation-bar></navigation-bar>
+    <br>
+    <br>
+    <br>
+    <br>
     <router-view></router-view>
   </div>
 </template>

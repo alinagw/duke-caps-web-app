@@ -3,7 +3,9 @@
 
     <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-    <b-navbar-brand><router-link to="/">boop</router-link></b-navbar-brand>
+    <b-navbar-brand>
+        <router-link to="/">boop</router-link>
+    </b-navbar-brand>
 
     <b-collapse is-nav id="nav_collapse">
 
@@ -43,6 +45,9 @@ export default {
 <style>
 .main-nav {
     background-color: #0F2F62;
+    -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.16);
 }
 
 .main-nav .nav-link {
@@ -56,6 +61,10 @@ export default {
 }
 
 .main-nav .nav-link:hover {
+    color: #2FA4EE !important;
+}
+
+.main-nav .nav-link.router-link-exact-active {
     color: #2FA4EE !important;
 }
 </style>
