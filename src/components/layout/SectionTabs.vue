@@ -16,32 +16,10 @@
 export default {
   name: 'SectionTabs',
   props: [
-    //"tabs"
+    "tabs"
   ],
   data () {
     return {
-      tabs: [
-        {
-          src: "/about-us/staff",
-          title: "Meet Our Staff",
-          icon: "https://static.thenounproject.com/png/604071-200.png"
-        },
-        {
-          src: "/about-us/staff",
-          title: "Meet Our Staff",
-          icon: "https://static.thenounproject.com/png/604071-200.png"
-        },
-        {
-          src: "/about-us/staff",
-          title: "Meet Our Staff",
-          icon: "https://static.thenounproject.com/png/604071-200.png"
-        },
-        {
-          src: "/about-us/staff",
-          title: "Meet Our Staff",
-          icon: "https://static.thenounproject.com/png/604071-200.png"
-        }
-      ]
     }
   }
 }
@@ -50,6 +28,7 @@ export default {
 <style>
 .section-tabs-card {
   max-width: 90%;
+  margin: auto;
   border: none;
   border-radius: 8px;
   -webkit-box-shadow: 0px 2px 10px 0px rgba(69,91,99,0.45);

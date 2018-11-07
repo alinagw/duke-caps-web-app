@@ -24,7 +24,8 @@
             "name": "",
             "jobTitle": "",
             "photo": "",
-            "bio": ""
+            "bio": "",
+            "tags": []
         }
     ]
 }
