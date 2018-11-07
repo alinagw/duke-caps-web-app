@@ -1,10 +1,7 @@
 <template>
   <div id="app">
     <navigation-bar></navigation-bar>
-    <br>
-    <br>
-    <br>
-    <br>
+    <div class="nav-spacer"></div>
     <router-view></router-view>
   </div>
 </template>
@@ -21,5 +18,8 @@ export default {
 </script>
 
 <style>
+.nav-spacer {
+  height: 56px;
+}
 
 </style>

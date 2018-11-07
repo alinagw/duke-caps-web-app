@@ -1,0 +1,30 @@
+{
+    "sections": {
+        "pageName": {
+            "id": "",
+            "title": "",
+            "src": "",
+            "images": [],
+            "tabs": {
+                "tabName": {
+                    "id": "",
+                    "title": "",
+                    "src": "",
+                    "icon": ""
+                }
+            }
+        }
+    },
+    "tags": {
+        "tagName": ["ids of things with this tag"]
+    },
+    "staff": [
+        {
+            "id": "",
+            "name": "",
+            "jobTitle": "",
+            "photo": "",
+            "bio": ""
+        }
+    ]
+}

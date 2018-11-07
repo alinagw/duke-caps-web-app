@@ -1,21 +1,30 @@
 <template>
-  <div>
-  </div>
+<div>
+    <b-jumbotron fluid>
+
+    </b-jumbotron>
+</div>
 </template>
 
 <script>
 import SectionTabs from "./../layout/SectionTabs"
 
 export default {
-  name: 'SectionHeader',
-  data () {
-    return {
-      
+    name: 'SectionHeader',
+    props: [
+      "section"
+    ],
+    components: {
+        SectionTabs
+    },
+    data() {
+        return {
+
+        }
     }
-  }
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>
