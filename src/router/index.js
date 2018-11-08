@@ -4,7 +4,11 @@ import Router from 'vue-router'
 import Homepage from '@/components/pages/Homepage'
 
 import AboutUs from '@/components/pages/AboutUs'
-import StaffBios from '@/components/pages/about-us-pages/StaffBios'
+import AboutHome from '@/components/pages/about-us-pages/AboutHome'
+import AboutStaff from '@/components/pages/about-us-pages/AboutStaff'
+import AboutPolicies from '@/components/pages/about-us-pages/AboutPolicies'
+import AboutTraining from '@/components/pages/about-us-pages/AboutTraining'
+import AboutWellnessCenter from '@/components/pages/about-us-pages/AboutWellnessCenter'
 
 import GetStarted from '@/components/pages/GetStarted'
 
@@ -27,8 +31,24 @@ export default new Router({
       component: AboutUs,
       children: [
         {
+          path: '',
+          component: AboutHome
+        },
+        {
           path: 'staff',
-          component: StaffBios
+          component: AboutStaff
+        },
+        {
+          path: 'policies',
+          component: AboutPolicies
+        },
+        {
+          path: 'training',
+          component: AboutTraining
+        },
+        {
+          path: 'student-wellness-center',
+          component: AboutWellnessCenter
         }
       ]
     },

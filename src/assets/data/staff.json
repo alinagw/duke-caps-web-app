@@ -1,0 +1,195 @@
+{
+    "clinical": [
+        {
+            "id": "",
+            "name": "Anita-Yvonne Bryant",
+            "degree": "PhD",
+            "jobTitle": "Staff Psychologist, Associate Director, Director of Training",
+            "photo": "https://studentaffairs.duke.edu/sites/default/files/2017-10/AY%20Bryant.jpg",
+            "bio": "",
+            "tags": []
+        },
+        {
+            "id": "",
+            "name": "Jennifer Bullock",
+            "degree": "MSW, LCSW",
+            "jobTitle": "Staff Social Worker",
+            "photo": "https://studentaffairs.duke.edu/sites/default/files/2017-10/IMG_0512.png",
+            "bio": "",
+            "tags": []
+        },
+        {
+            "id": "",
+            "name": "Tara Chandrasekhar",
+            "degree": "MD",
+            "jobTitle": "Staff Psychiatrist",
+            "photo": "https://studentaffairs.duke.edu/sites/default/files/2017-10/Tara.png",
+            "bio": "",
+            "tags": []
+        },
+        {
+            "id": "",
+            "name": "Ayesha Chaudhary",
+            "degree": "MD",
+            "jobTitle": "Staff Psychiatrist, Coordinator of Psychiatry",
+            "photo": "https://studentaffairs.duke.edu/sites/default/files/2017-10/Ayesha.jpg",
+            "bio": "",
+            "tags": []
+        },
+        {
+            "id": "",
+            "name": "Mazella Fuller",
+            "degree": "PhD, MSW, LCSW, CEDS",
+            "jobTitle": "Staff Social Worker",
+            "photo": "https://studentaffairs.duke.edu/sites/default/files/2017-10/Mazella.png",
+            "bio": "",
+            "tags": []
+        },
+        {
+            "id": "",
+            "name": "Liadainn Gilmore",
+            "degree": "LCSW",
+            "jobTitle": "Senior Social Worker, Referral Coordinator",
+            "photo": "https://studentaffairs.duke.edu/sites/default/files/2017-10/LiaG.png",
+            "bio": "",
+            "tags": []
+        },
+        {
+            "id": "",
+            "name": "Qin Hu",
+            "degree": "PhD",
+            "jobTitle": "Psychology Resident",
+            "photo": "https://studentaffairs.duke.edu/sites/default/files/2017-10/Qin.png",
+            "bio": "",
+            "tags": []
+        },
+        {
+            "id": "",
+            "name": "Rebecca Hurst",
+            "degree": "PhD",
+            "jobTitle": "Staff Psychologist, Assistant Director of Clinical Services",
+            "photo": "https://studentaffairs.duke.edu/sites/default/files/2017-10/Rebecca.png",
+            "bio": "",
+            "tags": []
+        },
+        {
+            "id": "",
+            "name": "Michael Iezzi",
+            "degree": "PhD",
+            "jobTitle": "Staff Psychologist",
+            "photo": "https://studentaffairs.duke.edu/sites/default/files/2017-10/Mike.png",
+            "bio": "",
+            "tags": []
+        },
+        {
+            "id": "",
+            "name": "Nahal Kaivan",
+            "degree": "PhD",
+            "jobTitle": "Staff Psychologist, Group Services Coordinator",
+            "photo": "https://studentaffairs.duke.edu/sites/default/files/2017-10/IMG_0521.png",
+            "bio": "",
+            "tags": []
+        },
+        {
+            "id": "",
+            "name": "Jeff Kulley",
+            "degree": "PhD",
+            "jobTitle": "Staff Psychologist, Associate Director, Director of Clinical Services",
+            "photo": "https://studentaffairs.duke.edu/sites/default/files/2017-10/JeffKulley.png",
+            "bio": "",
+            "tags": []
+        },
+        {
+            "id": "",
+            "name": "Yan Li",
+            "degree": "PsyD",
+            "jobTitle": "Staff Psychologist, Assistant Director of Campus and Community Engagement",
+            "photo": "https://studentaffairs.duke.edu/sites/default/files/2017-10/Yan.png",
+            "bio": "",
+            "tags": []
+        },
+        {
+            "id": "",
+            "name": "Marvice Marcus",
+            "degree": "PhD",
+            "jobTitle": "Staff Psychologist, Assistant Director of Training",
+            "photo": "https://studentaffairs.duke.edu/sites/default/files/2017-10/Dr.%20Marcus.png",
+            "bio": "",
+            "tags": []
+        },
+        {
+            "id": "",
+            "name": "Lisa Milliger",
+            "degree": "MSN, PMHNP-BC",
+            "jobTitle": "Psychiatric Nurse Practitioner",
+            "photo": "https://studentaffairs.duke.edu/sites/default/files/2017-10/IMG_0509.png",
+            "bio": "",
+            "tags": []
+        },
+        {
+            "id": "",
+            "name": "Danielle Oakley",
+            "degree": "PhD",
+            "jobTitle": "Staff Psychologist, Director of Counseling & Psychological Services",
+            "photo": "https://studentaffairs.duke.edu/sites/default/files/styles/medium_large/public/u110/Oakley.jpg?itok=M8I-ArUn",
+            "bio": "",
+            "tags": []
+        },
+        {
+            "id": "",
+            "name": "Emily Porter",
+            "degree": "MSW, LCSW",
+            "jobTitle": "Staff Social Worker",
+            "photo": "https://studentaffairs.duke.edu/sites/default/files/2017-10/IMG_0524.png",
+            "bio": "",
+            "tags": []
+        },
+        {
+            "id": "",
+            "name": "Holly Rogers",
+            "degree": "MD",
+            "jobTitle": "Staff Psychiatrist",
+            "photo": "https://studentaffairs.duke.edu/sites/default/files/2017-10/Holly.png",
+            "bio": "",
+            "tags": []
+        },
+        {
+            "id": "",
+            "name": "Mary Sharp",
+            "degree": "MSW, LCSW",
+            "jobTitle": "Staff Social Worker",
+            "photo": "https://studentaffairs.duke.edu/sites/default/files/2017-10/IMG_0508.png",
+            "bio": "",
+            "tags": []
+        },
+        {
+            "id": "",
+            "name": "Joseph Talley",
+            "degree": "PhD, ABPP",
+            "jobTitle": "Staff Psychologist, Associate Director",
+            "photo": "https://studentaffairs.duke.edu/sites/default/files/2017-10/JosephTalley.png",
+            "bio": "",
+            "tags": []
+        },
+        {
+            "id": "",
+            "name": "Nerine Tatham",
+            "degree": "MD",
+            "jobTitle": "Staff Psychiatrist",
+            "photo": "https://studentaffairs.duke.edu/sites/default/files/2017-10/IMG_0886.png",
+            "bio": "",
+            "tags": []
+        }
+    ],
+    "administrative": [
+        {
+            "id": "",
+            "name": "",
+            "degree": "",
+            "jobTitle": "",
+            "photo": "",
+            "bio": "",
+            "tags": []
+        }
+    ]
+}

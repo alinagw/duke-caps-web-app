@@ -15,40 +15,14 @@ import SectionTabs from "./../layout/SectionTabs"
 export default {
     name: 'SectionHeader',
     props: [
-        //"section"
+        "section"
     ],
     components: {
         SectionTabs
     },
     data() {
         return {
-            section: {
-                id: "",
-                title: "Section Title",
-                src: "link",
-                images: ["https://picsum.photos/600/300/?image=25"],
-                tabs: [{
-                        src: "/about-us/staff",
-                        title: "Meet Our Staff",
-                        icon: "https://static.thenounproject.com/png/604071-200.png"
-                    },
-                    {
-                        src: "/about-us/staff",
-                        title: "Meet Our Staff",
-                        icon: "https://static.thenounproject.com/png/604071-200.png"
-                    },
-                    {
-                        src: "/about-us/staff",
-                        title: "Meet Our Staff",
-                        icon: "https://static.thenounproject.com/png/604071-200.png"
-                    },
-                    {
-                        src: "/about-us/staff",
-                        title: "Meet Our Staff",
-                        icon: "https://static.thenounproject.com/png/604071-200.png"
-                    }
-                ]
-            }
+            
         }
     }
 }
@@ -64,21 +38,29 @@ export default {
     background-color: transparent;
 }
 
+.jumbotron h1 {
+  color: white;
+  font-family: "Scope One", "serif";
+  font-weight: bolder;
+  font-size: 64px;
+  letter-spacing: 4px;
+}
+
 .jumbotron-img {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: -8px;
+    left: -8px;
+    width: calc(100% + 16px);
+    height: calc(100% + 16px);
     overflow: hidden;
     z-index: -1;
 }
 
 .jumbotron img {
-  width: calc(100% + 8px);
-  height: calc(100% + 8px);
+  width: 100%;
+  height: 100% + 8px;
   object-fit: cover;
-  filter: blur(3px);
+  filter: blur(3px) brightness(65%);
 }
 
 .section-tabs-card {

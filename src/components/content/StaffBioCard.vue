@@ -1,5 +1,5 @@
 <template>
-<b-card :title="employee.name" :sub-title="employee.jobTitle" :img-src="employee.photo" :img-alt="employee.name" img-top tag="article" no-body class="staff-bio-card mb-2">
+<b-card :title="employee.name" :sub-title="employee.jobTitle" :img-src="employee.photo" :img-alt="employee.name" img-top img-fluid tag="article" no-body class="staff-bio-card">
     <b-card-body>
         <p class="card-text">
             Some quick example text to build on the card title and make up the bulk of the card's content.
@@ -25,23 +25,17 @@ export default {
     name: 'StaffBioCard',
 
     props: [
-        //"employee"
+        "employee"
     ],
 
     components: {
-      ChevronDown,
-      ChevronUp
+        ChevronDown,
+        ChevronUp
     },
 
     data() {
         return {
-            showCollapse: false,
-            employee: {
-              id: "1",
-              name: "Full Name",
-              jobTitle: "Job Title at CAPS",
-              photo: "https://picsum.photos/600/300/?image=25"
-            }
+            showCollapse: false
 
         }
     }
@@ -50,40 +44,75 @@ export default {
 
 <style>
 .staff-bio-card {
-  border: none;
-  border-radius: 8px;
-  -webkit-box-shadow: 0px 2px 10px 0px rgba(69,91,99,0.45);
--moz-box-shadow: 0px 2px 10px 0px rgba(69,91,99,0.45);
-box-shadow: 0px 2px 10px 0px rgba(69,91,99,0.45);
+    border: none;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 2px 10px 0px rgba(69, 91, 99, 0.45);
+    -moz-box-shadow: 0px 2px 10px 0px rgba(69, 91, 99, 0.45);
+    box-shadow: 0px 2px 10px 0px rgba(69, 91, 99, 0.45);
+    margin-bottom: 30px !important;
+    min-width: calc(100% - 30px);
+    transition: all 0.3s;
+}
+
+@media (min-width: 768px) {
+    .staff-bio-card {
+        min-width: calc(50% - 30px);
+    }
+}
+
+@media (min-width: 992px) {
+    .staff-bio-card {
+        min-width: calc(33% - 30px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .staff-bio-card {
+        min-width: calc(25% - 30px);
+    }
+}
+
+.staff-bio-card:hover {
+    -webkit-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4);
+    -moz-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4);
+    box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4);
+}
+
+.staff-bio-card .card-img-top {
+    /*height: 50%;
+    object-fit: cover;*/
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
 }
 
 .staff-bio-card .card-footer {
-  background-color: transparent;
-  border: none;
+    background-color: transparent;
+    border: none;
 }
 
 .card-collapse-toggle {
-  background-color: transparent;
-  border: none;
-  color: #78849E;
-  border-radius: 50%;
-  padding: 0;
-  width: 36px;
-  height: 36px;
-  font-size: 28px;
-  line-height: 28px;
+    background-color: transparent;
+    border: none;
+    color: #78849E;
+    border-radius: 50%;
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    font-size: 28px;
+    line-height: 28px;
 
 }
 
-.card-collapse-toggle:hover, .card-collapse-toggle:focus {
-  background-color: transparent;
-  box-shadow: none;
-  color: #78849E;
-  transition: all 0.5s;
+.card-collapse-toggle:hover,
+.card-collapse-toggle:focus {
+    background-color: transparent;
+    box-shadow: none;
+    color: #78849E;
+    transition: all 0.5s;
 }
 
 .card-collapse-toggle:hover {
-  background-color: rgba(223,226,232, 0.5);
+    background-color: rgba(223, 226, 232, 0.5);
 }
-
 </style>

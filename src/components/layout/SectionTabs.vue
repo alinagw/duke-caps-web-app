@@ -1,6 +1,6 @@
 <template>
   <b-card class="section-tabs-card" no-body>
-  <b-nav class="justify-content-center">
+  <b-nav class="justify-content-center" fill>
     <li v-for="(tab, index) in tabs" :key="index" class="nav-item">
       <router-link class="nav-link text-center" :to="tab.src">
         <b-img :src="tab.icon" fluid></b-img>
@@ -43,7 +43,7 @@ export default {
 }
 
 .section-tabs-card .nav-item img {
-  width: 48px;
+  width: 40px;
   margin-bottom: 6px;
 }
 
