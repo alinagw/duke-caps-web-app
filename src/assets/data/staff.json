@@ -184,10 +184,41 @@
     "administrative": [
         {
             "id": "",
-            "name": "",
-            "degree": "",
-            "jobTitle": "",
-            "photo": "",
+            "name": "Gwen Lloyd",
+            "jobTitle": "Administrative & Financial Coordinator",
+            "photo": "https://studentaffairs.duke.edu/sites/default/files/2017-10/IMG_0532.png",
+            "bio": "",
+            "tags": []
+        },
+        {
+            "id": "",
+            "name": "Christine Mello",
+            "jobTitle": "Staff Assistant",
+            "photo": "https://studentaffairs.duke.edu/sites/default/files/2017-10/Christine%202.png",
+            "bio": "",
+            "tags": []
+        },
+        {
+            "id": "",
+            "name": "Kate Sakofsky",
+            "jobTitle": "Administrative Assistant",
+            "photo": "https://studentaffairs.duke.edu/sites/default/files/2017-10/Kate.png",
+            "bio": "",
+            "tags": []
+        },
+        {
+            "id": "",
+            "name": "Colette Smith",
+            "jobTitle": "Staff Assistant",
+            "photo": "https://studentaffairs.duke.edu/sites/default/files/2017-10/IMG_0763.png",
+            "bio": "",
+            "tags": []
+        },
+        {
+            "id": "",
+            "name": "Mary Louise Cicinnati",
+            "jobTitle": "Staff Assistant",
+            "photo": "https://studentaffairs.duke.edu/sites/default/files/2017-10/IMG_0528.png",
             "bio": "",
             "tags": []
         }

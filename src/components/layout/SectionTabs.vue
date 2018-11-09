@@ -36,6 +36,12 @@ export default {
   box-shadow: 0px 2px 10px 0px rgba(69,91,99,0.45);
 }
 
+@media (min-width: 1200px) {
+    .section-tabs-card {
+      width: 1200px;
+    }
+}
+
 .section-tabs-card .nav-link {
   font-family: "Montserrat", "sans-serif";
   font-weight: 500;

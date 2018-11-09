@@ -1,6 +1,8 @@
 <template>
-<b-card :title="employee.name" :sub-title="employee.jobTitle" :img-src="employee.photo" :img-alt="employee.name" img-top img-fluid tag="article" no-body class="staff-bio-card">
+<b-card :title="employeeTitle" :sub-title="employee.jobTitle" :img-src="employee.photo" :img-alt="employee.name" img-top img-fluid no-body tag="div" class="staff-bio-card">
     <b-card-body>
+        <h4 class="card-title">{{ employeeTitle }}</h4>
+        <h6 class="card-subtitle mb-3 text-muted">{{ employee.jobTitle }}</h6>
         <p class="card-text">
             Some quick example text to build on the card title and make up the bulk of the card's content.
         </p>
@@ -38,6 +40,16 @@ export default {
             showCollapse: false
 
         }
+    },
+
+    computed: {
+        employeeTitle() {
+            var title = this.employee.name;
+            if (this.employee.hasOwnProperty("degree")) {
+                title += ", " + this.employee.degree;
+            }
+            return title;
+        }
     }
 }
 </script>
@@ -51,24 +63,37 @@ export default {
     box-shadow: 0px 2px 10px 0px rgba(69, 91, 99, 0.45);
     margin-bottom: 30px !important;
     min-width: calc(100% - 30px);
+    max-width: calc(100% - 30px);
     transition: all 0.3s;
+    font-family: "Montserrat", "sans-serif";
 }
 
-@media (min-width: 768px) {
+.staff-bio-card .card-img-top {
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+}
+
+@media (min-width: 576px) {
     .staff-bio-card {
         min-width: calc(50% - 30px);
+        max-width: calc(50% - 30px);
     }
+
+    .staff-bio-card .card-img-top {
+        height: 350px;
+    }
+    
 }
 
 @media (min-width: 992px) {
     .staff-bio-card {
         min-width: calc(33% - 30px);
+        max-width: calc(33% - 30px);
     }
-}
 
-@media (min-width: 1200px) {
-    .staff-bio-card {
-        min-width: calc(25% - 30px);
+    .staff-bio-card .card-img-top {
+        height: 300px;
     }
 }
 
@@ -78,13 +103,15 @@ export default {
     box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4);
 }
 
-.staff-bio-card .card-img-top {
-    /*height: 50%;
-    object-fit: cover;*/
-    height: 350px;
-    object-fit: cover;
-    object-position: top;
+.staff-bio-card .card-title {
+    font-weight: 400;
 }
+
+.staff-bio-card .card-subtitle {
+    font-size: 15px;
+}
+
+
 
 .staff-bio-card .card-footer {
     background-color: transparent;
