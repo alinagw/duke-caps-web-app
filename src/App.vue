@@ -23,7 +23,7 @@ export default {
 }
 
 .section-content {
-    padding: 0 8% 2% 8%;
+    padding: 0 10% 2% 10%;
 }
 
 @media (min-width: 1200px) {

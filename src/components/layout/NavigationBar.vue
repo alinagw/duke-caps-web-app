@@ -11,6 +11,7 @@
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
+
             <li class="nav-item px-1">
                 <router-link class="nav-link" to="/">Home</router-link>
             </li>
@@ -26,14 +27,27 @@
             <li class="nav-item px-1">
                 <router-link class="nav-link" to="/resources">Resources</router-link>
             </li>
+            <b-nav-form class="pl-3">
+                <b-input-group>
+                    <b-form-input type="text" placeholder="Search Resources" size="sm"></b-form-input>
+                    <b-input-group-append>
+                        <b-btn size="sm"><magnify></magnify></b-btn>
+                    </b-input-group-append>
+                </b-input-group>
+            </b-nav-form>
         </b-navbar-nav>
     </b-collapse>
 </b-navbar>
 </template>
 
 <script>
+import Magnify from "vue-material-design-icons/Magnify.vue"
+
 export default {
     name: 'NavigationBar',
+    components: {
+        Magnify
+    },
     data() {
         return {
 
