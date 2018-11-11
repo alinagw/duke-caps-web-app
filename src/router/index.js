@@ -13,6 +13,14 @@ import AboutWellnessCenter from '@/components/pages/about-us-pages/AboutWellness
 import GetStarted from '@/components/pages/GetStarted'
 
 import OurServices from '@/components/pages/OurServices'
+import ServicesHome from '@/components/pages/our-services-pages/ServicesHome'
+import ServicesConsultation from '@/components/pages/our-services-pages/ServicesConsultation'
+import ServicesIndividual from '@/components/pages/our-services-pages/ServicesIndividual'
+import ServicesGroup from '@/components/pages/our-services-pages/ServicesGroup'
+import ServicesCouples from '@/components/pages/our-services-pages/ServicesCouples'
+import ServicesPsychiatric from '@/components/pages/our-services-pages/ServicesPsychiatric'
+import ServicesHealth from '@/components/pages/our-services-pages/ServicesHealth'
+import ServicesWorkshops from '@/components/pages/our-services-pages/ServicesWorkshops'
 
 import Resources from '@/components/pages/Resources'
 
@@ -69,9 +77,37 @@ export default new Router({
       component: OurServices,
       children: [
         {
-          path: 'child',
-          component: OurServices
-        }
+          path: '',
+          component: ServicesHome
+        },
+        {
+          path: 'consultation',
+          component: ServicesConsultation
+        },
+        {
+          path: 'individual-counseling',
+          component: ServicesIndividual
+        },
+        {
+          path: 'group-counseling',
+          component: ServicesGroup
+        },
+        {
+          path: 'couples-counseling',
+          component: ServicesCouples
+        },
+        {
+          path: 'psychiatric',
+          component: ServicesPsychiatric
+        },
+        {
+          path: 'health-coaching',
+          component: ServicesHealth
+        },
+        {
+          path: 'workshops-discussions',
+          component: ServicesWorkshops
+        },
       ]
     },
     {

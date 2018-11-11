@@ -3,16 +3,19 @@
     <navigation-bar></navigation-bar>
     <div class="nav-spacer"></div>
     <router-view></router-view>
+    <!--<contact-us-footer></contact-us-footer>-->
 </div>
 </template>
 
 <script>
 import NavigationBar from "./components/layout/NavigationBar"
+import ContactUsFooter from "./components/layout/ContactUsFooter"
 
 export default {
     name: 'app',
     components: {
-        NavigationBar
+        NavigationBar,
+        ContactUsFooter
     }
 }
 </script>
