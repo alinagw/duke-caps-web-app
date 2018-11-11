@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  name: 'ServicesGroup',
+  name: 'AboutHome',
   components: {
 
   },

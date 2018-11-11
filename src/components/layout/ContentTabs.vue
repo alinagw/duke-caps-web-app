@@ -37,6 +37,7 @@ export default {
   font-family: "Montserrat", "sans-serif";
   font-weight: 500;
   font-size: 11px;
+  padding: 8px;
 }
 
 .content-tabs .nav-item img {

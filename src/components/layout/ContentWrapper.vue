@@ -22,43 +22,14 @@
 import ContentTabs from "./ContentTabs";
 export default {
     name: 'ContentWrapper',
+    props: [
+        "section"
+    ],
     components: {
         ContentTabs
     },
     data() {
         return {
-            section: {
-                id: "",
-                title: "About Us",
-                src: "link",
-                images: ["https://studentaffairs.duke.edu/sites/default/files/styles/carousel_a_image_xwide/public/2017-12/IMG_0483_5.jpg?itok=hFp3X1Pf"],
-                tabs: [{
-                        src: "/about-us",
-                        title: "About Us",
-                        icon: "https://static.thenounproject.com/png/604071-200.png"
-                    },
-                    {
-                        src: "/about-us/staff",
-                        title: "Meet Our Staff",
-                        icon: "https://static.thenounproject.com/png/604071-200.png"
-                    },
-                    {
-                        src: "/about-us/policies",
-                        title: "Our Policies",
-                        icon: "https://static.thenounproject.com/png/604071-200.png"
-                    },
-                    {
-                        src: "/about-us/training",
-                        title: "Training Programs",
-                        icon: "https://static.thenounproject.com/png/604071-200.png"
-                    },
-                    {
-                        src: "/about-us/student-wellness-center",
-                        title: "Student Wellness Center",
-                        icon: "https://static.thenounproject.com/png/604071-200.png"
-                    }
-                ]
-            }
 
         }
     }
@@ -73,6 +44,7 @@ export default {
     padding-top: 88px;
     padding-bottom: 168px;
     margin-bottom: -96px;
+    z-index: 1;
 }
 
 .jumbotron h1 {
@@ -109,6 +81,7 @@ export default {
     -webkit-box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.3), 0px 2px 10px 0px rgba(69, 91, 99, 0.12);
     -moz-box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.3), 0px 2px 10px 0px rgba(69, 91, 99, 0.12);
     box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.3), 0px 2px 10px 0px rgba(69, 91, 99, 0.12);
+    z-index: 2;
 }
 
 .divider {

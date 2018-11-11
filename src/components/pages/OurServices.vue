@@ -1,18 +1,14 @@
 <template>
-  <div>
-    <section-header :section="section"></section-header>
-    <b-container fluid class="section-content">
-      <router-view></router-view>
-    </b-container>
-  </div>
+<content-wrapper :section="section"></content-wrapper>
 </template>
 
 <script>
-import SectionHeader from "./../layout/SectionHeader"
+import ContentWrapper from "./../layout/ContentWrapper"
+
 export default {
   name: 'OurServices',
   components: {
-    SectionHeader
+    ContentWrapper
   },
   data () {
     return {
@@ -32,22 +28,12 @@ export default {
                         icon: "https://static.thenounproject.com/png/604071-200.png"
                     },
                     {
-                        src: "/services/individual-counseling",
-                        title: "Individual Counseling",
+                        src: "/services/counseling",
+                        title: "Counseling",
                         icon: "https://static.thenounproject.com/png/604071-200.png"
                     },
                     {
-                        src: "/services/group-counseling",
-                        title: "Group Counseling",
-                        icon: "https://static.thenounproject.com/png/604071-200.png"
-                    },
-                    {
-                        src: "/services/couples-counseling",
-                        title: "Couples Counseling",
-                        icon: "https://static.thenounproject.com/png/604071-200.png"
-                    },
-                    {
-                        src: "/services/psychiatric",
+                        src: "/services/psychiatric-services",
                         title: "Psychiatric Services",
                         icon: "https://static.thenounproject.com/png/604071-200.png"
                     },

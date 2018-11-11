@@ -11,13 +11,15 @@ import AboutTraining from '@/components/pages/about-us-pages/AboutTraining'
 import AboutWellnessCenter from '@/components/pages/about-us-pages/AboutWellnessCenter'
 
 import GetStarted from '@/components/pages/GetStarted'
+import StartHome from '@/components/pages/get-started-pages/StartHome'
+import StartScreening from '@/components/pages/get-started-pages/StartScreening'
+import StartWhen from '@/components/pages/get-started-pages/StartWhen'
+import StartExpectations from '@/components/pages/get-started-pages/StartExpectations'
 
 import OurServices from '@/components/pages/OurServices'
 import ServicesHome from '@/components/pages/our-services-pages/ServicesHome'
 import ServicesConsultation from '@/components/pages/our-services-pages/ServicesConsultation'
-import ServicesIndividual from '@/components/pages/our-services-pages/ServicesIndividual'
-import ServicesGroup from '@/components/pages/our-services-pages/ServicesGroup'
-import ServicesCouples from '@/components/pages/our-services-pages/ServicesCouples'
+import ServicesCounseling from '@/components/pages/our-services-pages/ServicesCounseling'
 import ServicesPsychiatric from '@/components/pages/our-services-pages/ServicesPsychiatric'
 import ServicesHealth from '@/components/pages/our-services-pages/ServicesHealth'
 import ServicesWorkshops from '@/components/pages/our-services-pages/ServicesWorkshops'
@@ -57,7 +59,7 @@ export default new Router({
           component: AboutPolicies
         },
         {
-          path: 'training',
+          path: 'training-programs',
           component: AboutTraining
         },
         {
@@ -72,8 +74,20 @@ export default new Router({
       component: GetStarted,
       children: [
         {
-          path: 'child',
-          component: GetStarted
+          path: '',
+          component: StartHome
+        },
+        {
+          path: 'screening',
+          component: StartScreening
+        },
+        {
+          path: 'when-can-i-be-seen',
+          component: StartWhen
+        },
+        {
+          path: 'what-to-expect',
+          component: StartExpectations
         }
       ]
     },
@@ -91,19 +105,11 @@ export default new Router({
           component: ServicesConsultation
         },
         {
-          path: 'individual-counseling',
-          component: ServicesIndividual
+          path: 'counseling',
+          component: ServicesCounseling
         },
         {
-          path: 'group-counseling',
-          component: ServicesGroup
-        },
-        {
-          path: 'couples-counseling',
-          component: ServicesCouples
-        },
-        {
-          path: 'psychiatric',
+          path: 'psychiatric-services',
           component: ServicesPsychiatric
         },
         {

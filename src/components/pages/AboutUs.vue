@@ -1,25 +1,18 @@
 <template>
-  <div>
-    <!--<section-header :section="section"></section-header>
-    <b-container fluid class="section-content">
-      <router-view></router-view>
-    </b-container>-->
-    <content-wrapper></content-wrapper>
-  </div>
+<content-wrapper :section="section"></content-wrapper>
 </template>
 
 <script>
 import ContentWrapper from "./../layout/ContentWrapper"
-import SectionHeader from "./../layout/SectionHeader"
+
 export default {
-  name: 'AboutUs',
-  components: {
-    SectionHeader,
-    ContentWrapper
-  },
-  data () {
-    return {
-      section: {
+    name: 'AboutUs',
+    components: {
+        ContentWrapper
+    },
+    data() {
+        return {
+            section: {
                 id: "",
                 title: "About Us",
                 src: "link",
@@ -40,7 +33,7 @@ export default {
                         icon: "https://static.thenounproject.com/png/604071-200.png"
                     },
                     {
-                        src: "/about-us/training",
+                        src: "/about-us/training-programs",
                         title: "Training Programs",
                         icon: "https://static.thenounproject.com/png/604071-200.png"
                     },
@@ -51,13 +44,12 @@ export default {
                     }
                 ]
             }
-      
+
+        }
     }
-  }
 }
 </script>
 
 <style>
-
 
 </style>

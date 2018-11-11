@@ -21,12 +21,17 @@ export default {
 </script>
 
 <style>
+#app {
+    background-color: #F5F9FA;
+    overflow-x: hidden;
+}
+
 .nav-spacer {
     height: 56px;
 }
 
 .section {
-    margin-bottom: 96px;
+    margin-bottom: 64px;
 }
 
 .section-content {

@@ -27,14 +27,14 @@
             <li class="nav-item px-1">
                 <router-link class="nav-link" to="/resources">Resources</router-link>
             </li>
-            <b-nav-form class="pl-3">
+            <!--<b-nav-form class="pl-3">
                 <b-input-group>
                     <b-form-input type="text" placeholder="Search Resources" size="sm"></b-form-input>
                     <b-input-group-append>
                         <b-btn size="sm"><magnify></magnify></b-btn>
                     </b-input-group-append>
                 </b-input-group>
-            </b-nav-form>
+            </b-nav-form>-->
         </b-navbar-nav>
     </b-collapse>
 </b-navbar>
