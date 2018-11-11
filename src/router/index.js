@@ -23,6 +23,12 @@ import ServicesHealth from '@/components/pages/our-services-pages/ServicesHealth
 import ServicesWorkshops from '@/components/pages/our-services-pages/ServicesWorkshops'
 
 import Resources from '@/components/pages/Resources'
+import ResourcesHome from '@/components/pages/resources-pages/ResourcesHome'
+import ResourcesWait from '@/components/pages/resources-pages/ResourcesWait'
+import ResourcesStudent from '@/components/pages/resources-pages/ResourcesStudent'
+import ResourcesMentalHealth from '@/components/pages/resources-pages/ResourcesMentalHealth'
+import ResourcesGroups from '@/components/pages/resources-pages/ResourcesGroups'
+import ResourcesEmergency from '@/components/pages/resources-pages/ResourcesEmergency'
 
 Vue.use(Router)
 
@@ -107,7 +113,7 @@ export default new Router({
         {
           path: 'workshops-discussions',
           component: ServicesWorkshops
-        },
+        }
       ]
     },
     {
@@ -116,8 +122,28 @@ export default new Router({
       component: Resources,
       children: [
         {
-          path: 'child',
-          component: Resources
+          path: '',
+          component: ResourcesHome
+        },
+        {
+          path: 'while-you-wait',
+          component: ResourcesWait
+        },
+        {
+          path: 'student-wellbeing',
+          component: ResourcesStudent
+        },
+        {
+          path: 'mental-health',
+          component: ResourcesMentalHealth
+        },
+        {
+          path: 'affiliated-groups',
+          component: ResourcesGroups
+        },
+        {
+          path: 'emergency',
+          component: ResourcesEmergency
         }
       ]
     }

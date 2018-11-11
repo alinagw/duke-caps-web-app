@@ -72,6 +72,8 @@ export default {
     height: 400px;
     object-fit: cover;
     object-position: top;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 @media (min-width: 576px) {

@@ -61,6 +61,11 @@ export default {
     font-family: "Montserrat", "sans-serif";
 }
 
+.service-card .card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
 @media (min-width: 768px) {
     .service-card {
         min-width: calc(50% - 30px);
