@@ -1,18 +1,21 @@
 <template>
   <div>
-    <section-header :section="section"></section-header>
+    <!--<section-header :section="section"></section-header>
     <b-container fluid class="section-content">
       <router-view></router-view>
-    </b-container>
+    </b-container>-->
+    <content-wrapper></content-wrapper>
   </div>
 </template>
 
 <script>
+import ContentWrapper from "./../layout/ContentWrapper"
 import SectionHeader from "./../layout/SectionHeader"
 export default {
   name: 'AboutUs',
   components: {
-    SectionHeader
+    SectionHeader,
+    ContentWrapper
   },
   data () {
     return {

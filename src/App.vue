@@ -3,7 +3,7 @@
     <navigation-bar></navigation-bar>
     <div class="nav-spacer"></div>
     <router-view></router-view>
-    <!--<contact-us-footer></contact-us-footer>-->
+    <contact-us-footer></contact-us-footer>
 </div>
 </template>
 
@@ -25,8 +25,12 @@ export default {
     height: 56px;
 }
 
+.section {
+    margin-bottom: 96px;
+}
+
 .section-content {
-    padding: 0 10% 2% 10%;
+    padding: 0 8% 48px 8%;
 }
 
 @media (min-width: 1200px) {
