@@ -1,56 +1,64 @@
 <template>
-  <b-card class="section-tabs-card" no-body>
-  <b-nav class="justify-content-center" fill>
-    <li v-for="(tab, index) in tabs" :key="index" class="nav-item">
-      <router-link class="nav-link text-center" :to="tab.src">
+<b-nav class="content-tabs justify-content-center" fill>
+    <b-nav-item v-for="(tab, key) in tabs" :key="tab.id" :to="tabPath(key)" class="text-center">
         <b-img :src="tab.icon" fluid></b-img>
         <p class="mb-0">{{ tab.title }}</p>
-      </router-link>
-    </li> 
-  </b-nav>
-</b-card>
-
+    </b-nav-item>
+</b-nav>
 </template>
 
 <script>
 export default {
-  name: 'SectionTabs',
-  props: [
-    "tabs"
-  ],
-  data () {
-    return {
+    name: 'SectionTabs',
+    props: [
+        "tabs"
+    ],
+    data() {
+        return {
+
+        }
+    },
+    methods: {
+        tabPath(tabKey) {
+            if (tabKey == "home") {
+                return "/" + this.$route.params.section;
+            }
+            return "/" + this.$route.params.section + "/" + tabKey;
+        }
     }
-  }
 }
 </script>
 
 <style>
-.section-tabs-card {
-  max-width: 90%;
-  margin: auto;
-  border: none;
-  border-radius: 8px;
-  -webkit-box-shadow: 0px 2px 10px 0px rgba(69,91,99,0.45);
-  -moz-box-shadow: 0px 2px 10px 0px rgba(69,91,99,0.45);
-  box-shadow: 0px 2px 10px 0px rgba(69,91,99,0.45);
+.content-tabs {
+    padding: 13px 16px;
 }
 
 @media (min-width: 1200px) {
-    .section-tabs-card {
-      width: 1200px;
+    .content-tabs {
+        width: 1200px;
     }
 }
 
-.section-tabs-card .nav-link {
-  font-family: "Montserrat", "sans-serif";
-  font-weight: 500;
-  font-size: 11px;
+.content-tabs .nav-link {
+    font-family: "Montserrat", "sans-serif";
+    font-weight: 500;
+    font-size: 11px;
+    padding: 8px;
+    color: #78849E;
+    transition: 0.3s;
 }
 
-.section-tabs-card .nav-item img {
-  width: 40px;
-  margin-bottom: 6px;
+.content-tabs .nav-item img {
+    width: 40px;
+    margin-bottom: 6px;
 }
 
+.content-tabs .nav-link:hover {
+
+}
+
+.content-tabs .nav-link.active {
+
+}
 </style>

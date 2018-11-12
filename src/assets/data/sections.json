@@ -1,31 +1,183 @@
 {
     "sections": {
-        "pageName": {
-            "id": "",
-            "title": "",
-            "src": "",
-            "images": [],
+        "about-us": {
+            "id": "about-us",
+            "tags": [],
+            "title": "About Us",
+            "image": "https://studentaffairs.duke.edu/sites/default/files/styles/carousel_a_image_xwide/public/2017-12/IMG_0483_5.jpg?itok=hFp3X1Pf",
             "tabs": {
-                "tabName": {
-                    "id": "",
-                    "title": "",
-                    "src": "",
-                    "icon": ""
+                "home": {
+                    "id": "about-us_home",
+                    "tags": [],
+                    "title": "About Us",
+                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "component": "AboutHome"
+                },
+                "staff": {
+                    "id": "about-us_staff",
+                    "tags": [],
+                    "title": "Meet Our Staff",
+                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "component": "AboutStaff"
+                },
+                "policies": {
+                    "id": "about-us_policies",
+                    "tags": [],
+                    "title": "Our Policies",
+                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "component": "AboutPolicies"
+                },
+                "training-programs": {
+                    "id": "about-us_training-programs",
+                    "tags": [],
+                    "title": "Training Programs",
+                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "component": "AboutTraining"
+                },
+                "student-wellness-center": {
+                    "id": "about-us_student-wellness-center",
+                    "tags": [],
+                    "title": "Student Wellness Center",
+                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "component": "AboutWellnessCenter"
+                }
+            }
+        },
+        "get-started": {
+            "id": "get-started",
+            "tags": [],
+            "title": "Get Started",
+            "image": "",
+            "tabs": {
+                "home": {
+                    "id": "get-started_home",
+                    "tags": [],
+                    "title": "Get Started",
+                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "component": "StartHome"
+                },
+                "screening": {
+                    "id": "get-started_screening",
+                    "tags": [],
+                    "title": "Is CAPS Right for Me?",
+                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "component": "StartScreening"
+                },
+                "when-can-i-be-seen": {
+                    "id": "get-started_when-can-i-be-seen",
+                    "tags": [],
+                    "title": "When Can I Be Seen?",
+                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "component": "StartWhen"
+                },
+                "what-to-expect": {
+                    "id": "get-started_what-to-expect",
+                    "tags": [],
+                    "title": "What to Expect",
+                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "component": "StartExpectations"
+                }
+            }
+        },
+        "services": {
+            "id": "services",
+            "tags": [],
+            "title": "Our Services",
+            "image": "",
+            "tabs": {
+                "home": {
+                    "id": "services_home",
+                    "tags": [],
+                    "title": "Our Services",
+                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "component": "ServicesHome"
+                },
+                "consultation": {
+                    "id": "services_consultation",
+                    "tags": [],
+                    "title": "Consultation",
+                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "component": "ServicesConsultation"
+                },
+                "counseling": {
+                    "id": "services_counseling",
+                    "tags": [],
+                    "title": "Counseling",
+                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "component": "ServicesCounseling"
+                },
+                "psychiatric-services": {
+                    "id": "services_psychiatric-services",
+                    "tags": [],
+                    "title": "Psychiatric Services",
+                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "component": "ServicesPsychiatric"
+                },
+                "health-coaching": {
+                    "id": "services_health-coaching",
+                    "tags": [],
+                    "title": "Health Coaching",
+                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "component": "ServicesHealth"
+                },
+                "workshops-and-discussions": {
+                    "id": "services_workshops-and-discussions",
+                    "tags": [],
+                    "title": "Workshops & Discussions",
+                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "component": "ServicesWorkshops"
+                }
+            }
+        },
+        "resources": {
+            "id": "resources",
+            "tags": [],
+            "title": "Resources",
+            "image": "https://studentaffairs.duke.edu/sites/default/files/styles/carousel_a_image_xwide/public/2017-12/IMG_0483_5.jpg?itok=hFp3X1Pf",
+            "tabs": {
+                "home": {
+                    "id": "resources_home",
+                    "tags": [],
+                    "title": "Resources",
+                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "component": "ResourcesHome"
+                },
+                "while-you-wait": {
+                    "id": "resources_while-you-wait",
+                    "tags": [],
+                    "title": "While You Wait",
+                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "component": "ResourcesWait"
+                },
+                "student-wellbeing": {
+                    "id": "resources_student-wellbeing",
+                    "tags": [],
+                    "title": "Student Wellbeing",
+                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "component": "ResourcesStudent"
+                },
+                "mental-health": {
+                    "id": "resources_mental-health",
+                    "tags": [],
+                    "title": "Mental Health",
+                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "component": "ResourcesMentalHealth"
+                },
+                "affiliated-groups": {
+                    "id": "resources_affiliated-groups",
+                    "tags": [],
+                    "title": "Affiliated Groups",
+                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "component": "ResourcesGroups"
+                },
+                "emergency": {
+                    "id": "resources_emergency",
+                    "tags": [],
+                    "title": "Emergency",
+                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "component": "ResourcesEmergency"
                 }
             }
         }
-    },
-    "tags": {
-        "tagName": ["ids of things with this tag"]
-    },
-    "staff": [
-        {
-            "id": "",
-            "name": "",
-            "jobTitle": "",
-            "photo": "",
-            "bio": "",
-            "tags": []
-        }
-    ]
+    }
 }

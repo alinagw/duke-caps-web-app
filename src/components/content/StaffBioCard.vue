@@ -54,13 +54,16 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .staff-bio-card {
     border: none;
     border-radius: 8px;
+    background-color: #F7F7FA;
+    /*border: none;
+    border-radius: 8px;
     -webkit-box-shadow: 0px 2px 10px 0px rgba(69, 91, 99, 0.45);
     -moz-box-shadow: 0px 2px 10px 0px rgba(69, 91, 99, 0.45);
-    box-shadow: 0px 2px 10px 0px rgba(69, 91, 99, 0.45);
+    box-shadow: 0px 2px 10px 0px rgba(69, 91, 99, 0.45);*/
     margin-bottom: 30px !important;
     min-width: calc(100% - 30px);
     max-width: calc(100% - 30px);
@@ -98,13 +101,13 @@ export default {
         height: 300px;
     }
 }
-
+/*
 .staff-bio-card:hover {
     -webkit-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4);
     -moz-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4);
     box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4);
 }
-
+*/
 .staff-bio-card .card-title {
     font-weight: 400;
 }

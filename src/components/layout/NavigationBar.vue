@@ -11,30 +11,11 @@
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-
-            <li class="nav-item px-1">
-                <router-link class="nav-link" to="/">Home</router-link>
-            </li>
-            <li class="nav-item px-1">
-                <router-link class="nav-link" to="/about-us">About Us</router-link>
-            </li>
-            <li class="nav-item px-1">
-                <router-link class="nav-link" to="/get-started">Get Started</router-link>
-            </li>
-            <li class="nav-item px-1">
-                <router-link class="nav-link" to="/services">Services</router-link>
-            </li>
-            <li class="nav-item px-1">
-                <router-link class="nav-link" to="/resources">Resources</router-link>
-            </li>
-            <!--<b-nav-form class="pl-3">
-                <b-input-group>
-                    <b-form-input type="text" placeholder="Search Resources" size="sm"></b-form-input>
-                    <b-input-group-append>
-                        <b-btn size="sm"><magnify></magnify></b-btn>
-                    </b-input-group-append>
-                </b-input-group>
-            </b-nav-form>-->
+            <b-nav-item to="/" exact>Home</b-nav-item>
+            <b-nav-item to="/about-us">About Us</b-nav-item>
+            <b-nav-item to="/get-started">Get Started</b-nav-item>
+            <b-nav-item to="/services">Services</b-nav-item>
+            <b-nav-item to="/resources">Resources</b-nav-item>
         </b-navbar-nav>
     </b-collapse>
 </b-navbar>
@@ -58,7 +39,7 @@ export default {
 
 <style>
 .main-nav {
-    background-color: #0F2F62;
+    background-color: #0F2B5B;
     -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.16);
     -moz-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.16);
     box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.16);
@@ -78,7 +59,7 @@ export default {
     color: #2FA4EE !important;
 }
 
-.main-nav .nav-link.router-link-exact-active {
+.main-nav .nav-link.active {
     color: #2FA4EE !important;
 }
 </style>

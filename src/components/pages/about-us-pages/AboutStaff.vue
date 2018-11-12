@@ -9,12 +9,14 @@
     <div class="divider"></div>
     <h1>Clinical Staff</h1>
     <b-card-group deck>
-        <staff-bio-card v-for="(employee, index) in clinicalStaff" :key="index" :employee="employee"></staff-bio-card>
+        <!--<staff-bio-card v-for="(employee, index) in clinicalStaff" :key="index" :employee="employee"></staff-bio-card>-->
+        <staff-card v-for="(employee, index) in clinicalStaff" :key="index" :employee="employee"></staff-card>
     </b-card-group>
     <div class="divider"></div>
     <h1>Administrative Staff</h1>
     <b-card-group deck>
-        <staff-bio-card v-for="(employee, index) in adminStaff" :key="index" :employee="employee"></staff-bio-card>
+        <!--<staff-bio-card v-for="(employee, index) in adminStaff" :key="index" :employee="employee"></staff-bio-card>-->
+        <staff-card v-for="(employee, index) in adminStaff" :key="index" :employee="employee"></staff-card>
     </b-card-group>
 </div>
 </template>
@@ -22,12 +24,14 @@
 <script>
 import staffJSON from './../../../assets/data/staff.json'
 import StaffBioCard from "./../../content/StaffBioCard"
+import StaffCard from "./../../content/StaffCard"
 
 export default {
     name: 'AboutStaff',
     props: [],
     components: {
-        StaffBioCard
+        StaffBioCard,
+        StaffCard
     },
     data() {
         return {

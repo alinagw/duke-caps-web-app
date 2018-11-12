@@ -1,33 +1,44 @@
 <template>
-  <div>
-    <h1>About Us</h1>
-    <p> 
-      <b-img class="content-img" src="https://studentaffairs.duke.edu/sites/default/files/styles/medium/public/2017-08/wellness_tree_seal_rgb.png?itok=X5LOgZRK" right fluid rounded></b-img>
-      CAPS helps Duke Students enhance strengths and develop abilities to successfully live, grow and learn in their personal and academic lives. We offer many services to Duke undergraduate, graduate, and professional students, including brief individual and group counseling, couples counseling and more. CAPS staff also provide outreach to student groups, particularly programs supportive of at-risk populations, on a wide range of issues impacting them in various aspects of campus life.
-    </p>
+<div>
+    <h1>Consultation</h1>
     <p>
-      CAPS is designed as a short-term care clinic. Therefore, we are limited in our ability to provide care for students needing long-term or more open-ended care.
+        If you are concerned about a student and wish to speak with a mental health professional about your concerns, we have a consultant available to speak with you by phone or in person.
     </p>
-    <p>
-      There are certain specialized services such as ADD/ADHD and treatment for Substance Use Disorders that are not available through CAPS.
-    </p>
-    <p>
-      We do recognize that several our students will need longer term or a more specialized type of care and we have a strong network with area community providers for these.
-    </p>
-  </div>
+    <p class="mb-1"><strong>
+      Some common reasons for using our Consultation Services include:
+    </strong></p>
+    <ul>
+        <li>
+          concern that a student is showing signs of impairment in daily functioning
+          </li>
+        <li>
+            questions about a student’s development (academically or socially)
+        </li>
+        <li>
+            alarm that a student is showing indications of self-destructive or unusual behaviors
+        </li>
+        <li>
+            concern about a student whose family is experiencing a crisis
+        </li>
+        <li>
+            need for information about referrals for more specialized services in the community
+        </li>
+    </ul>
+
+</div>
 </template>
 
 <script>
 export default {
-  name: 'ServicesConsultation',
-  components: {
+    name: 'ServicesConsultation',
+    components: {
 
-  },
-  data () {
-    return {
-      
+    },
+    data() {
+        return {
+
+        }
     }
-  }
 }
 </script>
 
@@ -38,17 +49,16 @@ export default {
     transition: 0.3s;
 }
 
-@media (min-width: 576px) { 
-  .section-content .content-img {
-      width: 50%;
-      margin: 0 0 32px 32px;
+@media (min-width: 576px) {
+    .section-content .content-img {
+        width: 50%;
+        margin: 0 0 32px 32px;
     }
 }
 
 @media (min-width: 992px) {
     .section-content .content-img {
-      width: 30%;
+        width: 30%;
     }
 }
-
 </style>

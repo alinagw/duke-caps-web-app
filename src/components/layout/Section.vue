@@ -1,32 +1,28 @@
 <template>
-<div class="section">
+<div class="section" :id="section.id">
     <b-jumbotron fluid :header="section.title" header-level="4">
         <div class="jumbotron-img">
-            <img :src="section.images[0]">
+            <img :src="section.image">
         </div>
-            <section-tabs :tabs="section.tabs"></section-tabs>
     </b-jumbotron>
     <b-container fluid>
         <b-card class="content-card" no-body>
-            <content-tabs :tabs="section.tabs"></content-tabs>
+            <section-tabs :tabs="section.tabs"></section-tabs>
             <div class="divider"></div>
-            <b-container fluid class="section-content mt-5">
-                <router-view></router-view>
-            </b-container>
+            <router-view></router-view>
         </b-card>
     </b-container>
 </div>
 </template>
-
 <script>
-import ContentTabs from "./ContentTabs";
+import SectionTabs from "./SectionTabs"
 export default {
-    name: 'ContentWrapper',
+    name: 'Section',
     props: [
         "section"
     ],
     components: {
-        ContentTabs
+        SectionTabs
     },
     data() {
         return {
@@ -37,6 +33,33 @@ export default {
 </script>
 
 <style>
+
+.section {
+    margin-bottom: 64px;
+}
+
+.section-content {
+    padding: 0 8% 48px 8%;
+    color: #454F63;
+}
+
+.content-card {
+    max-width: 95%;
+    margin: auto;
+    border: 0;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.3), 0px 2px 10px 0px rgba(69, 91, 99, 0.12);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.3), 0px 2px 10px 0px rgba(69, 91, 99, 0.12);
+    box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.3), 0px 2px 10px 0px rgba(69, 91, 99, 0.12);
+    z-index: 2;
+}
+
+@media (min-width: 1200px) {
+    .section-content, .content-card {
+      width: 1200px;
+      max-width: 1200px;
+    }
+}
+
 .jumbotron {
     position: relative;
     text-align: center;
@@ -74,14 +97,16 @@ export default {
     filter: blur(3px) brightness(65%);
 }
 
-.content-card {
-    max-width: 95%;
-    margin: auto;
-    border: 0;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.3), 0px 2px 10px 0px rgba(69, 91, 99, 0.12);
-    -moz-box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.3), 0px 2px 10px 0px rgba(69, 91, 99, 0.12);
-    box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.3), 0px 2px 10px 0px rgba(69, 91, 99, 0.12);
-    z-index: 2;
+.section-content h1 {
+    font-family: "Scope One", "serif";
+    margin-bottom: 24px;
+    color: #1D222D;
+}
+
+.section-content p, .section-content ul, .section-content ol {
+    font-family: "Montserrat", "sans-serif";
+    font-weight: 300;
+    font-size: 15px;
 }
 
 .divider {
@@ -90,5 +115,10 @@ export default {
   width: 90%;
   margin: auto;
   background-color: #F4F4F6;
+}
+
+.section-content .divider {
+    width: 100%;
+    margin: 32px 0;
 }
 </style>
