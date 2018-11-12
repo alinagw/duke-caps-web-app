@@ -7,7 +7,7 @@
     </b-jumbotron>
     <b-container fluid>
         <b-card class="content-card" no-body>
-            <section-tabs :tabs="section.tabs"></section-tabs>
+            <section-tabs :section="section.id" :tabs="section.tabs"></section-tabs>
             <div class="divider"></div>
             <router-view></router-view>
         </b-card>

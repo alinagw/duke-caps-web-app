@@ -1,0 +1,70 @@
+{
+    "articles": {
+        "adjusting-to-college": {
+            "id": "adjusting-to-college",
+            "title": "Adjusting to College",
+            "image": "",
+            "component": "ArticleAdjustCollege"
+        },
+        "being-emotional": {
+            "id": "being-emotional",
+            "title": "Being Emotional",
+            "image": "",
+            "component": "ArticleBeingEmotional"
+        },
+        "semester-survival-guide": {
+            "id": "semester-survival-guide",
+            "title": "CAPS Survival Guide to the End of the Semester",
+            "image": "",
+            "component": "ArticleSemesterSurvivalGuide"
+        },
+        "relationships-grad-school": {
+            "id": "relationships-grad-school",
+            "title": "Committed Relationships & Grad School",
+            "image": "",
+            "component": "ArticleRelationshipsGradSchool"
+        },
+        "first-year-concerns": {
+            "id": "first-year-concerns",
+            "title": "Common First-Year Concerns & Strategies",
+            "image": "",
+            "component": "ArticleFirstYearConcerns"
+        },
+        "conflict": {
+            "id": "conflict",
+            "title": "Confronting Conflict",
+            "image": "",
+            "component": "ArticleConflict"
+        },
+        "coping-stress": {
+            "id": "coping-stress",
+            "title": "Coping with Critical Incident Stress",
+            "image": "",
+            "component": "ArticleCopingStress"
+        },
+        "depression": {
+            "id": "depression",
+            "title": "Depression",
+            "image": "",
+            "component": "ArticleDepression"
+        },
+        "disordered-eating": {
+            "id": "disordered-eating",
+            "title": "Disordered Eating",
+            "image": "",
+            "component": "ArticleDisorderedEating"
+        },
+        "grief-and-loss": {
+            "id": "grief-and-loss",
+            "title": "Grief and Loss",
+            "image": "",
+            "component": "ArticleGriefLoss"
+        },
+        "living-life-values": {
+            "id": "living-life-values",
+            "title": "Living Your Life-Values",
+            "image": "",
+            "component": "ArticleLivingLifeValues"
+        }
+    }
+}

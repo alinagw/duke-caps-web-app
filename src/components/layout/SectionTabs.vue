@@ -11,6 +11,7 @@
 export default {
     name: 'SectionTabs',
     props: [
+        "section",
         "tabs"
     ],
     data() {
@@ -21,9 +22,9 @@ export default {
     methods: {
         tabPath(tabKey) {
             if (tabKey == "home") {
-                return "/" + this.$route.params.section;
+                return "/" + this.section;
             }
-            return "/" + this.$route.params.section + "/" + tabKey;
+            return "/" + this.section + "/" + tabKey;
         }
     }
 }
