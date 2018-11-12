@@ -103,6 +103,12 @@ export default {
     color: #1D222D;
 }
 
+.section-content h4 {
+    font-family: "Montserrat", "sans-serif";
+    color: #7A859C;
+    margin-top: 28px;
+}
+
 .section-content p, .section-content ul, .section-content ol {
     font-family: "Montserrat", "sans-serif";
     font-weight: 300;

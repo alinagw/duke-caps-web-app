@@ -50,6 +50,9 @@ export default {
     max-width: 100%;
     height: 400px;
     transition: 0.3s;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.45);
+    -moz-box-shadow: 0px 2px 6px 0px rgba(69, 91, 99, 0.45);
+    box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.45);
     transition: box-shadow 0.5s;
     font-family: "Montserrat", "sans-serif";
 }

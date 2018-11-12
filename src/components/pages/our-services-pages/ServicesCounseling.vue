@@ -17,20 +17,24 @@
     <p>
       Our Group Services include group therapy, discussion groups and workshops with a variety of goals that aim to promote wellbeing. Research demonstrates that group therapy is equally effective as individual therapy and is often the treatment of choice for student issues.
     </p>
+    <h4>Getting Started in Group</h4>
+    <p class="mb-4">
+        All groups require clinical consultation prior to joining. Please ask your clinical provider for more information. To get started, stop by CAPS any time between 9:00 to 4:00pm and speak with a clinical provider who can refer you to group. 
+    </p>
     <b-card-group deck>
-        <service-card v-for="(group, index) in groups" :key="index" :service="group"></service-card>
+        <workshop-card v-for="(group, index) in groups" :key="index" :service="group"></workshop-card>
     </b-card-group>
 </div>
 </template>
 
 <script>
-import ServiceCard from "./../../content/ServiceCard"
+import WorkshopCard from "./../../content/WorkshopCard"
 import servicesJSON from "./../../../assets/data/services.json"
 
 export default {
     name: 'ServicesCounseling',
     components: {
-      ServiceCard
+        WorkshopCard
     },
     data() {
         return {

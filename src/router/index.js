@@ -5,6 +5,7 @@ import Homepage from '@/components/pages/Homepage'
 import Section from '@/components/layout/Section'
 import SectionContent from '@/components/layout/SectionContent'
 import Article from '@/components/layout/Article'
+import Search from "@/components/pages/Search"
 
 import sectionsJSON from '@/assets/data/sections.json'
 
@@ -38,6 +39,10 @@ export default new Router({
           ]
         }
       ]
+    },
+    {
+      path: "/search",
+      component: Search
     }
   ]
 })
