@@ -1,11 +1,13 @@
 <template>
 <b-navbar class="main-nav" toggleable="md" fixed="top" type="dark">
 
-    <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+    
 
     <b-navbar-brand>
         <router-link to="/">boop</router-link>
     </b-navbar-brand>
+
+    <b-navbar-toggle target="nav_collapse" id="nav_collpase-toggle"></b-navbar-toggle>
 
     <b-collapse is-nav id="nav_collapse">
 
@@ -16,7 +18,7 @@
             <b-nav-item to="/get-started">Get Started</b-nav-item>
             <b-nav-item to="/services">Services</b-nav-item>
             <b-nav-item to="/resources">Resources</b-nav-item>
-            <b-nav-item to="/search">Search</b-nav-item>
+            <b-nav-item to="/search" class="search-icon"><magnify></magnify></b-nav-item>
         </b-navbar-nav>
     </b-collapse>
 </b-navbar>
@@ -38,7 +40,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .main-nav {
     background-color: #0F2B5B;
     -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.16);
@@ -62,5 +64,14 @@ export default {
 
 .main-nav .nav-link.active {
     color: #2FA4EE !important;
+}
+
+.main-nav .search-icon a {
+    font-size: 18px;
+    height: 34px;
+}
+
+.main-nav .search-icon a .magnify-icon {
+    bottom: 0.15rem;
 }
 </style>
