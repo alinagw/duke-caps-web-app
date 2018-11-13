@@ -32,7 +32,7 @@ export default {
         ResourcesWait: () => import("./../pages/resources-pages/ResourcesWait"),
         ResourcesStudent: () => import("./../pages/resources-pages/ResourcesStudent"),
         ResourcesMentalHealth: () => import("./../pages/resources-pages/ResourcesMentalHealth"),
-        ResourcesGroups: () => import("./../pages/resources-pages/ResourcesGroups"),
+        ResourcesAffiliated: () => import("./../pages/resources-pages/ResourcesAffiliated"),
         ResourcesEmergency: () => import("./../pages/resources-pages/ResourcesEmergency"),
     },
     data() {

@@ -163,12 +163,12 @@
                     "icon": "https://static.thenounproject.com/png/604071-200.png",
                     "component": "ResourcesMentalHealth"
                 },
-                "affiliated-groups": {
-                    "id": "resources_affiliated-groups",
+                "affiliated-resources": {
+                    "id": "resources_affiliated-resources",
                     "tags": [],
-                    "title": "Affiliated Groups",
+                    "title": "Affiliated Resources",
                     "icon": "https://static.thenounproject.com/png/604071-200.png",
-                    "component": "ResourcesGroups"
+                    "component": "ResourcesAffiliated"
                 },
                 "emergency": {
                     "id": "resources_emergency",

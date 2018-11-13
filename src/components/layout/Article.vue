@@ -38,7 +38,8 @@ export default {
         ArticleGriefLoss: () => import("./../pages/article-pages/ArticleGriefLoss"),
         ArticleLivingLifeValues: () => import("./../pages/article-pages/ArticleLivingLifeValues"),
         ArticleRelationshipsGradSchool: () => import("./../pages/article-pages/ArticleRelationshipsGradSchool"),
-        ArticleSemesterSurvivalGuide: () => import("./../pages/article-pages/ArticleSemesterSurvivalGuide")
+        ArticleSemesterSurvivalGuide: () => import("./../pages/article-pages/ArticleSemesterSurvivalGuide"),
+        ArticleAntiDepressants: () => import("./../pages/article-pages/ArticleAntiDepressants")
     },
     data() {
         return {
