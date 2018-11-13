@@ -16,6 +16,7 @@
             <b-nav-item to="/get-started">Get Started</b-nav-item>
             <b-nav-item to="/services">Services</b-nav-item>
             <b-nav-item to="/resources">Resources</b-nav-item>
+            <b-nav-item to="/search">Search</b-nav-item>
         </b-navbar-nav>
     </b-collapse>
 </b-navbar>

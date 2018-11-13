@@ -68,6 +68,7 @@ export default {
     padding-bottom: 168px;
     margin-bottom: -96px;
     z-index: 1;
+    overflow: hidden;
 }
 
 .jumbotron h1 {

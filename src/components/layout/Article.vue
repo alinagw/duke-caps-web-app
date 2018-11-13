@@ -60,8 +60,9 @@ export default {
 }
 
 .article-content {
-    padding: 48px 8% 48px 8%;
+    padding: 48px 8% 48px 2%;
     color: #454F63;
+    position: relative;
 }
 
 .content-card {
@@ -91,6 +92,7 @@ export default {
     padding-bottom: 184px;
     margin-bottom: -96px;
     z-index: 1;
+    overflow: hidden;
 }
 
 .article .jumbotron h1 {
@@ -108,8 +110,8 @@ export default {
     left: -8px;
     width: calc(100% + 16px);
     height: calc(100% + 16px);
-    overflow: hidden;
     z-index: -1;
+    overflow: hidden;
 }
 
 .article .jumbotron img {
@@ -118,6 +120,7 @@ export default {
     object-fit: cover;
     object-position: top;
     filter: blur(3px) brightness(65%);
+    overflow: hidden;
 }
 
 .article-back-button {
@@ -172,5 +175,36 @@ export default {
 .article-content .divider {
     width: 100%;
     margin: 32px 0;
+}
+
+.article-scroll-menu {
+    font-size: 13px !important;
+    position: sticky;
+    top: 72px;
+    margin-right: 24px;
+    border-right: 1.5px solid #F4F4F6;
+    border-radius: 0;
+}
+
+.article-scroll-menu-item {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: #7B859B;
+    transition: all 0.3s;
+    font-weight: 400;
+}
+
+.article-scroll-menu-item:first-child {
+    font-weight: 700;
+}
+
+.article-scroll-menu-item:hover {
+    color: #454F63;
+}
+
+.article-scroll-menu-item.active {
+    background-color: transparent;
+    color: #37A5EB;
 }
 </style>

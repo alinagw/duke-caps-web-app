@@ -151,29 +151,4 @@ export default {
     background-color: #E2E4EB;
     color: #79859D;
 }
-
-.card-collapse-toggle {
-    background-color: transparent;
-    border: none;
-    color: #78849E;
-    border-radius: 50%;
-    padding: 0;
-    width: 36px;
-    height: 36px;
-    font-size: 28px;
-    line-height: 28px;
-
-}
-
-.card-collapse-toggle:hover,
-.card-collapse-toggle:focus {
-    background-color: transparent;
-    box-shadow: none;
-    color: #78849E;
-    transition: all 0.5s;
-}
-
-.card-collapse-toggle:hover {
-    background-color: rgba(223, 226, 232, 0.5);
-}
 </style>

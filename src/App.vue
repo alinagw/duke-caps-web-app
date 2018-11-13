@@ -23,7 +23,6 @@ export default {
 <style>
 #app {
     background-color: #F7F7FA;
-    overflow-x: hidden;
 }
 
 .nav-spacer {
