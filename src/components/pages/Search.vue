@@ -1,16 +1,26 @@
 <template>
-<b-container fluid class="py-5 search">
-    <b-jumbotron fluid header-level="4">
-        <div class="jumbotron-img">
-            <!--<img :src="article.image">-->
-        </div>
+<div class="search">
+    <b-jumbotron fluid>
+        <b-input-group id="search-bar">
+            <b-form-input v-model="query" size="lg" type="text" placeholder="Search for resources" class="pl-4"></b-form-input>
+            <b-input-group-append>
+                <b-btn id="search-submit">
+                  <magnify></magnify>
+                </b-btn>
+            </b-input-group-append>
+        </b-input-group>
     </b-jumbotron>
     <b-container fluid>
         <b-card class="search-content-card" no-body>
             <b-container fluid class="search-content">
+              <b-row no-gutters class="mb-5">
+                <b-btn @click="showFiltersSidebar = !showFiltersSidebar">
+                  toggle sidebar
+                </b-btn>
+              </b-row>
 
                 <b-row no-gutters>
-                    <b-col cols="3">
+                    <b-col v-show="showFiltersSidebar" class="col-12 col-md-3" id="search-filters-sidebar">
                         <b-form-group v-for="(category, key) in filters" :key="key" class="search-filters">
                             <template slot="label">
                                 <b>{{ category.header }}</b><br>
@@ -24,7 +34,7 @@
                             </b-list-group-item>
                         </b-list-group>-->
                     </b-col>
-                    <b-col cols="9" class="pl-3">
+                    <b-col class="col-12 col-md-9 pl-3" id="search-results-content">
                         <div>
                             <h1>CAPS Services</h1>
                             <div class="divider"></div>
@@ -109,7 +119,7 @@
             </b-btn>
         </b-card-footer>
     </b-card>-->
-</b-container>
+</div>
 </template>
 
 <script>
@@ -117,15 +127,20 @@ import searchJSON from "./../../assets/data/search.json"
 import ArrowRight from "vue-material-design-icons/ArrowRight.vue"
 import WorkshopCard from "./../content/WorkshopCard"
 import ArticleCard from "./../content/ArticleCard"
+import Magnify from "vue-material-design-icons/Magnify.vue"
 export default {
     name: 'Search',
     components: {
-        ArrowRight
+        ArrowRight,
+        Magnify,
+        WorkshopCard,
+        ArticleCard
     },
     data() {
         return {
             items: searchJSON,
             query: "",
+            showFiltersSidebar: true,
             filters: {
                 who: {
                     header: "People in Need",
@@ -170,6 +185,39 @@ export default {
                     selected: [],
                     options: [{
                             text: "Individual",
+                            value: "individual"
+                        },
+                        {
+                            text: "Couples",
+                            value: "couples"
+                        },
+                        {
+                            text: "Groups & Workshops",
+                            value: "available"
+                        },
+                        {
+                            text: "Psychiatry & Meds",
+                            value: "psychiatric"
+                        },
+                        {
+                            text: "Mindfulness Practice",
+                            value: "mindfulness"
+                        },
+                        {
+                            text: "Fun & Active",
+                            value: "fun"
+                        },
+                        {
+                            text: "Articles",
+                            value: "article"
+                        }
+                    ]
+                },
+                problems: {
+                    header: "Types of Resources",
+                    selected: [],
+                    options: [{
+                            text: "Academic",
                             value: "individual"
                         },
                         {
@@ -474,23 +522,9 @@ export default {
         }
     },
     methods: {
-        getTypeTitle(type) {
-            switch (type) {
-                case "workshop-discussion":
-                    return "Workshops & Discussions";
-                case "group":
-                    return "Group Counseling";
-                case "article":
-                    return "Articles";
-                case "affiliated-resource":
-                    return "Affiliated Resources";
-                case "service":
-                    return "CAPS Services";
-                default:
-                    return "Resources";
-            }
-        },
+      toggleFiltersSidebar () {
 
+      },
         runSearch() {
             var options = {
                 keys: ["title", "tags"],
@@ -571,11 +605,11 @@ export default {
 }
 
 .search-content {
-    padding: 48px 8% 48px 4%;
+    padding: 48px 8% 48px 8%;
     color: #454F63;
 }
 
-.content-card {
+.search-content-card {
     max-width: 95%;
     margin: auto;
     border: 0;
@@ -583,6 +617,22 @@ export default {
     -moz-box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.3), 0px 2px 10px 0px rgba(69, 91, 99, 0.12);
     box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.3), 0px 2px 10px 0px rgba(69, 91, 99, 0.12);
     z-index: 2;
+}
+
+#search-filters-sidebar {
+  margin-left: -4%;
+  border-right: 1.5px solid #F4F4F6;
+  margin-right: 2%;
+  padding-right: 12px;
+}
+
+.article-scroll-menu {
+    font-size: 13px !important;
+    position: sticky;
+    top: 72px;
+    margin-right: 24px;
+    border-right: 1.5px solid #F4F4F6;
+    border-radius: 0;
 }
 
 @media (min-width: 1200px) {
@@ -601,7 +651,8 @@ export default {
     padding-top: 104px;
     padding-bottom: 184px;
     margin-bottom: -96px;
-    z-index: 1;
+    background-image: url("./../../assets/images/search-bg.jpg");
+    background-size: cover;
 }
 
 .search .jumbotron h1 {
@@ -748,18 +799,88 @@ export default {
 }
 
 .search-filters {
-  font-family: "Montserrat", "sans-serif";
-  font-weight: 300;
-  font-size: 13px;
+    font-family: "Montserrat", "sans-serif";
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.search-filters legend {
+  color: #112C5A;
 }
 
 .search-filter-checkboxes label {
-  min-height: initial !important;
-  height: 20px;
+    min-height: initial !important;
 }
 
-.search-filter-checkboxes .custom-control-label::before {
-  top: 0.1rem !important;
+.search-filter-checkboxes .custom-control-label::before, .search-filter-checkboxes .custom-control-label::after {
+    top: 0.1rem !important;
+}
+
+.search-filter-checkboxes .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+  background-color: #37A5EB;
+}
+
+#search-bar {
+  border-radius: 32px;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.6);
+    -moz-box-shadow: 0px 2px 6px 0px rgba(69, 91, 99, 0.6);
+    box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.6);
+    transition: 0.3s;
+    font-family: "Montserrat", "sans-serif";
+}
+
+#search-bar:hover {
+  -webkit-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.5);
+    -moz-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.5);
+    box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.5);
+}
+
+#search-bar input {
+  border: none;
+  font-weight: 300;
+  transition: all 0.3s ease;
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
+  color: #495265;
+  font-size: 18px;
+}
+
+#search-bar input:focus {
+  box-shadow: none;
+}
+
+#search-bar input::placeholder {
+    color: #79859D;
+}
+
+#search-bar:focus-within {
+  -webkit-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.5), 0px 0px 6px 2px #37A5EB;
+    -moz-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.5), 0px 0px 6px 2px #37A5EB;
+    box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.5), 0px 0px 6px 2px #37A5EB;
+  
+}
+
+#search-submit {
+  font-size: 24px;
+  line-height: initial;
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+  background-color: white;
+  border: none;
+  color: #79859D;
+  z-index: 2;
+}
+
+#search-submit .magnify-icon svg {
+  bottom: -0.2rem;
+}
+
+#search-submit:hover {
+    color: #37A5EB;
+}
+
+#search-submit:focus {
+  box-shadow: none;
 }
 
 /*
