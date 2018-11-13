@@ -31,14 +31,14 @@
                     "id": "about-us_training-programs",
                     "tags": [],
                     "title": "Training Programs",
-                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "icon": "https://static.thenounproject.com/png/1853614-200.png",
                     "component": "AboutTraining"
                 },
                 "student-wellness-center": {
                     "id": "about-us_student-wellness-center",
                     "tags": [],
                     "title": "Student Wellness Center",
-                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "icon": "https://static.thenounproject.com/png/952961-200.png",
                     "component": "AboutWellnessCenter"
                 }
             }
@@ -60,21 +60,21 @@
                     "id": "get-started_screening",
                     "tags": [],
                     "title": "Is CAPS Right for Me?",
-                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "icon": "https://static.thenounproject.com/png/432281-200.png",
                     "component": "StartScreening"
                 },
                 "when-can-i-be-seen": {
                     "id": "get-started_when-can-i-be-seen",
                     "tags": [],
                     "title": "When Can I Be Seen?",
-                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "icon": "https://static.thenounproject.com/png/1242635-200.png",
                     "component": "StartWhen"
                 },
                 "what-to-expect": {
                     "id": "get-started_what-to-expect",
                     "tags": [],
                     "title": "What to Expect",
-                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "icon": "https://static.thenounproject.com/png/1746220-200.png",
                     "component": "StartExpectations"
                 }
             }
@@ -96,35 +96,35 @@
                     "id": "services_consultation",
                     "tags": [],
                     "title": "Consultation",
-                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "icon": "https://static.thenounproject.com/png/2038396-200.png",
                     "component": "ServicesConsultation"
                 },
                 "counseling": {
                     "id": "services_counseling",
                     "tags": [],
                     "title": "Counseling",
-                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "icon": "https://static.thenounproject.com/png/184263-200.png",
                     "component": "ServicesCounseling"
                 },
                 "psychiatric-services": {
                     "id": "services_psychiatric-services",
                     "tags": [],
                     "title": "Psychiatric Services",
-                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "icon": "https://static.thenounproject.com/png/336853-200.png",
                     "component": "ServicesPsychiatric"
                 },
                 "health-coaching": {
                     "id": "services_health-coaching",
                     "tags": [],
                     "title": "Health Coaching",
-                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "icon": "https://static.thenounproject.com/png/1325876-200.png",
                     "component": "ServicesHealth"
                 },
                 "workshops-and-discussions": {
                     "id": "services_workshops-and-discussions",
                     "tags": [],
                     "title": "Workshops & Discussions",
-                    "icon": "https://static.thenounproject.com/png/604071-200.png",
+                    "icon": "https://static.thenounproject.com/png/766341-200.png",
                     "component": "ServicesWorkshops"
                 }
             }
