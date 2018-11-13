@@ -1,14 +1,94 @@
 <template>
-<b-container fluid class="py-5 article">
-  <b-jumbotron fluid header-level="4">
+<b-container fluid class="py-5 search">
+    <b-jumbotron fluid header-level="4">
         <div class="jumbotron-img">
             <!--<img :src="article.image">-->
         </div>
     </b-jumbotron>
     <b-container fluid>
-        <b-card class="content-card" no-body>
-            <b-container fluid class="article-content">
-              
+        <b-card class="search-content-card" no-body>
+            <b-container fluid class="search-content">
+
+                <b-row no-gutters>
+                    <b-col cols="3">
+                        <b-form-group v-for="(category, key) in filters" :key="key" class="search-filters">
+                            <template slot="label">
+                                <b>{{ category.header }}</b><br>
+                            </template>
+                                <b-form-checkbox-group :id="'category-' + key + '-options'" stacked v-model="category.selected" :options="category.options" class="search-filter-checkboxes"></b-form-checkbox-group>
+                        </b-form-group>
+
+                        <!--<b-list-group v-scroll-spy-active v-scroll-spy-link tag="ul" class="article-scroll-menu">
+                            <b-list-group-item v-for="(title, index) in titles" :key="index" tag="li" class="article-scroll-menu-item">
+                                <a>{{ title }}</a>
+                            </b-list-group-item>
+                        </b-list-group>-->
+                    </b-col>
+                    <b-col cols="9" class="pl-3">
+                        <div>
+                            <h1>CAPS Services</h1>
+                            <div class="divider"></div>
+                        </div>
+                        <div>
+                            <h1>Group Counseling</h1>
+                            <!--<b-card-group deck>
+                                <workshop-card v-for="(group, index) in groups" :key="index" :service="group"></workshop-card>
+                            </b-card-group>-->
+                            <div class="divider"></div>
+                        </div>
+                        <div>
+                            <h1>Workshops &amp; Discussions</h1>
+                            <!--<b-card-group deck>
+                                <workshop-card v-for="(workshop, index) in workshops" :key="index" :service="workshop"></workshop-card>
+                            </b-card-group>-->
+                            <div class="divider"></div>
+                        </div>
+                        <div>
+                            <h1>Student Wellbeing Articles</h1>
+                            <!--<b-card-group deck>
+                                <article-card v-for="(article, index) in mentalHealthArticles" :key="index" :article="article">
+                                </article-card>
+                            </b-card-group>-->
+                            <div class="divider"></div>
+                        </div>
+                        <div>
+                            <h1>Mental Health Articles</h1>
+                            <!--<b-card-group deck>
+                                <article-card v-for="(article, index) in mentalHealthArticles" :key="index" :article="article">
+                                </article-card>
+                            </b-card-group>-->
+                            <div class="divider"></div>
+                        </div>
+                        <div>
+                            <h1>Affiliated Resources</h1>
+                        </div>
+
+                        <!--<h1>Meet Our Staff</h1>
+                        <p class="content-text">
+                            <b-img class="content-img" src="https://studentaffairs.duke.edu/sites/default/files/styles/carousel_a_image_xwide/public/2017-12/IMG_0483_5.jpg?itok=hFp3X1Pf" right fluid rounded></b-img>
+                            Our staff includes psychologists, clinical social workers, and psychiatrists experienced in working with college-age adults. From the everyday challenges of life, to more profound impairment or "interruption" of daily functioning, we recognize that any student may face some level of challenge at any point in their careers here at Duke. Our work is guided by sensitivity to the needs of a diverse student body.
+
+                        </p>
+                        <div class="divider"></div>
+                        <h1>Clinical Staff</h1>-->
+                        <!--<b-card-group deck>
+                            <staff-card v-for="(employee, index) in clinicalStaff" :key="index" :employee="employee"></staff-card>
+                        </b-card-group>-->
+
+                        <!--<div v-scroll-spy="{data: 'section', offset: 80}" class="article-scroll-content">
+                            <div>
+
+                            </div>
+                            <div>
+
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>-->
+                    </b-col>
+                </b-row>
+
             </b-container>
         </b-card>
     </b-container>
@@ -35,6 +115,8 @@
 <script>
 import searchJSON from "./../../assets/data/search.json"
 import ArrowRight from "vue-material-design-icons/ArrowRight.vue"
+import WorkshopCard from "./../content/WorkshopCard"
+import ArticleCard from "./../content/ArticleCard"
 export default {
     name: 'Search',
     components: {
@@ -44,7 +126,79 @@ export default {
         return {
             items: searchJSON,
             query: "",
-            filters: [],
+            filters: {
+                who: {
+                    header: "People in Need",
+                    selected: [],
+                    options: [{
+                            text: "Students",
+                            value: "student"
+                        },
+                        {
+                            text: "Couples",
+                            value: "couple"
+                        },
+                        {
+                            text: "Parents & Family",
+                            value: "parent"
+                        },
+                        {
+                            text: "Faculty",
+                            value: "faculty"
+                        }
+                    ]
+                },
+                when: {
+                    header: "Urgency",
+                    selected: [],
+                    options: [{
+                            text: "Emergency",
+                            value: "emergency"
+                        },
+                        {
+                            text: "Available Now",
+                            value: "available"
+                        },
+                        {
+                            text: "Available Later",
+                            value: "later"
+                        }
+                    ]
+                },
+                what: {
+                    header: "Types of Resources",
+                    selected: [],
+                    options: [{
+                            text: "Individual",
+                            value: "individual"
+                        },
+                        {
+                            text: "Couples",
+                            value: "couples"
+                        },
+                        {
+                            text: "Groups & Workshops",
+                            value: "available"
+                        },
+                        {
+                            text: "Psychiatry & Meds",
+                            value: "psychiatric"
+                        },
+                        {
+                            text: "Mindfulness Practice",
+                            value: "mindfulness"
+                        },
+                        {
+                            text: "Fun & Active",
+                            value: "fun"
+                        },
+                        {
+                            text: "Articles",
+                            value: "article"
+                        }
+                    ]
+                }
+            },
             results: [],
             currQuestion: 0,
             currQuestionSelection: [],
@@ -306,9 +460,37 @@ export default {
     computed: {
         currQuestionObj() {
             return this.questions[this.currQuestion];
+        },
+        resultsTypes() {
+            var types = [];
+            if (this.results.length) {
+                for (var i = 0; i < this.results.length; i++) {
+                    if (!types.includes(this.results[i].type)) {
+                        types.push(this.results[i].type);
+                    }
+                }
+            }
+            return types;
         }
     },
     methods: {
+        getTypeTitle(type) {
+            switch (type) {
+                case "workshop-discussion":
+                    return "Workshops & Discussions";
+                case "group":
+                    return "Group Counseling";
+                case "article":
+                    return "Articles";
+                case "affiliated-resource":
+                    return "Affiliated Resources";
+                case "service":
+                    return "CAPS Services";
+                default:
+                    return "Resources";
+            }
+        },
+
         runSearch() {
             var options = {
                 keys: ["title", "tags"],
@@ -357,8 +539,8 @@ export default {
                     }
                 } else {
                     if (this.currQuestionObj.required) {
-                      // required
-                      return;
+                        // required
+                        return;
                     }
                 }
 
@@ -383,13 +565,13 @@ export default {
 }
 </script>
 
-<style scoped>
-.article {
+<style>
+.search {
     margin-bottom: 64px;
 }
 
-.article-content {
-    padding: 48px 8% 48px 8%;
+.search-content {
+    padding: 48px 8% 48px 4%;
     color: #454F63;
 }
 
@@ -405,14 +587,14 @@ export default {
 
 @media (min-width: 1200px) {
 
-    .article-content,
+    .search-content,
     .content-card {
         width: 1200px;
         max-width: 1200px;
     }
 }
 
-.article .jumbotron {
+.search .jumbotron {
     position: relative;
     text-align: center;
     background-color: transparent;
@@ -422,7 +604,7 @@ export default {
     z-index: 1;
 }
 
-.article .jumbotron h1 {
+.search .jumbotron h1 {
     color: white;
     font-family: "Scope One", "serif";
     font-weight: bolder;
@@ -431,7 +613,7 @@ export default {
     margin-bottom: 0;
 }
 
-.article .jumbotron-img {
+.search .jumbotron-img {
     position: absolute;
     top: -8px;
     left: -8px;
@@ -441,7 +623,7 @@ export default {
     z-index: -1;
 }
 
-.article .jumbotron img {
+.search .jumbotron img {
     width: calc(100% + 8px);
     height: calc(100% + 8px);
     object-fit: cover;
@@ -449,7 +631,7 @@ export default {
     filter: blur(3px) brightness(65%);
 }
 
-.article-back-button {
+.search-back-button {
     position: absolute;
     top: 24px;
     left: 24px;
@@ -461,30 +643,30 @@ export default {
     transition: 0.3s;
 }
 
-.article-back-arrow {
+.search-back-arrow {
     font-size: 22px;
     margin-right: 8px;
 }
 
-.article-back-button:hover {
+.search-back-button:hover {
     text-decoration: none;
 }
 
-.article-content h1 {
+.search-content h1 {
     font-family: "Scope One", "serif";
     margin-bottom: 24px;
     color: #1D222D;
 }
 
-.article-content h4 {
+.search-content h4 {
     font-family: "Montserrat", "sans-serif";
     color: #7A859C;
     margin-top: 28px;
 }
 
-.article-content p,
-.article-content ul,
-.article-content ol {
+.search-content p,
+.search-content ul,
+.search-content ol {
     font-family: "Montserrat", "sans-serif";
     font-weight: 300;
     font-size: 15px;
@@ -498,7 +680,7 @@ export default {
     background-color: #F4F4F6;
 }
 
-.article-content .divider {
+.search-content .divider {
     width: 100%;
     margin: 32px 0;
 }
@@ -563,6 +745,21 @@ export default {
 .search-question-next-button:disabled {
     background-color: #E2E4EB;
     color: #79859D;
+}
+
+.search-filters {
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.search-filter-checkboxes label {
+  min-height: initial !important;
+  height: 20px;
+}
+
+.search-filter-checkboxes .custom-control-label::before {
+  top: 0.1rem !important;
 }
 
 /*
