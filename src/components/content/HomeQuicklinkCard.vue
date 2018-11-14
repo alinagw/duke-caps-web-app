@@ -1,66 +1,61 @@
 <template>
-<b-card class="quicklink-card text-center" @click="$router.push(link.link)">
-    <div class="quicklink-image" v-html="link.icon"></div>
-    <h5 class="card-title mb-1">{{ link.title }}</h5>
-    <p class="card-text small mb-0">{{ link.description }}</p>
-</b-card>
+    <b-card class="quicklink-card text-center" @click="$router.push(link.link)">
+        <div class="quicklink-image" v-html="link.icon"></div>
+        <h5 class="card-title mb-1">{{ link.title }}</h5>
+        <p class="card-text small mb-0">{{ link.description }}</p>
+    </b-card>
 </template>
 
 <script>
-export default {
-    name: 'HomeQuicklinkCard',
-    props: [
-        "link"
-    ],
-    data() {
-        return {
+    export default {
+        name: 'HomeQuicklinkCard',
+        props: [
+            "link"
+        ],
+        data() {
+            return {}
         }
     }
-}
 </script>
 
 <style>
-.quicklink-card {
-    margin: 0 8px 16px 8px !important;
-    min-width: calc(50% - 16px);
-    border: none;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.45);
-    -moz-box-shadow: 0px 2px 6px 0px rgba(69, 91, 99, 0.45);
-    box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.45);
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-@media (min-width: 768px) {
     .quicklink-card {
-        min-width: calc(25% - 16px);
+        margin: 0 8px 16px 8px !important;
+        min-width: calc(50% - 16px);
+        border: none;
+        -webkit-box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.45);
+        -moz-box-shadow: 0px 2px 6px 0px rgba(69, 91, 99, 0.45);
+        box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.45);
+        transition: 0.5s;
+        cursor: pointer;
     }
-}
 
-.quicklink-card:hover {
-    -webkit-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4);
-    -moz-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4);
-    box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4);
-}
+    @media (min-width: 768px) {
+        .quicklink-card {
+            min-width: calc(25% - 16px);
+        }
+    }
 
-.quicklink-image {
-    width: 50px;
-    height: 50px;
-    margin: auto;
-    margin-bottom: 6px;
-}
+    .quicklink-card:hover {
+        -webkit-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4);
+        -moz-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4);
+        box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4);
+    }
 
-.quicklink-image svg {
-    height: 100%;
-    fill: #78849E;
-    transition: 0.3s;
-}
+    .quicklink-image {
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        margin-bottom: 6px;
+    }
 
-.card-title:hover {
-    color: #212529;;
-}
+    .quicklink-image svg {
+        height: 100%;
+        fill: #38C6D4;
+        transition: 0.3s;
+    }
 
-.quicklink-image svg {
-    fill: #38C6D4;
-}
+    .card-title:hover {
+        color: #0F2B5B;;
+    }
 </style>
