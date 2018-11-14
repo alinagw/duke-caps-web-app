@@ -704,6 +704,17 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 
 /***/ }),
 
+/***/ "G3Xa":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"search"},[_c('b-jumbotron',{attrs:{"fluid":""}},[_c('b-input-group',{attrs:{"id":"search-bar"}},[_c('b-form-input',{staticClass:"pl-4",attrs:{"size":"lg","type":"text","placeholder":"Search for resources"},nativeOn:{"keyup":function($event){if(!('button' in $event)&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }return _vm.runSearch($event)}},model:{value:(_vm.query),callback:function ($$v) {_vm.query=$$v},expression:"query"}}),_vm._v(" "),_c('b-input-group-append',[_c('b-btn',{attrs:{"id":"search-submit"},on:{"click":_vm.runSearch}},[_c('magnify')],1)],1)],1)],1),_vm._v(" "),_c('b-container',{attrs:{"fluid":""}},[_c('b-card',{staticClass:"search-content-card",attrs:{"no-body":""}},[_c('b-container',{staticClass:"search-content",attrs:{"fluid":""}},[_c('b-row',{attrs:{"no-gutters":""}},[_c('b-col',{directives:[{name:"show",rawName:"v-show",value:(_vm.showFiltersSidebar),expression:"showFiltersSidebar"}],staticClass:"col-12 col-md-3",attrs:{"id":"search-filters-sidebar"}},[_vm._l((_vm.filters),function(category,key){return _c('b-form-group',{key:key,staticClass:"search-filters",attrs:{"id":'filter-' + key}},[_c('template',{slot:"label"},[_c('b-link',{directives:[{name:"b-toggle",rawName:"v-b-toggle",value:('filter-' + key + '-collapse'),expression:"'filter-' + key + '-collapse'"}],staticClass:"filter-collapse-toggle float-right"},[_c('span',{staticClass:"when-closed"},[_c('chevron-down')],1),_vm._v(" "),_c('span',{staticClass:"when-opened"},[_c('chevron-up')],1)]),_vm._v(" "),_c('b',[_vm._v(_vm._s(category.header))]),_c('br')],1),_vm._v(" "),_c('b-collapse',{staticClass:"px-1 pb-1",attrs:{"id":'filter-' + key + '-collapse'}},[_c('b-form-checkbox-group',{staticClass:"search-filter-checkboxes",attrs:{"id":'category-' + key + '-options',"stacked":"","options":category.options},model:{value:(category.selected),callback:function ($$v) {_vm.$set(category, "selected", $$v)},expression:"category.selected"}})],1)],2)}),_vm._v(" "),_c('div',{staticClass:"my-4 text-center"},[_c('b-btn',{staticClass:"filter-submit-button",on:{"click":_vm.runSearch}},[_vm._v("Submit")])],1)],2),_vm._v(" "),_c('b-col',{staticClass:"col-12 col-md-9 pl-3",attrs:{"id":"search-results-content"}},[_c('div',{staticClass:"mb-5"},[_c('h1',{staticClass:"mb-1"},[_vm._v("Results")]),_vm._v(" "),_c('h6',{directives:[{name:"show",rawName:"v-show",value:(_vm.submittedQuery),expression:"submittedQuery"}]},[_vm._v(_vm._s(_vm.submittedQuery))]),_vm._v(" "),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.submittedQuery),expression:"submittedQuery"}],staticClass:"divider"})]),_vm._v(" "),_c('div',{directives:[{name:"show",rawName:"v-show",value:(!_vm.foundResults),expression:"!foundResults"}]},[_c('h4',[_vm._v("No results found.")])]),_vm._v(" "),(_vm.resultsTyped.helpNow.length)?_c('div',[_c('h1',[_vm._v("Immediate Help")]),_vm._v(" "),_c('b-card-group',{attrs:{"deck":""}},_vm._l((_vm.resultsTyped.helpNow),function(help,index){return _c('home-quicklink-card',{key:index,attrs:{"link":help.object}})})),_vm._v(" "),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.resultsTyped.capsService.length),expression:"resultsTyped.capsService.length"}],staticClass:"divider"})],1):_vm._e(),_vm._v(" "),(_vm.resultsTyped.capsService.length)?_c('div',[_c('h1',[_vm._v("CAPS Services")]),_vm._v(" "),_c('b-card-group',{attrs:{"deck":""}},_vm._l((_vm.resultsTyped.capsService),function(service,index){return _c('home-quicklink-card',{key:index,attrs:{"link":service.object}})})),_vm._v(" "),_c('div',{staticClass:"divider"})],1):_vm._e(),_vm._v(" "),(_vm.resultsTyped.groupCounseling.length)?_c('div',[_c('h1',[_vm._v("Group Counseling")]),_vm._v(" "),_c('b-card-group',{attrs:{"deck":""}},_vm._l((_vm.resultsTyped.groupCounseling),function(group,index){return _c('workshop-card',{key:index,attrs:{"service":group.object}})})),_vm._v(" "),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.resultsTyped.workshopDiscussion.length),expression:"resultsTyped.workshopDiscussion.length"}],staticClass:"divider"})],1):_vm._e(),_vm._v(" "),(_vm.resultsTyped.workshopDiscussion.length)?_c('div',[_c('h1',[_vm._v("Workshops & Discussions")]),_vm._v(" "),_c('b-card-group',{attrs:{"deck":""}},_vm._l((_vm.resultsTyped.workshopDiscussion),function(workshop,index){return _c('workshop-card',{key:index,attrs:{"service":workshop.object}})})),_vm._v(" "),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.resultsTyped.studentArticle.length),expression:"resultsTyped.studentArticle.length"}],staticClass:"divider"})],1):_vm._e(),_vm._v(" "),(_vm.resultsTyped.studentArticle.length)?_c('div',[_c('h1',[_vm._v("Student Wellbeing Articles")]),_vm._v(" "),_c('b-card-group',{attrs:{"deck":""}},_vm._l((_vm.resultsTyped.studentArticle),function(article,index){return _c('article-card',{key:index,attrs:{"article":article.object}})})),_vm._v(" "),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.resultsTyped.mentalHealthArticle.length),expression:"resultsTyped.mentalHealthArticle.length"}],staticClass:"divider"})],1):_vm._e(),_vm._v(" "),(_vm.resultsTyped.mentalHealthArticle.length)?_c('div',[_c('h1',[_vm._v("Mental Health Articles")]),_vm._v(" "),_c('b-card-group',{attrs:{"deck":""}},_vm._l((_vm.resultsTyped.mentalHealthArticle),function(article,index){return _c('article-card',{key:index,attrs:{"article":article.object}})})),_vm._v(" "),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.resultsTyped.parentArticle.length),expression:"resultsTyped.parentArticle.length"}],staticClass:"divider"})],1):_vm._e(),_vm._v(" "),(_vm.resultsTyped.parentArticle.length)?_c('div',[_c('h1',[_vm._v("Parents, Friends, & Family Articles")]),_vm._v(" "),_c('b-card-group',{attrs:{"deck":""}},_vm._l((_vm.resultsTyped.parentArticle),function(article,index){return _c('article-card',{key:index,attrs:{"article":article.object}})}))],1):_vm._e()])],1)],1)],1)],1)],1)}
+var staticRenderFns = []
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
+
 /***/ "GDkx":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1210,17 +1221,6 @@ var Component = normalizeComponent(
 
 /***/ }),
 
-/***/ "QuIV":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"search"},[_c('b-jumbotron',{attrs:{"fluid":""}},[_c('b-input-group',{attrs:{"id":"search-bar"}},[_c('b-form-input',{staticClass:"pl-4",attrs:{"size":"lg","type":"text","placeholder":"Search for resources"},nativeOn:{"keyup":function($event){if(!('button' in $event)&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }return _vm.runSearch($event)}},model:{value:(_vm.query),callback:function ($$v) {_vm.query=$$v},expression:"query"}}),_vm._v(" "),_c('b-input-group-append',[_c('b-btn',{attrs:{"id":"search-submit"},on:{"click":_vm.runSearch}},[_c('magnify')],1)],1)],1)],1),_vm._v(" "),_c('b-container',{attrs:{"fluid":""}},[_c('b-card',{staticClass:"search-content-card",attrs:{"no-body":""}},[_c('b-container',{staticClass:"search-content",attrs:{"fluid":""}},[_c('b-row',{attrs:{"no-gutters":""}},[_c('b-col',{directives:[{name:"show",rawName:"v-show",value:(_vm.showFiltersSidebar),expression:"showFiltersSidebar"}],staticClass:"col-12 col-md-3",attrs:{"id":"search-filters-sidebar"}},[_vm._l((_vm.filters),function(category,key){return _c('b-form-group',{key:key,staticClass:"search-filters",attrs:{"id":'filter-' + key}},[_c('template',{slot:"label"},[_c('b-link',{directives:[{name:"b-toggle",rawName:"v-b-toggle",value:('filter-' + key + '-collapse'),expression:"'filter-' + key + '-collapse'"}],staticClass:"filter-collapse-toggle float-right"},[_c('span',{staticClass:"when-closed"},[_c('chevron-down')],1),_vm._v(" "),_c('span',{staticClass:"when-opened"},[_c('chevron-up')],1)]),_vm._v(" "),_c('b',[_vm._v(_vm._s(category.header))]),_c('br')],1),_vm._v(" "),_c('b-collapse',{staticClass:"px-1 pb-1",attrs:{"id":'filter-' + key + '-collapse'}},[_c('b-form-checkbox-group',{staticClass:"search-filter-checkboxes",attrs:{"id":'category-' + key + '-options',"stacked":"","options":category.options},model:{value:(category.selected),callback:function ($$v) {_vm.$set(category, "selected", $$v)},expression:"category.selected"}})],1)],2)}),_vm._v(" "),_c('div',{staticClass:"my-4 text-center"},[_c('b-btn',{staticClass:"filter-submit-button",on:{"click":_vm.runSearch}},[_vm._v("Submit")])],1)],2),_vm._v(" "),_c('b-col',{staticClass:"col-12 col-md-9 pl-3",attrs:{"id":"search-results-content"}},[_c('div',{staticClass:"mb-5"},[_c('h1',{staticClass:"mb-1"},[_vm._v("Results")]),_vm._v(" "),_c('h6',{directives:[{name:"show",rawName:"v-show",value:(_vm.submittedQuery),expression:"submittedQuery"}]},[_vm._v(_vm._s(_vm.submittedQuery))]),_vm._v(" "),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.submittedQuery),expression:"submittedQuery"}],staticClass:"divider"})]),_vm._v(" "),_c('div',{directives:[{name:"show",rawName:"v-show",value:(!_vm.foundResults),expression:"!foundResults"}]},[_c('h4',[_vm._v("No results found.")])]),_vm._v(" "),(_vm.resultsTyped.helpNow.length)?_c('div',[_c('h1',[_vm._v("Immediate Help")]),_vm._v(" "),_c('b-card-group',{attrs:{"deck":""}},_vm._l((_vm.resultsTyped.helpNow),function(help,index){return _c('home-quicklink-card',{key:index,attrs:{"link":help.object}})})),_vm._v(" "),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.resultsTyped.capsService.length),expression:"resultsTyped.capsService.length"}],staticClass:"divider"})],1):_vm._e(),_vm._v(" "),(_vm.resultsTyped.capsService.length)?_c('div',[_c('h1',[_vm._v("CAPS Services")]),_vm._v(" "),_c('b-card-group',{attrs:{"deck":""}},_vm._l((_vm.resultsTyped.capsService),function(service,index){return _c('home-quicklink-card',{key:index,attrs:{"link":service.object}})})),_vm._v(" "),_c('div',{staticClass:"divider"})],1):_vm._e(),_vm._v(" "),(_vm.resultsTyped.groupCounseling.length)?_c('div',[_c('h1',[_vm._v("Group Counseling")]),_vm._v(" "),_c('b-card-group',{attrs:{"deck":""}},_vm._l((_vm.resultsTyped.groupCounseling),function(group,index){return _c('workshop-card',{key:index,attrs:{"service":group.object}})})),_vm._v(" "),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.resultsTyped.workshopDiscussion.length),expression:"resultsTyped.workshopDiscussion.length"}],staticClass:"divider"})],1):_vm._e(),_vm._v(" "),(_vm.resultsTyped.workshopDiscussion.length)?_c('div',[_c('h1',[_vm._v("Workshops & Discussions")]),_vm._v(" "),_c('b-card-group',{attrs:{"deck":""}},_vm._l((_vm.resultsTyped.workshopDiscussion),function(workshop,index){return _c('workshop-card',{key:index,attrs:{"service":workshop.object}})})),_vm._v(" "),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.resultsTyped.studentArticle.length),expression:"resultsTyped.studentArticle.length"}],staticClass:"divider"})],1):_vm._e(),_vm._v(" "),(_vm.resultsTyped.studentArticle.length)?_c('div',[_c('h1',[_vm._v("Student Wellbeing Articles")]),_vm._v(" "),_c('b-card-group',{attrs:{"deck":""}},_vm._l((_vm.resultsTyped.studentArticle),function(article,index){return _c('article-card',{key:index,attrs:{"article":article.object}})})),_vm._v(" "),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.resultsTyped.mentalHealthArticle.length),expression:"resultsTyped.mentalHealthArticle.length"}],staticClass:"divider"})],1):_vm._e(),_vm._v(" "),(_vm.resultsTyped.mentalHealthArticle.length)?_c('div',[_c('h1',[_vm._v("Mental Health Articles")]),_vm._v(" "),_c('b-card-group',{attrs:{"deck":""}},_vm._l((_vm.resultsTyped.mentalHealthArticle),function(article,index){return _c('article-card',{key:index,attrs:{"article":article.object}})})),_vm._v(" "),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.resultsTyped.parentArticle.length),expression:"resultsTyped.parentArticle.length"}],staticClass:"divider"})],1):_vm._e(),_vm._v(" "),(_vm.resultsTyped.parentArticle.length)?_c('div',[_c('h1',[_vm._v("Parents, Friends, & Family Articles")]),_vm._v(" "),_c('b-card-group',{attrs:{"deck":""}},_vm._l((_vm.resultsTyped.parentArticle),function(article,index){return _c('article-card',{key:index,attrs:{"article":article.object}})}))],1):_vm._e()])],1)],1)],1)],1)],1)}
-var staticRenderFns = []
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-
-/***/ }),
-
 /***/ "R68u":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1270,6 +1270,13 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
         }
     }
 });
+
+/***/ }),
+
+/***/ "S+c4":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -2151,13 +2158,6 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 
 /***/ }),
 
-/***/ "aToK":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ "b05z":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2835,9 +2835,9 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Search_vue__ = __webpack_require__("TbTe");
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_05e4ea06_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Search_vue__ = __webpack_require__("QuIV");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_366da1f8_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Search_vue__ = __webpack_require__("G3Xa");
 function injectStyle (ssrContext) {
-  __webpack_require__("aToK")
+  __webpack_require__("S+c4")
 }
 var normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -2850,12 +2850,12 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-05e4ea06"
+var __vue_scopeId__ = "data-v-366da1f8"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Search_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_05e4ea06_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Search_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_366da1f8_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Search_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -3285,4 +3285,4 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ })
 
 },["NHnr"]);
-//# sourceMappingURL=app.c374d036e0b20a6a2c9d.js.map
+//# sourceMappingURL=app.af5a316e52b9e686e254.js.map
