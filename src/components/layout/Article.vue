@@ -60,7 +60,7 @@ export default {
 }
 
 .article-content {
-    padding: 48px 8% 48px 2%;
+    padding: 48px 8% 48px 8%;
     color: #454F63;
     position: relative;
 }
@@ -186,6 +186,9 @@ export default {
 .article-content .divider {
     width: 100%;
     margin: 32px 0;
+}
+.scroll-spy-col {
+    margin-left: -6%;
 }
 
 .article-scroll-menu {

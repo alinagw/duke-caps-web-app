@@ -135,13 +135,13 @@ export default {
     margin: 32px 0;
 }
 
-.section a:not(.btn, .nav-link) {
+.section-content a:not(.btn) {
     color: #38C6D4;
     transition: 0.3s;
     font-weight: 400;
 }
 
-.section a:not(.btn, .nav-link):hover {
+.section-content a:not(.btn):hover {
     color: #1f7998;
     text-decoration: none;
 }

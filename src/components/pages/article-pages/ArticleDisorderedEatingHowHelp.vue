@@ -1,6 +1,6 @@
 <template>
     <b-row no-gutters>
-        <b-col cols="3">
+        <b-col cols="3" class="scroll-spy-col">
             <b-list-group v-scroll-spy-active v-scroll-spy-link tag="ul" class="article-scroll-menu">
                 <b-list-group-item v-for="(title, index) in titles" :key="index" tag="li" class="article-scroll-menu-item">
                     <a>{{ title }}</a>
