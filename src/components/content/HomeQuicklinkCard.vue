@@ -1,6 +1,6 @@
 <template>
 <b-card class="quicklink-card text-center" @click="$router.push(link.link)">
-    <div class="quicklink-image"></div>
+    <div class="quicklink-image" v-html="link.icon"></div>
     <h5 class="card-title mb-1">{{ link.title }}</h5>
     <p class="card-text small mb-0">{{ link.description }}</p>
 </b-card>
@@ -14,7 +14,6 @@ export default {
     ],
     data() {
         return {
-
         }
     }
 }
@@ -42,5 +41,26 @@ export default {
     -webkit-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4);
     -moz-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4);
     box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4);
+}
+
+.quicklink-image {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 6px;
+}
+
+.quicklink-image svg {
+    height: 100%;
+    fill: #78849E;
+    transition: 0.3s;
+}
+
+.card-title:hover {
+    color: #212529;;
+}
+
+.quicklink-image svg {
+    fill: #38C6D4;
 }
 </style>
