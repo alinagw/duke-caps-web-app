@@ -30,7 +30,7 @@
                     <p>Often, students may refrain from letting parents know about a troubling time or an episode with a psychological problem because they wish to protect you from the hurt, confusion, and worry that they assume you'll feel. They are usually correct in their assumption that you'll feel these things.  What they usually fail to consider is your resilience and willingness to endure these feelings for the sake of being able to support them. Clarifications from parents on this issue can be very helpful: Yes, it would be upsetting, but I can handle that and I want to if that means being there for you! Help them remember who you are: A parent, whose caring concern is a source of both hurt and strength.</p>
                 </div>
                 <div>
-                    <h4>Remember What You've Done</h4>
+                    <h4>Remember What You’ve Done</h4>
                     <p>In simplest terms, you have done a good job in raising the student that has earned admission to Duke University. You have taught them values, including a strong work ethic.  You have shown them decision making. You have encouraged an exploration of career planning, and you have introduced notions of success that you hope they incorporate in their college careers. All of the successful work you have done as a parent up to this point grants you the opportunity to trust your child to navigate the challenges of college life.  With that trust, you can allow yourself to limit the degree to which you continue to hold the reins in the college student’s life.  When they are struggling, however, your reflex may be to take over. While sometimes, a strong decision on your part may still be necessary, most of the time you can parent from a distance by keeping a few suggestions in mind.</p>
                 </div>
                 <div>
@@ -61,19 +61,14 @@ export default {
         return {
             section: 0,
             titles: [
-            'Antidepressant Medications Q & A',
-            'Introduction',
-            '1. Why would taking a pill help the way I feel?',
-            '2. Why can’t I do it on my own?',
-            '3. How do these medicines work?',
-            '4. What are the side effects?',
-            '5. Are these medicines addictive?',
-            '6. If I start one of these medicines do I have to take if for the rest of my life?',
-            '7. How do I know if it’s working? What will I notice?',
-            '8. Can I drink alcohol with it?',
-            '9. Will it change my personality?',
-            '10. How much does it cost? Is it covered by insurance?',
-            'Conclusion',
+            'Parenting From A Distance',
+            'A Guide for Parents of College Students',
+            'Remember Who You Are',
+            'They Are Afraid to Disappoint You',
+            'They Want to Protect You',
+            'Remember What You’ve Done',
+            'What You Can Do',
+            'Consult with CAPS Staff Members',
             ]
         }
     }
