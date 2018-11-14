@@ -14,9 +14,18 @@
         <b-card class="search-content-card" no-body>
             <b-container fluid class="search-content">
                 <b-row no-gutters class="mb-5">
+                    <b-col class="col-1">
                     <b-btn @click="showFiltersSidebar = !showFiltersSidebar">
-                        toggle sidebar
+                        <filter-variant></filter-variant>
                     </b-btn>
+                    </b-col>
+                    <b-col class="col-2">
+                    <h4 class="my-0">Filters</h4>
+                    </b-col>
+                    <b-col class="col-9">
+                        <h1 class="mb-0">Results</h1>
+                        <h6 v-show="results.length">{{ query }}</h6>
+                    </b-col>
                 </b-row>
 
                 <b-row no-gutters>
@@ -137,6 +146,7 @@ import ArticleCard from "./../content/ArticleCard"
 import Magnify from "vue-material-design-icons/Magnify.vue"
 import ChevronDown from "vue-material-design-icons/ChevronDown.vue"
 import ChevronUp from "vue-material-design-icons/ChevronUp.vue"
+import FilterVariant from "vue-material-design-icons/FilterVariant.vue"
 
 export default {
     name: 'Search',
@@ -146,7 +156,8 @@ export default {
         WorkshopCard,
         ArticleCard,
         ChevronDown,
-        ChevronUp
+        ChevronUp,
+        FilterVariant
     },
     data() {
         return {
@@ -226,35 +237,27 @@ export default {
                     ]
                 },
                 problems: {
-                    header: "Types of Resources",
+                    header: "Common Problems",
                     selected: [],
                     options: [{
-                            text: "Academic",
+                            text: "Academic Stress",
                             value: "individual"
                         },
                         {
-                            text: "Couples",
+                            text: "College Transition",
+                            value: "individual"
+                        },
+                        {
+                            text: "Mental Health",
                             value: "couples"
                         },
                         {
-                            text: "Groups & Workshops",
+                            text: "Relationships",
                             value: "available"
                         },
                         {
-                            text: "Psychiatry & Meds",
+                            text: "Sleeping & Eating",
                             value: "psychiatric"
-                        },
-                        {
-                            text: "Mindfulness Practice",
-                            value: "mindfulness"
-                        },
-                        {
-                            text: "Fun & Active",
-                            value: "fun"
-                        },
-                        {
-                            text: "Articles",
-                            value: "article"
                         }
                     ]
                 }

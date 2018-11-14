@@ -63,6 +63,10 @@ export default {
 </script>
 
 <style scoped>
+#home-carousel {
+    max-height: 70vh;
+    overflow: hidden;
+}
 
 .quicklinks {
     margin: auto;
