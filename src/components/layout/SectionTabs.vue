@@ -57,6 +57,15 @@ export default {
     margin-bottom: 6px;
 }
 
+.content-tabs .nav-link:hover {
+    color: #FFD960;
+}
+
+.content-tabs .nav-link.active {
+    color: #38C6D4;
+}
+
+
 .content-tabs .nav-item .tab-icon svg {
     height: 100%;
     fill: #78849E;

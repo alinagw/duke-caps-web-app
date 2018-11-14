@@ -43,19 +43,27 @@
     }
 
     .quicklink-image {
-        width: 50px;
-        height: 50px;
+        width: 80px;
+        height: 80px;
         margin: auto;
-        margin-bottom: 6px;
+        margin-bottom: 12px;
     }
 
     .quicklink-image svg {
         height: 100%;
         fill: #38C6D4;
-        transition: 0.3s;
+        transition: 0.6s ease;
     }
 
-    .card-title:hover {
+    .quicklink-card:hover .quicklink-image svg {
+        fill: #FFD960;
+    }
+
+    .quicklink-card .card-title {
         color: #0F2B5B;;
+    }
+
+    .quicklink-card .card-text {
+        color: #79859D;
     }
 </style>
