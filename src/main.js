@@ -19,7 +19,7 @@ Vue.use(scrollSpy, {
 Vue.use(BootstrapVue)
 Vue.use(VueFuse)
 //Vue.use(Scrollspy);
-Vue.config.productionTip = false
+//Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
