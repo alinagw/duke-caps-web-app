@@ -1,16 +1,16 @@
 webpackJsonp([0],{
 
-/***/ "23KS":
+/***/ "1ygL":
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("Nu9q");
+var content = __webpack_require__("LcUq");
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("rjj0")("611386d0", content, true, {});
+var update = __webpack_require__("rjj0")("75554f1e", content, true, {});
 
 /***/ }),
 
@@ -33,6 +33,17 @@ var update = __webpack_require__("rjj0")("3d033fb4", content, true, {});
 
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('b-card',{staticClass:"staff-bio-card",attrs:{"title":_vm.employeeTitle,"sub-title":_vm.employee.jobTitle,"img-src":_vm.employee.photo,"img-alt":_vm.employee.name,"img-top":"","img-fluid":"","no-body":"","tag":"div"}},[_c('b-card-body',[_c('h4',{staticClass:"card-title"},[_vm._v(_vm._s(_vm.employeeTitle))]),_vm._v(" "),_c('h6',{staticClass:"card-subtitle mb-3 text-muted"},[_vm._v(_vm._s(_vm.employee.jobTitle))]),_vm._v(" "),_c('p',{staticClass:"card-text"},[_vm._v("\n            Some quick example text to build on the card title and make up the bulk of the card's content.\n        ")]),_vm._v(" "),_c('b-collapse',{attrs:{"id":'employee-' + _vm.employee.id + '-collapse'},model:{value:(_vm.showCollapse),callback:function ($$v) {_vm.showCollapse=$$v},expression:"showCollapse"}},[_c('p',{staticClass:"card-text"},[_vm._v("yeet")])])],1),_vm._v(" "),_c('b-card-footer',{staticClass:"text-center"},[_c('b-btn',{staticClass:"card-collapse-toggle",class:_vm.showCollapse ? 'collapsed' : null,attrs:{"aria-controls":'employee-' + _vm.employee.id + '-collapse',"aria-expanded":_vm.showCollapse ? 'true' : 'false'},on:{"click":function($event){_vm.showCollapse = !_vm.showCollapse}}},[_c('span',{directives:[{name:"show",rawName:"v-show",value:(!_vm.showCollapse),expression:"!showCollapse"}]},[_c('chevron-down')],1),_vm._v(" "),_c('span',{directives:[{name:"show",rawName:"v-show",value:(_vm.showCollapse),expression:"showCollapse"}]},[_c('chevron-up')],1)])],1)],1)}
+var staticRenderFns = []
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
+
+/***/ "9DXL":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('b-card',{staticClass:"staff-bio-card",attrs:{"overlay":"","img-src":_vm.employee.photo,"img-alt":_vm.employee.name,"img-fluid":"","tag":"div","no-body":""}},[_c('div',{staticClass:"card-img-overlay d-flex flex-column justify-content-end"},[_c('h4',{staticClass:"card-title"},[_vm._v(_vm._s(_vm.employeeTitle))]),_vm._v(" "),_c('h6',{staticClass:"card-subtitle"},[_vm._v(_vm._s(_vm.employee.jobTitle))])])])}
 var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
@@ -184,7 +195,7 @@ var Component = normalizeComponent(
 
 /***/ }),
 
-/***/ "Nu9q":
+/***/ "LcUq":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("FZ+f")(true);
@@ -192,7 +203,7 @@ exports = module.exports = __webpack_require__("FZ+f")(true);
 
 
 // module
-exports.push([module.i, ".staff-bio-card{border:none;border-radius:8px;margin-bottom:30px!important;max-width:100%;height:400px;transition:.3s;-webkit-box-shadow:0 2px 5px 0 rgba(69,91,99,.45);-moz-box-shadow:0 2px 6px 0 rgba(69,91,99,.45);box-shadow:0 2px 5px 0 rgba(69,91,99,.45);transition:box-shadow .5s;font-family:Montserrat,\"sans-serif\"}.staff-bio-card .card-img{border-radius:8px;width:100%;height:100%;object-fit:cover;object-position:top}.staff-bio-card .card-img-overlay{border-radius:8px;background:#11151b;background:linear-gradient(0deg,rgba(17,21,27,.9) 3%,rgba(17,21,27,0) 40%)}@media (min-width:576px){.staff-bio-card{min-width:calc(50% - 30px);max-width:calc(50% - 30px);height:300px}}@media (min-width:768px){.staff-bio-card{height:400px}}@media (min-width:992px){.staff-bio-card{min-width:calc(33% - 30px);max-width:calc(33% - 30px)}}.staff-bio-card:hover{-webkit-box-shadow:0 5px 18px 0 rgba(69,91,99,.4);-moz-box-shadow:0 5px 18px 0 rgba(69,91,99,.4);box-shadow:0 5px 18px 0 rgba(69,91,99,.4)}.staff-bio-card .card-title{font-size:20px;color:#fff}.staff-bio-card .card-subtitle{font-size:13px;color:rgba(247,247,250,.7)}", "", {"version":3,"sources":["/Users/alinawalling/Documents/GitHub/duke-caps-web-app/src/components/content/StaffCard.vue"],"names":[],"mappings":"AACA,gBACI,YAAa,AACb,kBAAmB,AACnB,6BAA+B,AAC/B,eAAgB,AAChB,aAAc,AACd,eAAiB,AACjB,kDAA2D,AAC3D,+CAAwD,AACxD,0CAAmD,AACnD,0BAA4B,AAC5B,mCAAwC,CAC3C,AACD,0BACI,kBAAmB,AACnB,WAAY,AACZ,YAAa,AACb,iBAAkB,AAClB,mBAAqB,CACxB,AACD,kCACI,kBAAmB,AACnB,mBAA4B,AAC5B,0EAAsF,CACzF,AACD,yBACA,gBACQ,2BAA4B,AAC5B,2BAA4B,AAC5B,YAAc,CACrB,CACA,AACD,yBACA,gBACQ,YAAc,CACrB,CACA,AACD,yBACA,gBACQ,2BAA4B,AAC5B,0BAA4B,CACnC,CACA,AACD,sBACI,kDAA2D,AAC3D,+CAAwD,AACxD,yCAAmD,CACtD,AACD,4BACI,eAAgB,AAChB,UAAa,CAChB,AACD,+BACI,eAAgB,AAChB,0BAAgC,CACnC","file":"StaffCard.vue","sourcesContent":["\n.staff-bio-card {\n    border: none;\n    border-radius: 8px;\n    margin-bottom: 30px !important;\n    max-width: 100%;\n    height: 400px;\n    transition: 0.3s;\n    -webkit-box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.45);\n    -moz-box-shadow: 0px 2px 6px 0px rgba(69, 91, 99, 0.45);\n    box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.45);\n    transition: box-shadow 0.5s;\n    font-family: \"Montserrat\", \"sans-serif\";\n}\n.staff-bio-card .card-img {\n    border-radius: 8px;\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n    object-position: top;\n}\n.staff-bio-card .card-img-overlay {\n    border-radius: 8px;\n    background: rgb(17, 21, 27);\n    background: linear-gradient(to top, rgba(17, 21, 27, 0.9) 3%, rgba(17, 21, 27,0) 40%);\n}\n@media (min-width: 576px) {\n.staff-bio-card {\n        min-width: calc(50% - 30px);\n        max-width: calc(50% - 30px);\n        height: 300px;\n}\n}\n@media (min-width: 768px) {\n.staff-bio-card {\n        height: 400px;\n}\n}\n@media (min-width: 992px) {\n.staff-bio-card {\n        min-width: calc(33% - 30px);\n        max-width: calc(33% - 30px);\n}\n}\n.staff-bio-card:hover {\n    -webkit-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4);\n    -moz-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4);\n    box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4);\n}\n.staff-bio-card .card-title {\n    font-size: 20px;\n    color: white;\n}\n.staff-bio-card .card-subtitle {\n    font-size: 13px;\n    color: rgba(247, 247, 250, 0.7);\n}\n"],"sourceRoot":""}]);
+exports.push([module.i, ".staff-bio-card[data-v-30d918ae]{border:none;border-radius:8px;margin-bottom:30px!important;max-width:100%;height:400px;transition:.3s;-webkit-box-shadow:0 2px 5px 0 rgba(69,91,99,.45);-moz-box-shadow:0 2px 6px 0 rgba(69,91,99,.45);box-shadow:0 2px 5px 0 rgba(69,91,99,.45);transition:box-shadow .5s;font-family:Montserrat,\"sans-serif\"}.staff-bio-card .card-img[data-v-30d918ae]{border-radius:8px;width:100%;height:100%;object-fit:cover;object-position:top}.staff-bio-card .card-img-overlay[data-v-30d918ae]{border-radius:8px;background:#11151b;background:linear-gradient(0deg,rgba(17,21,27,.9) 3%,rgba(17,21,27,0) 40%)}@media (min-width:576px){.staff-bio-card[data-v-30d918ae]{min-width:calc(50% - 30px);max-width:calc(50% - 30px);height:300px}}@media (min-width:768px){.staff-bio-card[data-v-30d918ae]{height:400px}}@media (min-width:992px){.staff-bio-card[data-v-30d918ae]{min-width:calc(33% - 30px);max-width:calc(33% - 30px)}}.staff-bio-card[data-v-30d918ae]:hover{-webkit-box-shadow:0 5px 18px 0 rgba(69,91,99,.4);-moz-box-shadow:0 5px 18px 0 rgba(69,91,99,.4);box-shadow:0 5px 18px 0 rgba(69,91,99,.4)}.staff-bio-card .card-title[data-v-30d918ae]{font-size:20px;color:#fff}.staff-bio-card .card-subtitle[data-v-30d918ae]{font-size:13px;color:rgba(247,247,250,.7)}", "", {"version":3,"sources":["/Users/alinawalling/Documents/GitHub/duke-caps-web-app/src/components/content/StaffCard.vue"],"names":[],"mappings":"AACA,iCACI,YAAa,AACb,kBAAmB,AACnB,6BAA+B,AAC/B,eAAgB,AAChB,aAAc,AACd,eAAiB,AACjB,kDAA2D,AAC3D,+CAAwD,AACxD,0CAAmD,AACnD,0BAA4B,AAC5B,mCAAwC,CAC3C,AACD,2CACI,kBAAmB,AACnB,WAAY,AACZ,YAAa,AACb,iBAAkB,AAClB,mBAAqB,CACxB,AACD,mDACI,kBAAmB,AACnB,mBAA4B,AAC5B,0EAAsF,CACzF,AACD,yBACA,iCACQ,2BAA4B,AAC5B,2BAA4B,AAC5B,YAAc,CACrB,CACA,AACD,yBACA,iCACQ,YAAc,CACrB,CACA,AACD,yBACA,iCACQ,2BAA4B,AAC5B,0BAA4B,CACnC,CACA,AACD,uCACI,kDAA2D,AAC3D,+CAAwD,AACxD,yCAAmD,CACtD,AACD,6CACI,eAAgB,AAChB,UAAa,CAChB,AACD,gDACI,eAAgB,AAChB,0BAAgC,CACnC","file":"StaffCard.vue","sourcesContent":["\n.staff-bio-card[data-v-30d918ae] {\n    border: none;\n    border-radius: 8px;\n    margin-bottom: 30px !important;\n    max-width: 100%;\n    height: 400px;\n    transition: 0.3s;\n    -webkit-box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.45);\n    -moz-box-shadow: 0px 2px 6px 0px rgba(69, 91, 99, 0.45);\n    box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.45);\n    transition: box-shadow 0.5s;\n    font-family: \"Montserrat\", \"sans-serif\";\n}\n.staff-bio-card .card-img[data-v-30d918ae] {\n    border-radius: 8px;\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n    object-position: top;\n}\n.staff-bio-card .card-img-overlay[data-v-30d918ae] {\n    border-radius: 8px;\n    background: rgb(17, 21, 27);\n    background: linear-gradient(to top, rgba(17, 21, 27, 0.9) 3%, rgba(17, 21, 27,0) 40%);\n}\n@media (min-width: 576px) {\n.staff-bio-card[data-v-30d918ae] {\n        min-width: calc(50% - 30px);\n        max-width: calc(50% - 30px);\n        height: 300px;\n}\n}\n@media (min-width: 768px) {\n.staff-bio-card[data-v-30d918ae] {\n        height: 400px;\n}\n}\n@media (min-width: 992px) {\n.staff-bio-card[data-v-30d918ae] {\n        min-width: calc(33% - 30px);\n        max-width: calc(33% - 30px);\n}\n}\n.staff-bio-card[data-v-30d918ae]:hover {\n    -webkit-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4);\n    -moz-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4);\n    box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4);\n}\n.staff-bio-card .card-title[data-v-30d918ae] {\n    font-size: 20px;\n    color: white;\n}\n.staff-bio-card .card-subtitle[data-v-30d918ae] {\n    font-size: 13px;\n    color: rgba(247, 247, 250, 0.7);\n}\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -205,9 +216,9 @@ exports.push([module.i, ".staff-bio-card{border:none;border-radius:8px;margin-bo
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_StaffCard_vue__ = __webpack_require__("tYrS");
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_513805f8_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_StaffCard_vue__ = __webpack_require__("y/hl");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_30d918ae_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_StaffCard_vue__ = __webpack_require__("9DXL");
 function injectStyle (ssrContext) {
-  __webpack_require__("23KS")
+  __webpack_require__("1ygL")
 }
 var normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -220,12 +231,12 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = null
+var __vue_scopeId__ = "data-v-30d918ae"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_StaffCard_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_513805f8_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_StaffCard_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_30d918ae_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_StaffCard_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -402,18 +413,7 @@ var update = __webpack_require__("rjj0")("31bd2496", content, true, {});
     }
 });
 
-/***/ }),
-
-/***/ "y/hl":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('b-card',{staticClass:"staff-bio-card",attrs:{"overlay":"","img-src":_vm.employee.photo,"img-alt":_vm.employee.name,"img-fluid":"","tag":"div","no-body":""}},[_c('div',{staticClass:"card-img-overlay d-flex flex-column justify-content-end"},[_c('h4',{staticClass:"card-title"},[_vm._v(_vm._s(_vm.employeeTitle))]),_vm._v(" "),_c('h6',{staticClass:"card-subtitle"},[_vm._v(_vm._s(_vm.employee.jobTitle))])])])}
-var staticRenderFns = []
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-
 /***/ })
 
 });
-//# sourceMappingURL=0.3e122467b5a2851fd98c.js.map
+//# sourceMappingURL=0.226a03274ec11214bf53.js.map

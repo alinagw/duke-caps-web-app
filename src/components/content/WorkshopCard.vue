@@ -76,7 +76,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .workshop-card {
     border: none;
     border-radius: 8px;

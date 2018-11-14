@@ -42,7 +42,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .staff-bio-card {
     border: none;
     border-radius: 8px;

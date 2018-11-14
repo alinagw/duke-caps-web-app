@@ -47,7 +47,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .service-card {
     border: none;
     border-radius: 8px;

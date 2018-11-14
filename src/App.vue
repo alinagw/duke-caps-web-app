@@ -22,7 +22,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #app {
     background-color: #F7F7FA;
 }

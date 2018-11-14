@@ -45,7 +45,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .article-card {
     border: none;
     border-radius: 8px;
