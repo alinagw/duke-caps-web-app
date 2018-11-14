@@ -2,7 +2,7 @@
 <b-card :img-src="article.image" :img-alt="article.title" img-top img-fluid class="article-card" no-body>
     <b-card-body>
         <h4 class="card-title">{{ article.title }}</h4>
-        <p class="card-text">
+        <p class="card-text" style="font-weight:300;">
             {{ article.description }}
         </p>
     </b-card-body>

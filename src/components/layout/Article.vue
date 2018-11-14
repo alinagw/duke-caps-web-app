@@ -3,7 +3,6 @@
     <b-jumbotron fluid :header="article.title" header-level="4">
         <b-link class="article-back-button" @click="$router.go(-1)">
             <arrow-left class="article-back-arrow"></arrow-left>
-            Back
             </b-link>
         <div class="jumbotron-img">
             <img :src="article.image">
@@ -152,18 +151,15 @@ export default {
     text-transform: uppercase;
     font-family: "Montserrat", "sans-serif";
     font-weight: 600;
-    font-size: 14px;
+    font-size: 32px;
     letter-spacing: 0.5px;
     transition: 0.3s;
-}
-
-.article-back-arrow {
-    font-size: 22px;
-    margin-right: 8px;
+    color: white;
 }
 
 .article-back-button:hover {
     text-decoration: none;
+    color: #3EA6E8;
 }
 
 .article-content h1 {

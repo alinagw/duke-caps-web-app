@@ -59,21 +59,21 @@
                         <div v-if="resultsTyped.groupCounseling.length">
                             <h1>Group Counseling</h1>
                             <b-card-group deck>
-                                <workshop-card v-for="(group, index) in resultsTyped.groupCounseling" :key="index" :service="group.object"></workshop-card>
+                                <workshop-card v-for="(group, index) in resultsTyped.groupCounseling" :key="index" :service="group.object" style="max-width:100%"></workshop-card>
                             </b-card-group>
                             <div class="divider" v-show="resultsTyped.workshopDiscussion.length"></div>
                         </div>
                         <div v-if="resultsTyped.workshopDiscussion.length">
                             <h1>Workshops &amp; Discussions</h1>
                             <b-card-group deck>
-                                <workshop-card v-for="(workshop, index) in resultsTyped.workshopDiscussion" :key="index" :service="workshop.object"></workshop-card>
+                                <workshop-card v-for="(workshop, index) in resultsTyped.workshopDiscussion" :key="index" :service="workshop.object" style="max-width:100%"></workshop-card>
                             </b-card-group>
                             <div class="divider" v-show="resultsTyped.studentArticle.length"></div>
                         </div>
                         <div v-if="resultsTyped.studentArticle.length">
                             <h1>Student Wellbeing Articles</h1>
                             <b-card-group deck>
-                                <article-card v-for="(article, index) in resultsTyped.studentArticle" :key="index" :article="article.object">
+                                <article-card v-for="(article, index) in resultsTyped.studentArticle" :key="index" :article="article.object" style="max-width:100%">
                                 </article-card>
                             </b-card-group>
                             <div class="divider" v-show="resultsTyped.mentalHealthArticle.length"></div>
@@ -81,7 +81,7 @@
                         <div v-if="resultsTyped.mentalHealthArticle.length">
                             <h1>Mental Health Articles</h1>
                             <b-card-group deck>
-                                <article-card v-for="(article, index) in resultsTyped.mentalHealthArticle" :key="index" :article="article.object">
+                                <article-card v-for="(article, index) in resultsTyped.mentalHealthArticle" :key="index" :article="article.object" style="max-width:100%">
                                 </article-card>
                             </b-card-group>
                             <div class="divider" v-show="resultsTyped.parentArticle.length"></div>
@@ -89,7 +89,7 @@
                         <div v-if="resultsTyped.parentArticle.length">
                             <h1>Parents, Friends, &amp; Family Articles</h1>
                             <b-card-group deck>
-                                <article-card v-for="(article, index) in resultsTyped.parentArticle" :key="index" :article="article.object">
+                                <article-card v-for="(article, index) in resultsTyped.parentArticle" :key="index" :article="article.object" style="max-width:100%">
                                 </article-card>
                             </b-card-group>
                         </div>
@@ -1023,11 +1023,7 @@ export default {
     }
 }
 
-.article-card {
-    max-width: 100% !important;
-}
-
-.article-card .card-text, .workshop-card .card-text {
-    font-weight: 300;
+.search-results-content .card-text {
+    font-weight: 300 !important;
 }
 </style>

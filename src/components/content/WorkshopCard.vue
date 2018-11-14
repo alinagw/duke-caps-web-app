@@ -2,17 +2,17 @@
 <b-card :img-src="service.photo" :img-alt="service.name" img-top img-fluid no-body class="workshop-card">
     <b-card-body>
         <h4 class="card-title">{{ service.name }}</h4>
-        <p class="card-text mb-0" v-for="(paragraph, index) in service.description" :key="index">
+        <p class="card-text mb-0"  style="font-weight:300;" v-for="(paragraph, index) in service.description" :key="index">
             {{ paragraph }}
         </p>
         <b-collapse v-model="showCollapse" :id="'service-' + service.id + '-collapse'">
             <h6 class="card-subtitle mb-3 mt-4">Offerings</h6>
-            <p class="card-text" v-if="!offeringsAvailable"><strong>
+            <p class="card-text" v-if="!offeringsAvailable" style="font-weight:300;"><strong>
                 {{ service.timeOfferings }}
             </strong></p>
             <div v-if="offeringsAvailable">
                 <div class="d-flex flex-row justify-content-between pr-4" v-for="(time, index) in service.timeOfferings" :key="index">
-                    <p class="card-text"> {{ time.date }} <strong>|</strong> {{ time.time }}</p>
+                    <p class="card-text" style="font-weight:300;"> {{ time.date }} <strong>|</strong> {{ time.time }}</p>
                     <b-link v-if="checkRSVP(time)" class="card-text" :href="time.rsvp" target="_blank">RSVP</b-link>
                 </div>
             </div>

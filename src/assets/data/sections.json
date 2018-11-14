@@ -47,7 +47,7 @@
             "id": "get-started",
             "tags": [],
             "title": "Get Started",
-            "image": "https://www.10wallpaper.com/wallpaper/medium/1508/Simple_nature_landscape_HD_wallpaper_medium.jpg",
+            "image": "https://github.com/alinagw/duke-caps-web-app/blob/additional-content/src/assets/images/Meditation%20garden%20HERO.jpg?raw=true",
             "tabs": {
                 "home": {
                     "id": "get-started_home",
@@ -76,7 +76,7 @@
             "id": "services",
             "tags": [],
             "title": "Our Services",
-            "image": "http://www.ox.ac.uk/sites/files/oxford/styles/ow_medium_feature/public/field/field_image_main/Helping%20banner.jpg?itok=HeTnO9bw",
+            "image": "https://github.com/alinagw/duke-caps-web-app/blob/additional-content/src/assets/images/inside_vcaps.png?raw=true",
             "tabs": {
                 "home": {
                     "id": "services_home",

@@ -145,4 +145,8 @@ export default {
     color: #1f7998;
     text-decoration: none;
 }
+
+#get-started.section .jumbotron img, #services.section .jumbotron img {
+    object-position: center;
+}
 </style>
