@@ -42,8 +42,18 @@
                         <div v-show="!foundResults">
                             <h4>No results found.</h4>
                         </div>
+                        <div v-if="resultsTyped.helpNow.length">
+                            <h1>Immediate Help</h1>
+                            <b-card-group deck>
+                                <home-quicklink-card v-for="(help, index) in resultsTyped.helpNow" :key="index" :link="help.object"></home-quicklink-card>
+                            </b-card-group>
+                            <div class="divider" v-show="resultsTyped.capsService.length"></div>
+                        </div>
                         <div v-if="resultsTyped.capsService.length">
                             <h1>CAPS Services</h1>
+                            <b-card-group deck>
+                                <home-quicklink-card v-for="(service, index) in resultsTyped.capsService" :key="index" :link="service.object"></home-quicklink-card>
+                            </b-card-group>
                             <div class="divider"></div>
                         </div>
                         <div v-if="resultsTyped.groupCounseling.length">
@@ -74,10 +84,14 @@
                                 <article-card v-for="(article, index) in resultsTyped.mentalHealthArticle" :key="index" :article="article.object">
                                 </article-card>
                             </b-card-group>
-                            <div class="divider" v-show="resultsTyped.affiliatedResource.length"></div>
+                            <div class="divider" v-show="resultsTyped.parentArticle.length"></div>
                         </div>
-                        <div v-if="resultsTyped.affiliatedResource.length">
-                            <h1>Affiliated Resources</h1>
+                        <div v-if="resultsTyped.parentArticle.length">
+                            <h1>Parents, Friends, &amp; Family Articles</h1>
+                            <b-card-group deck>
+                                <article-card v-for="(article, index) in resultsTyped.parentArticle" :key="index" :article="article.object">
+                                </article-card>
+                            </b-card-group>
                         </div>
                     </b-col>
                 </b-row>
@@ -97,6 +111,7 @@ import Magnify from "vue-material-design-icons/Magnify.vue"
 import ChevronDown from "vue-material-design-icons/ChevronDown.vue"
 import ChevronUp from "vue-material-design-icons/ChevronUp.vue"
 import FilterVariant from "vue-material-design-icons/FilterVariant.vue"
+import HomeQuicklinkCard from "./../content/HomeQuicklinkCard"
 
 export default {
     name: 'Search',
@@ -107,7 +122,8 @@ export default {
         ArticleCard,
         ChevronDown,
         ChevronUp,
-        FilterVariant
+        FilterVariant,
+        HomeQuicklinkCard
     },
     data() {
         return {
@@ -224,7 +240,8 @@ export default {
                 groupCounseling: [],
                 studentArticle: [],
                 mentalHealthArticle: [],
-                affiliatedResource: [],
+                parentArticle: [],
+                helpNow: [],
                 other: []
             },
             currQuestion: 0,
@@ -506,9 +523,17 @@ export default {
                 return true;
             }
             return false;
-        }
+        },
+
+        
     },
     methods: {
+        filterChecked (filter) {
+            if (this.submittedQuery.includes(filter)) {
+                return true;
+            } return false;
+        },
+
         runSearch() {
             this.results = [];
             this.resultsTyped = {
@@ -517,7 +542,8 @@ export default {
                 groupCounseling: [],
                 studentArticle: [],
                 mentalHealthArticle: [],
-                affiliatedResource: [],
+                parentArticle: [],
+                helpNow: [],
                 other: []
             };
             this.submittedQuery = "";
@@ -564,8 +590,11 @@ export default {
                     case "mental-health-article":
                         this.resultsTyped.mentalHealthArticle.push(this.results[i]);
                         break;
-                    case "affiliated":
-                        this.resultsTyped.affiliatedResource.push(this.results[i]);
+                    case "help-now":
+                        this.resultsTyped.helpNow.push(this.results[i]);
+                        break;
+                    case "parent-article":
+                        this.resultsTyped.parentArticle.push(this.results[i]);
                         break;
                     default:
                         this.resultsTyped.other.push(this.results[i]);
@@ -645,7 +674,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .search {
     margin-bottom: 64px;
 }
@@ -975,5 +1004,26 @@ export default {
 .filter-submit-button:hover {
     background-color: #1f7998;
     box-shadow: none;
+}
+
+.quicklink-card {
+    min-width: 100% !important;
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .quicklink-card {
+        min-width: calc(50% - 30px) !important;
+    } 
+}
+
+@media (min-width: 992px) {
+    .quicklink-card {
+        min-width: calc(33% - 30px) !important;
+    }
+}
+
+.article-card {
+    max-width: 100% !important;
 }
 </style>
