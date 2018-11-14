@@ -10,7 +10,7 @@
     <b-col cols="9">
         <div v-scroll-spy="{data: 'section', offset: 80}" class="article-scroll-content">
             <div>
-                <h1>BEING EMOTIONAL</h1>
+                <h1>Being Emotional</h1>
                 <p>It seems silly, perhaps, to think of trying to find your emotional sides. In fact, it’s probably not lost but only hidden. But because, often, there is such a tendency to avoid or suppress anything that might bring about some emotional vulnerability, we think it's important to inform students about how that might impact your lives and your campus.</p>
             </div>
             <div>
