@@ -1026,4 +1026,8 @@ export default {
 .article-card {
     max-width: 100% !important;
 }
+
+.article-card .card-text, .workshop-card .card-text {
+    font-weight: 300;
+}
 </style>

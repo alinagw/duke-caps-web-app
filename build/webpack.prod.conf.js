@@ -39,7 +39,7 @@ var webpackConfig = merge(baseWebpackConfig, {
     }),
     // extract css into its own file
     new ExtractTextPlugin({
-      filename: utils.assetsPath('css/[name].[contenthash].css')
+      filename: utils.assetsPath('../[name].[contenthash].css')
     }),
     /*new MiniCssExtractPlugin({
       filename: utils.assetsPath('css/[name].[contenthash].css'),
