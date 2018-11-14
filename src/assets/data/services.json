@@ -122,60 +122,6 @@
             }]
         },
         {
-            "id": "cultivating-mindful-self-compassion-group",
-            "name": "Cultivating Mindful Self-Compassion Group",
-            "photo": "",
-            "description": [
-                "A group for anyone who tends to be their own worst critic. Designed for graduate and professional students, this group uses current research to promote healthier emotional wellbeing through mindful self-compassion skills. Group members will cultivate a range of tools to use within the context of internal and external stress and demands."
-            ],
-            "timeOfferings": [{
-                "date": "Every Tuesday",
-                "time": "5:30 pm - 7:00 pm"
-            }]
-        },
-        {
-            "id": "dialectical-behavior-therapy-group",
-            "name": "Dialectical Behavior Therapy Group",
-            "photo": "",
-            "description": [
-                "Dialectical Behavior Therapy is a cognitive behavioral treatment developed by Marsha Linehan, PhD. This is an evidenced based group, which is effective for anyone who struggles with emotional dysregulation.", 
-                "It is an opportunity to learn four key skills:", 
-                "1. Core Mindfulness: being fully present in the moment",
-                "2. Interpersonal Effectiveness: asking for what you want and saying no while keeping self respect, maintaining relationships and meeting your goals",
-                "3. Emotion Regulation: understanding and mastering the emotional response",
-                "4. Distress Tolerance: surviving crises without making things worse",
-                "The skills are taught in modules and may be spread over more than one semester with core mindfulness repeating between the other three modules. The ultimate goal is to use these skills in everyday life to be as effective as possible and create your own life worth living."
-            ],
-            "timeOfferings": [{
-                "date": "Every Wednesday",
-                "time": "3:00 pm - 4:30 pm"
-            }]
-        },
-        {
-            "id": "lgbtq-group",
-            "name": "LGBTQ+ Group",
-            "photo": "",
-            "description": [
-                "This group is a space to be in community with those who share identities and experiences, to talk openly about our lived experiences, and to provide and receive support and feedback from one another. Come as you are."
-            ],
-            "timeOfferings": [{
-                "date": "Every Wednesday",
-                "time": "3:00 pm - 4:30 pm"
-            }]
-        },
-        {
-            "id": "running-group",
-            "name": "Running Group",
-            "photo": "",
-            "description": [
-                "Facilitated as an Understanding Self and Others group, while incorporating the benefits of exercise. Group members will run outside, sharing their thoughts and feelings with peers."
-            ],
-            "timeOfferings": [{
-                "date": "Every Monday",
-                "time": "3:30 pm - 4:30 pm"
-            }]
-        },
-        {
             "id": "understanding-self-and-others",
             "name": "Understanding Self and Others",
             "photo": "",
@@ -204,6 +150,60 @@
                     "time": "10:30am - 12:00pm"
                 }
             ]
+        },
+        {
+            "id": "cultivating-mindful-self-compassion-group",
+            "name": "Cultivating Mindful Self-Compassion Group",
+            "photo": "",
+            "description": [
+                "A group for anyone who tends to be their own worst critic. Designed for graduate and professional students, this group uses current research to promote healthier emotional wellbeing through mindful self-compassion skills. Group members will cultivate a range of tools to use within the context of internal and external stress and demands."
+            ],
+            "timeOfferings": [{
+                "date": "Every Tuesday",
+                "time": "5:30 pm - 7:00 pm"
+            }]
+        },
+        {
+            "id": "lgbtq-group",
+            "name": "LGBTQ+ Group",
+            "photo": "",
+            "description": [
+                "This group is a space to be in community with those who share identities and experiences, to talk openly about our lived experiences, and to provide and receive support and feedback from one another. Come as you are."
+            ],
+            "timeOfferings": [{
+                "date": "Every Wednesday",
+                "time": "3:00 pm - 4:30 pm"
+            }]
+        },
+        {
+            "id": "running-group",
+            "name": "Running Group",
+            "photo": "",
+            "description": [
+                "Facilitated as an Understanding Self and Others group, while incorporating the benefits of exercise. Group members will run outside, sharing their thoughts and feelings with peers."
+            ],
+            "timeOfferings": [{
+                "date": "Every Monday",
+                "time": "3:30 pm - 4:30 pm"
+            }]
+        },
+        {
+            "id": "dialectical-behavior-therapy-group",
+            "name": "Dialectical Behavior Therapy Group",
+            "photo": "",
+            "description": [
+                "Dialectical Behavior Therapy is a cognitive behavioral treatment developed by Marsha Linehan, PhD. This is an evidenced based group, which is effective for anyone who struggles with emotional dysregulation.", 
+                "It is an opportunity to learn four key skills:", 
+                "1. Core Mindfulness: being fully present in the moment",
+                "2. Interpersonal Effectiveness: asking for what you want and saying no while keeping self respect, maintaining relationships and meeting your goals",
+                "3. Emotion Regulation: understanding and mastering the emotional response",
+                "4. Distress Tolerance: surviving crises without making things worse",
+                "The skills are taught in modules and may be spread over more than one semester with core mindfulness repeating between the other three modules. The ultimate goal is to use these skills in everyday life to be as effective as possible and create your own life worth living."
+            ],
+            "timeOfferings": [{
+                "date": "Every Wednesday",
+                "time": "3:00 pm - 4:30 pm"
+            }]
         }
     ]
 }
