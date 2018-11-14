@@ -67,9 +67,6 @@ export default {
 </script>
 
 <style scoped>
-#home-carousel {
-  
-}
 
 .quicklinks {
     margin: auto;

@@ -70,8 +70,4 @@ export default {
 .content-tabs .nav-link:hover .tab-icon svg, .content-tabs .nav-link.active .tab-icon svg {
     fill: #38C6D4;
 }
-
-.content-tabs .nav-link.active {
-
-}
 </style>
