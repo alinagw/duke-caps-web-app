@@ -29,17 +29,21 @@ export default {
     components: {
         ArrowLeft,
         ArticleAdjustCollege: () => import("./../pages/article-pages/ArticleAdjustCollege"),
+        ArticleAntiDepressants: () => import("./../pages/article-pages/ArticleAntiDepressants"),
         ArticleBeingEmotional: () => import("./../pages/article-pages/ArticleBeingEmotional"),
         ArticleConflict: () => import("./../pages/article-pages/ArticleConflict"),
         ArticleCopingStress: () => import("./../pages/article-pages/ArticleCopingStress"),
         ArticleDepression: () => import("./../pages/article-pages/ArticleDepression"),
         ArticleDisorderedEating: () => import("./../pages/article-pages/ArticleDisorderedEating"),
+        ArticleDisorderedEatingHowHelp: () => import("./../pages/article-pages/ArticleDisorderedEatingHowHelp"),
+        ArticleDisorderedEatingTerms: () => import("./../pages/article-pages/ArticleDisorderedEatingTerms"),
+        ArticleDisorderedEatingUnderstand: () => import("./../pages/article-pages/ArticleDisorderedEatingUnderstand"),
+        ArticleDisorderedEatingWhatSay: () => import("./../pages/article-pages/ArticleDisorderedEatingWhatSay"),
         ArticleFirstYearConcerns: () => import("./../pages/article-pages/ArticleFirstYearConcerns"),
         ArticleGriefLoss: () => import("./../pages/article-pages/ArticleGriefLoss"),
         ArticleLivingLifeValues: () => import("./../pages/article-pages/ArticleLivingLifeValues"),
         ArticleRelationshipsGradSchool: () => import("./../pages/article-pages/ArticleRelationshipsGradSchool"),
-        ArticleSemesterSurvivalGuide: () => import("./../pages/article-pages/ArticleSemesterSurvivalGuide"),
-        ArticleAntiDepressants: () => import("./../pages/article-pages/ArticleAntiDepressants")
+        ArticleSemesterSurvivalGuide: () => import("./../pages/article-pages/ArticleSemesterSurvivalGuide")
     },
     data() {
         return {
@@ -48,6 +52,11 @@ export default {
     },
     computed: {
         articleComponent () {
+            if (this.article.hasOwnProperty("children")) {
+                if (this.article.children.hasOwnProperty(this.$route.params.subpage)) {
+                    return this.article.children[this.$route.params.subpage];
+                }
+            }
             return this.article.component;
         }
     }

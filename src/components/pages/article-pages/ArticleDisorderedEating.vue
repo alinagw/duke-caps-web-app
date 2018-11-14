@@ -5,10 +5,10 @@
             <p>Struggles with eating issues are are about more than just food, though if you are suffering from these issues you may not be able to explain what else is happening. What you do know is that you struggle a lot more than you want to with eating or not eating, gaining weight, keeping your current weight, or losing weight. All this holds so much of your attention that it's hard to get to what these eating issues are really about. So what is this "disordered eating" all about, then?</p>
         </div>
         <div class="d-flex flex-row flex-wrap justify-content-center">
-            <b-btn href="#" target="_blank">Terms and Diagnosis</b-btn>
-            <b-btn href="#" target="_blank">Understanding Disordered Eating</b-btn>
-            <b-btn href="#" target="_blank">How To Help?</b-btn>
-            <b-btn href="#" target="_blank">What To Say?</b-btn>
+            <b-btn to="/article/disordered-eating/terms-and-diagnosis">Terms and Diagnosis</b-btn>
+            <b-btn to="/article/disordered-eating/understand">Understanding Disordered Eating</b-btn>
+            <b-btn to="/article/disordered-eating/how-to-help">How To Help?</b-btn>
+            <b-btn to="/article/disordered-eating/what-to-say">What To Say?</b-btn>
         </div>
     </div>
 </template>
