@@ -18,7 +18,7 @@
     }
 </script>
 
-<style scoped>
+<style>
     .quicklink-card {
         margin: 0 8px 16px 8px !important;
         min-width: calc(50% - 16px);

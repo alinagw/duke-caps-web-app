@@ -65,7 +65,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .article {
     margin-bottom: 64px;
 }

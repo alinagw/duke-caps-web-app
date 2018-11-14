@@ -40,7 +40,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .section-content .content-img {
     width: 100%;
     margin: 0 0 32px 0;
