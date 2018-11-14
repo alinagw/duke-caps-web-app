@@ -5,7 +5,7 @@
                 align="middle"
                 src="https://www.youtube.com/embed/9qkPR26yigA?autoplay=0&start=0&rel=0">
         </iframe>
-        <h4>Looking to Initiate services with CAPS?</h4>
+        <h4>Looking to Initiate Services with CAPS?</h4>
         <p>
             If you would like to begin services at CAPS, please drop in between the hours of 9:00 am to 4:00 pm, Monday
             - Friday and ask to speak with a counselor. No appointment needed!
@@ -76,7 +76,6 @@
     }
 
     .embedded-video {
-        width: 100%;
         transition: 0.3s;
         margin-left: auto;
         margin-right: auto;
@@ -84,15 +83,8 @@
 
     @media (min-width: 576px) {
         .embedded-video {
-            width: 75%;
             margin-left: auto;
             margin-right: auto;
-        }
-    }
-
-    @media (min-width: 992px) {
-        .embedded-video {
-            width: 100%;
         }
     }
 </style>
