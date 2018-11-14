@@ -26,6 +26,8 @@
                     <p>It is okay to acknowledge the full range of your feelings, not just the "positive" ones like loving and caring and patient.   Sometimes you will feel anger, fear or frustration and it is okay to acknowledge these.  It seems scary to think of telling someone who seems so fragile that you are angry or frustrated because you don't want to hurt him (or her).  Of course, there are times that a person is too fragile to hear these things and you need to use the best judgment you have.  Generally speaking, however, you play an important role when you can be genuinely loving and frustrated, genuinely caring and angry.  The reason that this is so important is that most people who struggle with disordered eating have entered a world where most things are EITHER/OR.  They have forgotten that people can be loving and frustrated at the same time.  So, when they see their loved ones able to be complex, to carry some seemingly contradictory feelings, it helps them see that they too can be complex individuals rather than the single dimension-being that disordered eating creates.</p>
                     <p>So, in the end, being helpful to someone struggling with disordered eating is, ultimately,  just being a genuine person in such a way that shows them it's okay for them to be who they genuinely are right now: someone struggling; someone needing to know it's okay to need support and get it from those who care.</p>
                     <br>
+                    <br>
+                    <p><i>© 2001. LifeShops. Gary D. Glass, Ph.D.</i></p>
                 </div>
             </div>
         </b-col>

@@ -76,6 +76,7 @@
                     <p>And for each of these questions, you can add another hundred every day, leaving you feeling overwhelmed to the point where you just need to make life simple!  The need to keep things simple then impacts your way of thinking about things. One of the ways you may try to make life seem a little more manageable is thinking in extremes. You keep your world black and white because all the different shades of gray are too hard to define and you're struggling enough with how to define yourself as it is. As this way of thinking takes over, then most of your life  becomes a matter of all or nothing. You only leave yourself two choices.  So there is only fat or thin--with nothing in between, beautiful or ugly--with nothing in between, and then perfect or worthless--with nothing in between.</p>
                     <p>Eating, then, becomes the one thing that can be controlled in all of these aspects!  But there is help available.  Contact CAPS if you'd like to talk to someone who may know how to help you live your life more completely and with more comforting self-acceptance than the eating issues that have become  the problem instead of a solution.</p>
                     <br>
+                    <p><i>© 2001. LifeShops. Gary D. Glass, Ph.D.</i></p>
                 </div>
             </div>
         </b-col>
