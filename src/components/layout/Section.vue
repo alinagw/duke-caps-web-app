@@ -9,11 +9,14 @@
         <b-card class="content-card" no-body>
             <section-tabs :section="section.id" :tabs="section.tabs"></section-tabs>
             <div class="divider"></div>
-            <router-view></router-view>
+            <transition name="fade" mode="out-in">
+                <router-view></router-view>
+            </transition>
         </b-card>
     </b-container>
 </div>
 </template>
+
 <script>
 import SectionTabs from "./SectionTabs"
 export default {
@@ -33,7 +36,6 @@ export default {
 </script>
 
 <style>
-
 .section {
     margin-bottom: 64px;
 }
@@ -54,9 +56,11 @@ export default {
 }
 
 @media (min-width: 1200px) {
-    .section-content, .content-card {
-      width: 1200px;
-      max-width: 1200px;
+
+    .section-content,
+    .content-card {
+        width: 1200px;
+        max-width: 1200px;
     }
 }
 
@@ -110,22 +114,35 @@ export default {
     margin-top: 28px;
 }
 
-.section-content p, .section-content ul, .section-content ol {
+.section-content p,
+.section-content ul,
+.section-content ol {
     font-family: "Montserrat", "sans-serif";
     font-weight: 300;
     font-size: 15px;
 }
 
 .divider {
-  height: 1.5px;
-  border-radius: 50%;
-  width: 90%;
-  margin: auto;
-  background-color: #F4F4F6;
+    height: 1.5px;
+    border-radius: 50%;
+    width: 90%;
+    margin: auto;
+    background-color: #F4F4F6;
 }
 
 .section-content .divider {
     width: 100%;
     margin: 32px 0;
+}
+
+.section a {
+    color: #38C6D4;
+    transition: 0.3s;
+    font-weight: 400;
+}
+
+.section a:hover {
+    color: #1f7998;
+    text-decoration: none;
 }
 </style>

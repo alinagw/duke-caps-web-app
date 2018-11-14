@@ -49,7 +49,7 @@ export default {
                     title: "Personalized Resources",
                     description: "Don't know where to start? Search for CAPS resources fit for your unique needs.",
                     image: "",
-                    link: "",
+                    link: "/search",
                     color: ""
                 },
                 {
