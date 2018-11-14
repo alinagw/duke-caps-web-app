@@ -1106,8 +1106,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-__WEBPACK_IMPORTED_MODULE_0_vue__["default"].use(__WEBPACK_IMPORTED_MODULE_8_vue2_scrollspy__["a" /* default */], {
-  easing: __WEBPACK_IMPORTED_MODULE_8_vue2_scrollspy__["b" /* Easing */].Cubic.InOut
+__WEBPACK_IMPORTED_MODULE_0_vue__["default"].use(__WEBPACK_IMPORTED_MODULE_8_vue2_scrollspy__["b" /* default */], {
+  easing: __WEBPACK_IMPORTED_MODULE_8_vue2_scrollspy__["a" /* Easing */].Cubic.InOut
 });
 
 __WEBPACK_IMPORTED_MODULE_0_vue__["default"].use(__WEBPACK_IMPORTED_MODULE_1_bootstrap_vue__["a" /* default */]);
@@ -3285,4 +3285,4 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ })
 
 },["NHnr"]);
-//# sourceMappingURL=app.d5a154fe92c879472500.js.map
+//# sourceMappingURL=app.c374d036e0b20a6a2c9d.js.map
