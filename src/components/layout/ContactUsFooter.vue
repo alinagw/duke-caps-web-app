@@ -11,10 +11,10 @@
         <b-col class="col-12 col-md-3 col-lg-4 mx-auto pb-4 pb-md-0">
             <h6>Helpful Links</h6>
             <p><b-link to="/resources/emergency">Emergency Resources</b-link></p>
-            <p><b-link to="/resources/emergency">Get Started with CAPS</b-link></p>
-            <p><b-link to="/resources/emergency">Resources While You Wait</b-link></p>
-            <p><b-link to="/resources/emergency">Personalized Resources</b-link></p>
-            <p><b-link to="/resources/emergency">Provide Feedback for CAPS</b-link></p>
+            <p><b-link to="/get-started">Get Started with CAPS</b-link></p>
+            <p><b-link to="/resources/while-you-wait">Resources While You Wait</b-link></p>
+            <p><b-link to="/search">Search Personalized Resources</b-link></p>
+            <p><a href="https://duke.qualtrics.com/jfe/form/SV_ctKNl5AI5ekvbeZ" target="_blank">Provide Feedback for CAPS</a></p>
         </b-col>
         <b-col class="col-12 col-md-6 col-lg-5 mx-auto">
             <h6>Contact</h6>
