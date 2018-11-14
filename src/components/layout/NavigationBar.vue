@@ -49,9 +49,10 @@
         -moz-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.16);
         box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.16);
     }
-
+    .main-nav .nav-link {
+        color:white !important;
+    }
     .main-nav .nav-link, .main-nav .nav-bar-brand-title {
-        color: white;
         font-family: "Montserrat", "sans-serif";
         font-size: 12px;
         font-weight: 500;

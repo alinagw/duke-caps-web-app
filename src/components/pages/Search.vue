@@ -2,10 +2,10 @@
 <div class="search">
     <b-jumbotron fluid>
         <b-input-group id="search-bar">
-            <b-form-input v-model="query" size="lg" type="text" placeholder="Search for resources" class="pl-4"></b-form-input>
+            <b-form-input v-model="query" size="lg" type="text" placeholder="Search for resources" class="pl-4" @keyup.enter.native="runSearch"></b-form-input>
             <b-input-group-append>
-                <b-btn id="search-submit">
-                  <magnify></magnify>
+                <b-btn id="search-submit" @click="runSearch">
+                    <magnify></magnify>
                 </b-btn>
             </b-input-group-append>
         </b-input-group>
@@ -13,19 +13,26 @@
     <b-container fluid>
         <b-card class="search-content-card" no-body>
             <b-container fluid class="search-content">
-              <b-row no-gutters class="mb-5">
-                <b-btn @click="showFiltersSidebar = !showFiltersSidebar">
-                  toggle sidebar
-                </b-btn>
-              </b-row>
+                <b-row no-gutters class="mb-5">
+                    <b-btn @click="showFiltersSidebar = !showFiltersSidebar">
+                        toggle sidebar
+                    </b-btn>
+                </b-row>
 
                 <b-row no-gutters>
                     <b-col v-show="showFiltersSidebar" class="col-12 col-md-3" id="search-filters-sidebar">
-                        <b-form-group v-for="(category, key) in filters" :key="key" class="search-filters">
+                        <b-form-group v-for="(category, key) in filters" :key="key" class="search-filters" :id="'filter-' + key">
                             <template slot="label">
+                                <b-link v-b-toggle="'filter-' + key + '-collapse'" class="filter-collapse-toggle float-right">
+                                    <span class="when-closed"><chevron-down></chevron-down></span>
+                                    <span class="when-opened"><chevron-up></chevron-up></span>
+                                </b-link>
                                 <b>{{ category.header }}</b><br>
+                                
                             </template>
+                            <b-collapse :id="'filter-' + key + '-collapse'" class="px-1 pb-1">
                                 <b-form-checkbox-group :id="'category-' + key + '-options'" stacked v-model="category.selected" :options="category.options" class="search-filter-checkboxes"></b-form-checkbox-group>
+                            </b-collapse>
                         </b-form-group>
 
                         <!--<b-list-group v-scroll-spy-active v-scroll-spy-link tag="ul" class="article-scroll-menu">
@@ -35,41 +42,41 @@
                         </b-list-group>-->
                     </b-col>
                     <b-col class="col-12 col-md-9 pl-3" id="search-results-content">
-                        <div>
+                        <div v-if="resultsTyped.capsService.length">
                             <h1>CAPS Services</h1>
                             <div class="divider"></div>
                         </div>
-                        <div>
+                        <div v-if="resultsTyped.groupCounseling.length">
                             <h1>Group Counseling</h1>
-                            <!--<b-card-group deck>
-                                <workshop-card v-for="(group, index) in groups" :key="index" :service="group"></workshop-card>
-                            </b-card-group>-->
-                            <div class="divider"></div>
+                            <b-card-group deck>
+                                <workshop-card v-for="(group, index) in resultsTyped.groupCounseling" :key="index" :service="group.object"></workshop-card>
+                            </b-card-group>
+                            <div class="divider" v-show="resultsTyped.workshopDiscussion.length"></div>
                         </div>
-                        <div>
+                        <div v-if="resultsTyped.workshopDiscussion.length">
                             <h1>Workshops &amp; Discussions</h1>
-                            <!--<b-card-group deck>
-                                <workshop-card v-for="(workshop, index) in workshops" :key="index" :service="workshop"></workshop-card>
-                            </b-card-group>-->
-                            <div class="divider"></div>
+                            <b-card-group deck>
+                                <workshop-card v-for="(workshop, index) in resultsTyped.workshopDiscussion" :key="index" :service="workshop.object"></workshop-card>
+                            </b-card-group>
+                            <div class="divider" v-show="resultsTyped.studentArticle.length"></div>
                         </div>
-                        <div>
+                        <div v-if="resultsTyped.studentArticle.length">
                             <h1>Student Wellbeing Articles</h1>
-                            <!--<b-card-group deck>
-                                <article-card v-for="(article, index) in mentalHealthArticles" :key="index" :article="article">
+                            <b-card-group deck>
+                                <article-card v-for="(article, index) in resultsTyped.studentArticle" :key="index" :article="article.object">
                                 </article-card>
-                            </b-card-group>-->
-                            <div class="divider"></div>
+                            </b-card-group>
+                            <div class="divider" v-show="resultsTyped.mentalHealthArticle.length"></div>
                         </div>
-                        <div>
+                        <div v-if="resultsTyped.mentalHealthArticle.length">
                             <h1>Mental Health Articles</h1>
-                            <!--<b-card-group deck>
-                                <article-card v-for="(article, index) in mentalHealthArticles" :key="index" :article="article">
+                            <b-card-group deck>
+                                <article-card v-for="(article, index) in resultsTyped.mentalHealthArticle" :key="index" :article="article.object">
                                 </article-card>
-                            </b-card-group>-->
-                            <div class="divider"></div>
+                            </b-card-group>
+                            <div class="divider" v-show="resultsTyped.affiliatedResource.length"></div>
                         </div>
-                        <div>
+                        <div v-if="resultsTyped.affiliatedResource.length">
                             <h1>Affiliated Resources</h1>
                         </div>
 
@@ -128,13 +135,18 @@ import ArrowRight from "vue-material-design-icons/ArrowRight.vue"
 import WorkshopCard from "./../content/WorkshopCard"
 import ArticleCard from "./../content/ArticleCard"
 import Magnify from "vue-material-design-icons/Magnify.vue"
+import ChevronDown from "vue-material-design-icons/ChevronDown.vue"
+import ChevronUp from "vue-material-design-icons/ChevronUp.vue"
+
 export default {
     name: 'Search',
     components: {
         ArrowRight,
         Magnify,
         WorkshopCard,
-        ArticleCard
+        ArticleCard,
+        ChevronDown,
+        ChevronUp
     },
     data() {
         return {
@@ -143,7 +155,7 @@ export default {
             showFiltersSidebar: true,
             filters: {
                 who: {
-                    header: "People in Need",
+                    header: "Who needs help?",
                     selected: [],
                     options: [{
                             text: "Students",
@@ -248,6 +260,15 @@ export default {
                 }
             },
             results: [],
+            resultsTyped: {
+                capsService: [],
+                workshopDiscussion: [],
+                groupCounseling: [],
+                studentArticle: [],
+                mentalHealthArticle: [],
+                affiliatedResource: [],
+                other: []
+            },
             currQuestion: 0,
             currQuestionSelection: [],
             questions: [{
@@ -522,22 +543,66 @@ export default {
         }
     },
     methods: {
-      toggleFiltersSidebar () {
-
-      },
         runSearch() {
-            var options = {
-                keys: ["title", "tags"],
-                defaultAll: false,
-                threshold: 0.1,
-                tokenize: true,
-                findAllMatches: true,
-                includeScore: true
+            this.results = [];
+            this.resultsTyped = {
+                capsService: [],
+                workshopDiscussion: [],
+                groupCounseling: [],
+                studentArticle: [],
+                mentalHealthArticle: [],
+                affiliatedResource: [],
+                other: []
+            };
+            this.query = this.query.trim();
+
+            if (this.query) {
+                var options = {
+                    keys: ["title", "tags"],
+                    defaultAll: false,
+                    threshold: 0.1,
+                    tokenize: true,
+                    findAllMatches: true
+                }
+
+                this.$search(this.query, this.items, options).then(result => {
+                    this.results = result;
+                    if (this.results.length) {
+                        this.parseResults();
+                    }
+                });
             }
 
-            this.$search(this.query, this.items, options).then(result => {
-                this.results = result;
-            });
+        },
+
+        parseResults () {
+
+            for (var i = 0; i < this.results.length; i++) {
+                switch (this.results[i].type) {
+                    case "workshop-discussion":
+                        this.resultsTyped.workshopDiscussion.push(this.results[i]);
+                        break;
+                    case "caps-service":
+                        this.resultsTyped.capsService.push(this.results[i]);
+                        break;
+                    case "group":
+                        this.resultsTyped.groupCounseling.push(this.results[i]);
+                        break;
+                    case "student-article":
+                        this.resultsTyped.studentArticle.push(this.results[i]);
+                        break;
+                    case "mental-health-article":
+                        this.resultsTyped.mentalHealthArticle.push(this.results[i]);
+                        break;
+                    case "affiliated":
+                        this.resultsTyped.affiliatedResource.push(this.results[i]);
+                        break;
+                    default:
+                        this.resultsTyped.other.push(this.results[i]);
+                        break;
+                }
+            }
+            
         },
 
         toggleSelectOption(index) {
@@ -620,10 +685,10 @@ export default {
 }
 
 #search-filters-sidebar {
-  margin-left: -4%;
-  border-right: 1.5px solid #F4F4F6;
-  margin-right: 2%;
-  padding-right: 12px;
+    margin-left: -4%;
+    border-right: 1.5px solid #F4F4F6;
+    margin-right: 2%;
+    padding-right: 12px;
 }
 
 .article-scroll-menu {
@@ -805,23 +870,28 @@ export default {
 }
 
 .search-filters legend {
-  color: #112C5A;
+    color: #112C5A;
 }
 
 .search-filter-checkboxes label {
     min-height: initial !important;
 }
 
-.search-filter-checkboxes .custom-control-label::before, .search-filter-checkboxes .custom-control-label::after {
+.search-filter-checkboxes .custom-control-label::before,
+.search-filter-checkboxes .custom-control-label::after {
     top: 0.1rem !important;
 }
 
+.search-filter-checkboxes .custom-control-input:focus~.custom-control-label::before {
+    box-shadow: none;
+}
+
 .search-filter-checkboxes .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-  background-color: #37A5EB;
+    background-color: #37A5EB;
 }
 
 #search-bar {
-  border-radius: 32px;
+    border-radius: 32px;
     -webkit-box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.6);
     -moz-box-shadow: 0px 2px 6px 0px rgba(69, 91, 99, 0.6);
     box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.6);
@@ -830,23 +900,23 @@ export default {
 }
 
 #search-bar:hover {
-  -webkit-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.5);
+    -webkit-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.5);
     -moz-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.5);
     box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.5);
 }
 
 #search-bar input {
-  border: none;
-  font-weight: 300;
-  transition: all 0.3s ease;
-  border-top-left-radius: 32px;
-  border-bottom-left-radius: 32px;
-  color: #495265;
-  font-size: 18px;
+    border: none;
+    font-weight: 300;
+    transition: all 0.3s ease;
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+    color: #495265;
+    font-size: 18px;
 }
 
 #search-bar input:focus {
-  box-shadow: none;
+    box-shadow: none;
 }
 
 #search-bar input::placeholder {
@@ -854,25 +924,25 @@ export default {
 }
 
 #search-bar:focus-within {
-  -webkit-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.5), 0px 0px 6px 2px #37A5EB;
+    -webkit-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.5), 0px 0px 6px 2px #37A5EB;
     -moz-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.5), 0px 0px 6px 2px #37A5EB;
     box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.5), 0px 0px 6px 2px #37A5EB;
-  
+
 }
 
 #search-submit {
-  font-size: 24px;
-  line-height: initial;
-  border-top-right-radius: 32px;
-  border-bottom-right-radius: 32px;
-  background-color: white;
-  border: none;
-  color: #79859D;
-  z-index: 2;
+    font-size: 24px;
+    line-height: initial;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+    background-color: white;
+    border: none;
+    color: #79859D;
+    z-index: 2;
 }
 
 #search-submit .magnify-icon svg {
-  bottom: -0.2rem;
+    bottom: -0.2rem;
 }
 
 #search-submit:hover {
@@ -880,58 +950,26 @@ export default {
 }
 
 #search-submit:focus {
-  box-shadow: none;
+    box-shadow: none;
 }
 
-/*
-.inner-container {
-  position: relative;
-  max-width: 20%;
-  min-width: 360px;
-  height: 300px;
-  width: 100%;
-  margin: 0 auto 100px;
+.collapsed > .when-opened,
+:not(.collapsed) > .when-closed {
+  display: none;
 }
 
-.question-card-content {
-  position: absolute;
-  opacity: 0;
-  top: 2em;
-  left: 10%;
-  width: 80%;
-  margin: 0 auto;
+.filter-collapse-toggle {
+    color: #79859D;
+    font-size: 20px;
+    height: 14px;
+    transition: 0.3s;
 }
 
-.question-card-active {
-  display: block !important;
-  margin: 0 auto;
-  opacity: 1;
-  transition: ease-in-out 1s;
+.filter-collapse-toggle:hover {
+    color: #37A5EB;
 }
 
-.question-card {
-  position: relative;
-  background: #fff;
-  border-radius: 5px;
-  padding: 2em 0;
-  height: 300px;
-  box-sizing: border-box;
-  transition: .3s ease;
-  box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.35);
+.filter-collapse-toggle svg {
+    bottom: initial !important;
 }
-.question-card:first-child, .card:nth-child(2) {
-  background: #00c4c7;
-  height: 8px;
-  border-radius: 5px 5px 0 0;
-  padding: 0;
-  box-shadow: none;
-}
-.question-card:first-child {
-  margin: 0 20px;
-  background: #00b0b2;
-}
-.question-card:nth-child(2) {
-  margin: 0 10px;
-}
-*/
 </style>
