@@ -207,4 +207,15 @@ export default {
     background-color: transparent;
     color: #37A5EB;
 }
+
+.article a {
+    color: #38C6D4;
+    transition: 0.3s;
+    font-weight: 400;
+}
+
+.article a:hover {
+    color: #1f7998;
+    text-decoration: none;
+}
 </style>
