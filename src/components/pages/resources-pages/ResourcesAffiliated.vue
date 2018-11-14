@@ -1,19 +1,18 @@
 <template>
   <div>
-    <h1>About Us</h1>
-    <p> 
-      <b-img class="content-img" src="https://studentaffairs.duke.edu/sites/default/files/styles/medium/public/2017-08/wellness_tree_seal_rgb.png?itok=X5LOgZRK" right fluid rounded></b-img>
-      CAPS helps Duke Students enhance strengths and develop abilities to successfully live, grow and learn in their personal and academic lives. We offer many services to Duke undergraduate, graduate, and professional students, including brief individual and group counseling, couples counseling and more. CAPS staff also provide outreach to student groups, particularly programs supportive of at-risk populations, on a wide range of issues impacting them in various aspects of campus life.
-    </p>
-    <p>
-      CAPS is designed as a short-term care clinic. Therefore, we are limited in our ability to provide care for students needing long-term or more open-ended care.
-    </p>
-    <p>
-      There are certain specialized services such as ADD/ADHD and treatment for Substance Use Disorders that are not available through CAPS.
-    </p>
-    <p>
-      We do recognize that several our students will need longer term or a more specialized type of care and we have a strong network with area community providers for these.
-    </p>
+    <h1>Affiliated Services</h1>
+    <p>Duke offers a wide range of support tailored to the needs of students.</p>
+    <p>For student advocacy and academic assistance, visit <a href="https://studentaffairs.duke.edu/dukereach1">Duke REACH.</a></p>
+
+<h4>Medical Leave of Absence</h4>
+    <p>If you need to take some time away from Duke, you may consider taking a leave of absence.</p>
+    <ul>
+      <li><a href="https://trinity.duke.edu/undergraduate/academic-policies/leave-absence-medical">Medical leave of absence, Trinity College of Arts & Sciences, Undergraduates</a> </li>
+      <li><a href="https://trinity.duke.edu/osr/return-medical-leave">Return from medical leave, Trinity College of Arts & Science, Undergraduates</a></li>
+      <li><a href="https://pratt.duke.edu/undergrad/students/policies/3514">Leave of absence, Pratt School of Engineering, Undergraduates</a> </li>
+      <li><a href="https://law.duke.edu/studentaffairs/docs/Requesting_a_Personal_or_Medical_Leave_of_Absence.pdf">Leave of Absence, Duke Law School</a> </li>
+      <li><a href="https://hr.duke.edu/benefits/time-away/leaves-absence">Leave of absence, Employees</a></li>
+    </ul>
   </div>
 </template>
 

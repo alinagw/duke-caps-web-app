@@ -1,54 +1,90 @@
 <template>
-  <div>
-    <h1>About Us</h1>
-    <p> 
-      <b-img class="content-img" src="https://studentaffairs.duke.edu/sites/default/files/styles/medium/public/2017-08/wellness_tree_seal_rgb.png?itok=X5LOgZRK" right fluid rounded></b-img>
-      CAPS helps Duke Students enhance strengths and develop abilities to successfully live, grow and learn in their personal and academic lives. We offer many services to Duke undergraduate, graduate, and professional students, including brief individual and group counseling, couples counseling and more. CAPS staff also provide outreach to student groups, particularly programs supportive of at-risk populations, on a wide range of issues impacting them in various aspects of campus life.
-    </p>
-    <p>
-      CAPS is designed as a short-term care clinic. Therefore, we are limited in our ability to provide care for students needing long-term or more open-ended care.
-    </p>
-    <p>
-      There are certain specialized services such as ADD/ADHD and treatment for Substance Use Disorders that are not available through CAPS.
-    </p>
-    <p>
-      We do recognize that several our students will need longer term or a more specialized type of care and we have a strong network with area community providers for these.
-    </p>
-  </div>
+    <div class="start-home">
+        <h1>Getting Started With CAPS</h1>
+        <iframe class="embedded-video" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"
+                align="middle"
+                src="https://www.youtube.com/embed/9qkPR26yigA?autoplay=0&start=0&rel=0">
+        </iframe>
+        <h4>Looking to Initiate Services with CAPS?</h4>
+        <p>
+            If you would like to begin services at CAPS, please drop in between the hours of 9:00 am to 4:00 pm, Monday
+            - Friday and ask to speak with a counselor. No appointment needed!
+        </p>
+        <p>
+            You will meet with a counselor on a first-come, first-served basis. The earlier in the day you come in the
+            better. Please plan for an hour visit.
+        </p>
+        <p>
+            <a @click="showCollapse = !showCollapse" :class="showCollapse ? 'collapsed' : null"
+               :aria-controls="collapsible-duke-marine-lab" :aria-expanded="showCollapse ? 'true' : 'false'">
+                Duke Marine Lab Students
+                <span v-show="!showCollapse"><chevron-down class="collapse-toggle-icon ml-2"></chevron-down></span>
+                <span v-show="showCollapse"><chevron-up class="collapse-toggle-icon ml-2"></chevron-up></span>
+            </a>
+        </p>
+        <b-collapse id="collapsible-duke-marine-lab" v-model="showCollapse">
+            <p> We recognize that students studying at the Duke Marine Lab may have a difficult time driving to Durham
+                to access CAPS services. To assist students seeking counseling services, we have identified therapists
+                in
+                Beaufort and the surrounding communities who are available to meet with Duke students for brief
+                counseling services. These services are available through the student health fee you pay when you
+                register for
+                classes and will support up to six counseling appointments with one of the therapists CAPS has
+                identified. Should you decide to continue counseling after these six sessions, you will be responsible
+                for subsequent fees.
+                Many students utilize their health insurance to cover these charges and you may wish to discuss this
+                with the counselor at the time of your initial appointment.
+            </p>
+            <p>Please contact Lia Gilmore, LCSW, Referral Coordinator for CAPS at 919-660-1012 to access these resources
+                and
+                to make her aware of which provider you will be seeing so arrangements for billing can be made.
+            </p>
+            <p>Should you prefer to seek this information from an administrator at the Marine Lab, you may contact Katie
+                Wood, Program Coordinator for Duke Marine Lab at 252-504-7508.
+            </p>
+        </b-collapse>
+    </div>
 </template>
 
 <script>
-export default {
-  name: 'AboutHome',
-  components: {
+    import ChevronDown from "vue-material-design-icons/ChevronDown.vue"
+    import ChevronUp from "vue-material-design-icons/ChevronUp.vue"
 
-  },
-  data () {
-    return {
-      
+    export default {
+        name: 'StartHome',
+        components: {
+            ChevronDown,
+            ChevronUp
+        },
+        data() {
+            return {
+                showCollapse: false
+            }
+        }
     }
-  }
-}
 </script>
 
 <style scoped>
-.section-content .content-img {
-    width: 100%;
-    margin: 0 0 32px 0;
-    transition: 0.3s;
-}
-
-@media (min-width: 576px) { 
-  .section-content .content-img {
-      width: 50%;
-      margin: 0 0 32px 32px;
+    .start-home a:hover {
+        text-decoration-line: underline;
+        color: #007bff;
+        cursor: pointer;
     }
-}
 
-@media (min-width: 992px) {
-    .section-content .content-img {
-      width: 30%;
+    .start-home a {
+        color: #007bff;
     }
-}
 
+    .embedded-video {
+        transition: 0.3s;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (min-width: 576px) {
+        .embedded-video {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 </style>
