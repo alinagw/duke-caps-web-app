@@ -1,6 +1,7 @@
 <template>
 <div>
     <h1>Mental Health Articles</h1>
+    <p>Learn more about your mental health with the articles below.</p>
     <b-card-group deck>
         <article-card v-for="(article, index) in mentalHealthArticles" :key="index" :article="article">
         </article-card>

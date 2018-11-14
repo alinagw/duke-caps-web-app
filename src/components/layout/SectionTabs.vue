@@ -63,11 +63,11 @@ export default {
     transition: 0.3s;
 }
 
-.content-tabs .nav-link:hover, .content-tabs .nav-link.active {
-    color: #38C6D4;
+.content-tabs .nav-link:hover .tab-icon svg{
+    fill: #FFD960;
 }
 
-.content-tabs .nav-link:hover .tab-icon svg, .content-tabs .nav-link.active .tab-icon svg {
+.content-tabs .nav-link.active .tab-icon svg, .content-tabs{
     fill: #38C6D4;
 }
 </style>

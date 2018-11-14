@@ -8,7 +8,7 @@
         <div class="divider"></div>
         <h1>Resources for Parents, Family, and Friends</h1>
         <p>Parents, siblings, friends, roommates, and romantic partners are often the first to notice that a student is struggling.  However, it is often difficult to determine the best way to help the student. We are available to talk you through some of your concerns and answer some of the questions you might have about how to approach a struggling student.</p>
-        <p>Some common reasons for using our Consultation Services include:</p>
+        <p><strong>Some common reasons for using our Consultation Services include:</strong></p>
         <ul>
             <li>Concern that a student is showing signs of impairment in daily functioning</li>
             <li>questions about a student’s development (academically or socially)</li>
@@ -72,4 +72,8 @@ export default {
         width: 30%;
     }
 }
+
+.article-card {
+  max-width: calc(50% - 30px);
+  }
 </style>
