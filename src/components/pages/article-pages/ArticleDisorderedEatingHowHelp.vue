@@ -47,7 +47,8 @@ export default {
             'Disordered Eating: How To Help?',
             'Let Them Know They’re Not Alone',
             'Encourage Them to Seek Help',
-            'Be Yourself',
+            'Be Yourself'
+            ]
         }
     }
 }

@@ -89,7 +89,19 @@ export default new Router({
     {
       path: "/article/:article",
       component: Article,
-      props: (route) => ({ article: articlesJSON.articles[route.params.article] })
+      props: (route) => ({ article: articlesJSON.articles[route.params.article] }),
+      children: [
+        {
+          path: "",
+          component: Article,
+          props: (route) => ({ article: articlesJSON.articles[route.params.article] })
+        },
+        {
+          path: ":subpage",
+          component: Article,
+          props: (route) => ({ article: articlesJSON.articles[route.params.article] })
+        }
+      ]
     },
     {
       path: "/search",
