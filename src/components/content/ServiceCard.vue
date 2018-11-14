@@ -111,7 +111,7 @@ export default {
 .card-collapse-toggle:focus {
     background-color: transparent;
     box-shadow: none;
-    color: #78849E;
+    color: #FFD960;
     transition: all 0.5s;
 }
 

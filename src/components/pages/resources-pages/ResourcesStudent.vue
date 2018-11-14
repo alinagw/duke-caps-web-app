@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>Student Wellbeing Articles</h1>
+      <p>These self-help pages are another dimension of our service to the Duke community. We realize that many members of the community may want to learn more about overall well-being. Regardless of your reasons, we hope you find these pages and links helpful.</p>
     <b-card-group deck>
         <article-card v-for="(article, index) in studentArticles" :key="index" :article="article">
         </article-card>
