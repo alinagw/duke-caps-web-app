@@ -13,20 +13,6 @@
     <b-container fluid>
         <b-card class="search-content-card" no-body>
             <b-container fluid class="search-content">
-                <b-row no-gutters class="mb-5">
-                    <b-col class="col-1">
-                    <b-btn @click="showFiltersSidebar = !showFiltersSidebar">
-                        <filter-variant></filter-variant>
-                    </b-btn>
-                    </b-col>
-                    <b-col class="col-2">
-                    <h4 class="my-0">Filters</h4>
-                    </b-col>
-                    <b-col class="col-9">
-                        <h1 class="mb-0">Results</h1>
-                        <h6 v-show="results.length">{{ query }}</h6>
-                    </b-col>
-                </b-row>
 
                 <b-row no-gutters>
                     <b-col v-show="showFiltersSidebar" class="col-12 col-md-3" id="search-filters-sidebar">
@@ -37,20 +23,25 @@
                                     <span class="when-opened"><chevron-up></chevron-up></span>
                                 </b-link>
                                 <b>{{ category.header }}</b><br>
-                                
-                            </template>
-                            <b-collapse :id="'filter-' + key + '-collapse'" class="px-1 pb-1">
-                                <b-form-checkbox-group :id="'category-' + key + '-options'" stacked v-model="category.selected" :options="category.options" class="search-filter-checkboxes"></b-form-checkbox-group>
-                            </b-collapse>
-                        </b-form-group>
 
-                        <!--<b-list-group v-scroll-spy-active v-scroll-spy-link tag="ul" class="article-scroll-menu">
-                            <b-list-group-item v-for="(title, index) in titles" :key="index" tag="li" class="article-scroll-menu-item">
-                                <a>{{ title }}</a>
-                            </b-list-group-item>
-                        </b-list-group>-->
+                            </template>
+                                <b-collapse :id="'filter-' + key + '-collapse'" class="px-1 pb-1">
+                                    <b-form-checkbox-group :id="'category-' + key + '-options'" stacked v-model="category.selected" :options="category.options" class="search-filter-checkboxes"></b-form-checkbox-group>
+                                </b-collapse>
+                        </b-form-group>
+                        <div class="my-4 text-center">
+                            <b-btn class="filter-submit-button" @click="runSearch">Submit</b-btn>
+                        </div>
                     </b-col>
                     <b-col class="col-12 col-md-9 pl-3" id="search-results-content">
+                        <div class="mb-5">
+                            <h1 class="mb-1">Results</h1>
+                            <h6 v-show="submittedQuery">{{ submittedQuery }}</h6>
+                            <div class="divider" v-show="submittedQuery"></div>
+                        </div>
+                        <div v-show="!foundResults">
+                            <h4>No results found.</h4>
+                        </div>
                         <div v-if="resultsTyped.capsService.length">
                             <h1>CAPS Services</h1>
                             <div class="divider"></div>
@@ -88,53 +79,12 @@
                         <div v-if="resultsTyped.affiliatedResource.length">
                             <h1>Affiliated Resources</h1>
                         </div>
-
-                        <!--<h1>Meet Our Staff</h1>
-                        <p class="content-text">
-                            <b-img class="content-img" src="https://studentaffairs.duke.edu/sites/default/files/styles/carousel_a_image_xwide/public/2017-12/IMG_0483_5.jpg?itok=hFp3X1Pf" right fluid rounded></b-img>
-                            Our staff includes psychologists, clinical social workers, and psychiatrists experienced in working with college-age adults. From the everyday challenges of life, to more profound impairment or "interruption" of daily functioning, we recognize that any student may face some level of challenge at any point in their careers here at Duke. Our work is guided by sensitivity to the needs of a diverse student body.
-
-                        </p>
-                        <div class="divider"></div>
-                        <h1>Clinical Staff</h1>-->
-                        <!--<b-card-group deck>
-                            <staff-card v-for="(employee, index) in clinicalStaff" :key="index" :employee="employee"></staff-card>
-                        </b-card-group>-->
-
-                        <!--<div v-scroll-spy="{data: 'section', offset: 80}" class="article-scroll-content">
-                            <div>
-
-                            </div>
-                            <div>
-
-                            </div>
-                            <div>
-
-                            </div>
-                        </div>-->
                     </b-col>
                 </b-row>
 
             </b-container>
         </b-card>
     </b-container>
-    <!--<b-card no-body class="search-question-card">
-        <b-card-body>
-            <h1 class="card-title">{{ currQuestionObj.question }}</h1>
-            <h4 class="card-subtitle">{{ currQuestionObj.instructions }}</h4>
-        </b-card-body>
-        <b-list-group flush>
-            <b-list-group-item v-for="(option, i) in currQuestionObj.options" :key="i" action @click="toggleSelectOption(i)" :active="isSelected(i)">
-                {{ option.title }}
-            </b-list-group-item>
-        </b-list-group>
-        <b-card-footer class="text-right">
-            <b-btn class="search-question-next-button" @click="nextQuestion">
-                Next
-                <arrow-right class="search-question-next-arrow"></arrow-right>
-            </b-btn>
-        </b-card-footer>
-    </b-card>-->
 </div>
 </template>
 
@@ -163,6 +113,7 @@ export default {
         return {
             items: searchJSON,
             query: "",
+            submittedQuery: "",
             showFiltersSidebar: true,
             filters: {
                 who: {
@@ -215,8 +166,12 @@ export default {
                             value: "couples"
                         },
                         {
-                            text: "Groups & Workshops",
-                            value: "available"
+                            text: "Workshops & Discussions",
+                            value: "workshop"
+                        },
+                        {
+                            text: "Group Counseling",
+                            value: "group"
                         },
                         {
                             text: "Psychiatry & Meds",
@@ -241,23 +196,23 @@ export default {
                     selected: [],
                     options: [{
                             text: "Academic Stress",
-                            value: "individual"
+                            value: "academic stress"
                         },
                         {
                             text: "College Transition",
-                            value: "individual"
+                            value: "college"
                         },
                         {
                             text: "Mental Health",
-                            value: "couples"
+                            value: "mental health"
                         },
                         {
                             text: "Relationships",
-                            value: "available"
+                            value: "relationships"
                         },
                         {
                             text: "Sleeping & Eating",
-                            value: "psychiatric"
+                            value: "sleeping eating"
                         }
                     ]
                 }
@@ -543,6 +498,14 @@ export default {
                 }
             }
             return types;
+        },
+        foundResults() {
+            if (this.submittedQuery.length && this.results.length) {
+                return true;
+            } else if (this.submittedQuery.length === 0) {
+                return true;
+            }
+            return false;
         }
     },
     methods: {
@@ -557,7 +520,10 @@ export default {
                 affiliatedResource: [],
                 other: []
             };
+            this.submittedQuery = "";
+
             this.query = this.query.trim();
+            this.addFilters();
 
             if (this.query) {
                 var options = {
@@ -570,6 +536,7 @@ export default {
 
                 this.$search(this.query, this.items, options).then(result => {
                     this.results = result;
+                    this.submittedQuery = this.query;
                     if (this.results.length) {
                         this.parseResults();
                     }
@@ -578,7 +545,7 @@ export default {
 
         },
 
-        parseResults () {
+        parseResults() {
 
             for (var i = 0; i < this.results.length; i++) {
                 switch (this.results[i].type) {
@@ -605,7 +572,18 @@ export default {
                         break;
                 }
             }
-            
+
+        },
+
+        addFilters() {
+            for (var filter in this.filters) {
+                var selected = this.filters[filter].selected;
+                if (selected.length) {
+                    for (var i = 0; i < selected.length; i++) {
+                        this.query += " " + selected[i];
+                    }
+                }
+            }
         },
 
         toggleSelectOption(index) {
@@ -783,6 +761,11 @@ export default {
     margin-top: 28px;
 }
 
+.search-content h6 {
+    color: #38C6D4;
+    font-family: "Montserrat", "sans-serif";
+}
+
 .search-content p,
 .search-content ul,
 .search-content ol {
@@ -956,9 +939,9 @@ export default {
     box-shadow: none;
 }
 
-.collapsed > .when-opened,
-:not(.collapsed) > .when-closed {
-  display: none;
+.collapsed>.when-opened,
+:not(.collapsed)>.when-closed {
+    display: none;
 }
 
 .filter-collapse-toggle {
@@ -974,5 +957,23 @@ export default {
 
 .filter-collapse-toggle svg {
     bottom: initial !important;
+}
+
+.filter-submit-button,
+.filter-submit-button:focus {
+    border: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700 !important;
+    padding: 8px 16px;
+    border-radius: 32px;
+    background-color: #2DC6D6;
+    box-shadow: none;
+}
+
+.filter-submit-button:hover {
+    background-color: #1f7998;
+    box-shadow: none;
 }
 </style>
