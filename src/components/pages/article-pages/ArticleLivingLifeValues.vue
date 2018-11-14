@@ -10,7 +10,7 @@
     <b-col cols="9">
         <div v-scroll-spy="{data: 'section', offset: 80}" class="article-scroll-content">
             <div>
-               <h1>LIVING YOUR LIFE-VALUES</h1>
+               <h1>Living Your Life-Values</h1>
             </div>
             <div>
                <h4>Your Map for Living</h4>

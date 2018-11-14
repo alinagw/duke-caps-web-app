@@ -10,7 +10,7 @@
     <b-col cols="9">
         <div v-scroll-spy="{data: 'section', offset: 80}" class="article-scroll-content">
             <div>
-                <h1>ANTIDEPRESSANT MEDICATIONS Q & A</h1>
+                <h1>Antidepressant Medications Q & A</h1>
                 <p>Medicines most commonly prescribed to deal with emotional pain are called antidepressants, though they are used to treat many kinds of anxiety problems as well as depression. The idea of taking a medicine to help restore emotional balance is one that typically raises many questions for students. A few questions in particular come up frequently, so we've put together these answers as a starting point.</p>
                 <h3>Questions About Medications</h3>
                 <p><i>Antidepressants: Biological Treatment for Psychological Symptoms</i></p>
