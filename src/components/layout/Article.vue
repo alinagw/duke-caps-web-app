@@ -65,6 +65,17 @@ export default {
     position: relative;
 }
 
+.article-content a:not(.btn) {
+    color: #38C6D4;
+    transition: 0.3s;
+    font-weight: 400;
+}
+
+.article-content a:not(.btn):hover {
+    color: #1f7998;
+    text-decoration: none;
+}
+
 .content-card {
     max-width: 95%;
     margin: auto;
@@ -195,27 +206,26 @@ export default {
     font-weight: 400;
 }
 
-.article-scroll-menu-item:first-child {
+.article-scroll-menu-item a {
+    color: #7B859B !important;
+    transition: all 0.3s;
+    font-weight: 400;
+}
+
+.article-scroll-menu-item:first-child a {
     font-weight: 700;
 }
 
-.article-scroll-menu-item:hover {
-    color: #454F63;
+.article-scroll-menu-item:hover a {
+    color: #454F63 !important;
 }
 
 .article-scroll-menu-item.active {
     background-color: transparent;
-    color: #37A5EB;
+    color: #37A5EB !important;
 }
 
-.article a {
-    color: #38C6D4;
-    transition: 0.3s;
-    font-weight: 400;
-}
-
-.article a:hover {
-    color: #1f7998;
-    text-decoration: none;
+.article-scroll-menu-item.active a {
+    color: #37A5EB !important;
 }
 </style>
