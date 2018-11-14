@@ -8,9 +8,9 @@
         At CAPS we utilize an integrated multidisciplinary model in the delivery of a comprehensive range of psychological services to the university student community. We provide training within a context that values the uniqueness of each human being and remains sensitive to cultural and individual diversity in the immediate and extended community. Our training programs are service oriented and individually tailored to provide a broad range of training opportunities, with particular consideration to the unique goals of each discipline.
     </p>
     <div class="d-flex flex-row flex-wrap justify-content-center">
-        <b-button href="https://studentaffairs.duke.edu/caps/programs/apa-accredited-psychology-internship">APA Accredited Psychology Internship</b-button>
-        <b-button href="https://studentaffairs.duke.edu/caps/training-programs/psychiatry-residency">Psychiatry Residency</b-button>
-        <b-button href="https://studentaffairs.duke.edu/caps/training-programs/social-work-internship">Social Work Internship</b-button>
+        <b-btn href="https://studentaffairs.duke.edu/caps/programs/apa-accredited-psychology-internship" target="_blank">APA Accredited Psychology Internship</b-btn>
+        <b-btn href="https://studentaffairs.duke.edu/caps/training-programs/psychiatry-residency" target="_blank">Psychiatry Residency</b-btn>
+        <b-btn href="https://studentaffairs.duke.edu/caps/training-programs/social-work-internship" target="_blank">Social Work Internship</b-btn>
     </div>
 </div>
 </template>
@@ -32,17 +32,18 @@ export default {
 <style scoped>
 .btn {
     margin: 24px auto;
-    background-color: white;
-    color: black;
+    background-color: #38C6D4;
+    color: white;
     font-family: "Montserrat", "sans-serif";
     font-size: 14px;
     letter-spacing: 1px;
     padding: 12px 16px;
     border: none;
     border-radius: 8px;
-    -webkit-box-shadow: 0px 2px 10px 0px rgba(69, 91, 99, 0.45);
-    -moz-box-shadow: 0px 2px 10px 0px rgba(69, 91, 99, 0.45);
-    box-shadow: 0px 2px 10px 0px rgba(69, 91, 99, 0.45);
+    transition: 0.3s;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.45);
+    -moz-box-shadow: 0px 2px 6px 0px rgba(69, 91, 99, 0.45);
+    box-shadow: 0px 2px 5px 0px rgba(69, 91, 99, 0.45);
 }
 
 .btn:hover,
@@ -50,13 +51,12 @@ export default {
     -webkit-box-shadow: 0px 2px 10px 0px rgba(69, 91, 99, 0.45);
     -moz-box-shadow: 0px 2px 10px 0px rgba(69, 91, 99, 0.45);
     box-shadow: 0px 2px 10px 0px rgba(69, 91, 99, 0.45);
-    background-color: white !important;
-    color: black !important;
+    background-color: #1f7998 !important;
 }
 
 .btn:hover {
-    -webkit-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4) !important;
-    -moz-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4) !important;
-    box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4) !important;
+    -webkit-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4);
+    -moz-box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4);
+    box-shadow: 0px 5px 18px 0px rgba(69, 91, 99, 0.4);
 }
 </style>

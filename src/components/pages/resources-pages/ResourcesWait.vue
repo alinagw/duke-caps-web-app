@@ -2,8 +2,12 @@
   <div>
     <h1>While You Wait</h1>
     <p> 
-      If you are waiting for a CAPS appointment, feel free to check out our articles on <a :link="resources/student-wellbeing"></a>
+      If you are waiting for a CAPS appointment, feel free to check out our articles on <b-link to="/resources/student-wellbeing">student wellbeing</b-link> and <b-link to="/resources/mental-health">mental health.</b-link>
     </p>
+
+    <h4><a href="http://screening.mentalhealthscreening.org/dukeed">Anonymous Screening Test</a></h4>
+    <p>To gain more insight into whether you would benefit from mental health services, <a href="http://screening.mentalhealthscreening.org/dukeed">click here</a>. This brief screening is purely educational, not diagnostic, but it may give you the validation and confidence you need to set up an appointment with CAPS.</p>
+
   </div>
 </template>
 

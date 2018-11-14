@@ -1,7 +1,7 @@
 <template>
 <b-nav class="content-tabs justify-content-center" fill>
-    <b-nav-item v-for="(tab, key) in tabs" :key="tab.id" :to="tabPath(key)" class="text-center">
-        <b-img :src="tab.icon" fluid></b-img>
+    <b-nav-item v-for="(tab, key) in tabs" :key="tab.id" :to="tabPath(key)" class="text-center" :exact="key === 'home'">
+        <div v-html="tab.icon" class="tab-icon"></div>
         <p class="mb-0">{{ tab.title }}</p>
     </b-nav-item>
 </b-nav>
@@ -45,18 +45,30 @@ export default {
     font-family: "Montserrat", "sans-serif";
     font-weight: 500;
     font-size: 11px;
-    padding: 8px;
+    padding: 4px 8px;
     color: #78849E;
     transition: 0.3s;
 }
 
-.content-tabs .nav-item img {
+.content-tabs .nav-item .tab-icon {
     width: 40px;
+    height: 40px;
+    margin: auto;
     margin-bottom: 6px;
 }
 
-.content-tabs .nav-link:hover {
+.content-tabs .nav-item .tab-icon svg {
+    height: 100%;
+    fill: #78849E;
+    transition: 0.3s;
+}
 
+.content-tabs .nav-link:hover, .content-tabs .nav-link.active {
+    color: #38C6D4;
+}
+
+.content-tabs .nav-link:hover .tab-icon svg, .content-tabs .nav-link.active .tab-icon svg {
+    fill: #38C6D4;
 }
 
 .content-tabs .nav-link.active {

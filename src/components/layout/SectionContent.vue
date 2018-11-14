@@ -1,6 +1,6 @@
 <template>
 <b-container fluid class="section-content mt-5" :id="tab.id">
-    <transition name="component-fade" mode="out-in">
+    <transition name="fade" mode="out-in">
     <component :is="tabComponent"></component>
     </transition>
 </b-container>

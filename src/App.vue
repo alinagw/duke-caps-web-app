@@ -2,7 +2,9 @@
 <div id="app">
     <navigation-bar></navigation-bar>
     <div class="nav-spacer"></div>
-    <router-view></router-view>
+    <transition name="fade" mode="out-in">
+        <router-view></router-view>
+    </transition>
     <contact-us-footer></contact-us-footer>
 </div>
 </template>
@@ -27,5 +29,18 @@ export default {
 
 .nav-spacer {
     height: 56px;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition-property: opacity;
+  transition-duration: .25s;
+}
+
+.fade-enter-active {
+  transition-delay: .25s;
+}
+
+.fade-enter, .fade-leave-active {
+  opacity: 0
 }
 </style>
