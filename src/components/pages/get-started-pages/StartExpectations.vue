@@ -1,54 +1,38 @@
 <template>
-  <div>
-    <h1>About Us</h1>
-    <p> 
-      <b-img class="content-img" src="https://studentaffairs.duke.edu/sites/default/files/styles/medium/public/2017-08/wellness_tree_seal_rgb.png?itok=X5LOgZRK" right fluid rounded></b-img>
-      CAPS helps Duke Students enhance strengths and develop abilities to successfully live, grow and learn in their personal and academic lives. We offer many services to Duke undergraduate, graduate, and professional students, including brief individual and group counseling, couples counseling and more. CAPS staff also provide outreach to student groups, particularly programs supportive of at-risk populations, on a wide range of issues impacting them in various aspects of campus life.
-    </p>
-    <p>
-      CAPS is designed as a short-term care clinic. Therefore, we are limited in our ability to provide care for students needing long-term or more open-ended care.
-    </p>
-    <p>
-      There are certain specialized services such as ADD/ADHD and treatment for Substance Use Disorders that are not available through CAPS.
-    </p>
-    <p>
-      We do recognize that several our students will need longer term or a more specialized type of care and we have a strong network with area community providers for these.
-    </p>
-  </div>
+    <div class="start-expectations">
+        <h1>
+           What To Expect During an Access Consultation
+        </h1>
+        <ol>
+            <li>
+                For this initial visit, you will meet with a counselor for about 15 minutes, in which the counselor will
+                assess any concerns about your safety, evaluate if your needs can be met within CAPS’ brief treatment
+                model, and determine where services are most appropriately provided; and
+            </li>
+            <li>
+                You will leave with recommendations about next steps in your care, which may be at CAPS, another campus
+                resource, or in the community. If services will be at CAPS, you will schedule future appointments with
+                the same provider(s). Follow up visits at CAPS are about 45-50 minutes for Individual/Couples
+                appointments and 90 minutes for Groups.
+            </li>
+        </ol>
+
+        <p>Try to arrive early in the day, as spots can fill up. You can come by the Student Wellness Center from 9:00 am to 4:00 pm, Monday
+            through Friday.</p>
+        </div>
 </template>
 
 <script>
-export default {
-  name: 'AboutHome',
-  components: {
 
-  },
-  data () {
-    return {
-      
+    export default {
+        name: 'StartExpectations',
+        data() {
+            return {
+            }
+        }
     }
-  }
-}
 </script>
 
 <style scoped>
-.section-content .content-img {
-    width: 100%;
-    margin: 0 0 32px 0;
-    transition: 0.3s;
-}
-
-@media (min-width: 576px) { 
-  .section-content .content-img {
-      width: 50%;
-      margin: 0 0 32px 32px;
-    }
-}
-
-@media (min-width: 992px) {
-    .section-content .content-img {
-      width: 30%;
-    }
-}
 
 </style>

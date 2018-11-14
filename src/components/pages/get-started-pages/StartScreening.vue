@@ -1,19 +1,24 @@
 <template>
   <div>
-    <h1>About Us</h1>
-    <p> 
-      <b-img class="content-img" src="https://studentaffairs.duke.edu/sites/default/files/styles/medium/public/2017-08/wellness_tree_seal_rgb.png?itok=X5LOgZRK" right fluid rounded></b-img>
-      CAPS helps Duke Students enhance strengths and develop abilities to successfully live, grow and learn in their personal and academic lives. We offer many services to Duke undergraduate, graduate, and professional students, including brief individual and group counseling, couples counseling and more. CAPS staff also provide outreach to student groups, particularly programs supportive of at-risk populations, on a wide range of issues impacting them in various aspects of campus life.
-    </p>
-    <p>
-      CAPS is designed as a short-term care clinic. Therefore, we are limited in our ability to provide care for students needing long-term or more open-ended care.
-    </p>
-    <p>
-      There are certain specialized services such as ADD/ADHD and treatment for Substance Use Disorders that are not available through CAPS.
-    </p>
-    <p>
-      We do recognize that several our students will need longer term or a more specialized type of care and we have a strong network with area community providers for these.
-    </p>
+    <h1>Is CAPS Right For Me?</h1>
+    <h4>In case of an emergency in which your or another's immediate safety is at risk, please call Duke Police at 919-684-2444. If calling off campus, dial 9-1-1.</h4>
+      <p>If you have an urgent concern about yourself or another student after 5:00pm call the Dean on Call at 919-970-4169 or call 984-974-6303 and let the Health-link staff member know you were referred by Duke-CAPS.
+      </p>
+    <p>For concerns related to sexual assault, click <a href="https://studentaffairs.duke.edu/wc/gender-violence/sexual-assault-and-rape">here.</a></p>
+    <p>For additional resources in the case of a crisis or urgent situation, please also refer to the resources listed on the <a href="https://studentaffairs.duke.edu/dos/dukereach">DukeReach</a> web site.
+      </p>
+    <h4><a href="http://screening.mentalhealthscreening.org/dukeed">Anonymous Screening Test</a></h4>
+    <p>To gain more insight into whether you would benefit from mental health services, <a href="http://screening.mentalhealthscreening.org/dukeed">click here</a>. This brief screening is purely educational, not diagnostic, but it may give you the validation and confidence you need to set up an appointment with CAPS.</p>
+    <h4>National Emergency Resources</h4>
+    <ul>
+      <li>Crisis Textline: Text START to 741-741</li>
+      <li>Crisis Textline for Students of Color: Text STEVE to 741-741</li>
+      <li>National Suicide Hotline: 1-800-273-TALK(8255) | <a href=https://suicidepreventionlifeline.org/">suicidepreventionlifeline.org</a></li>
+      <li>LGBTQ Trevor Lifeline: 866-488-7386 | <a href="https://www.thetrevorproject.org/">TheTrevorProject.org</a></li>
+      <li> Trans Lifeline: 877-565-8860 | <a href="https://translifeline.org/">translifeline.org</a></li>
+      <li>Addictions Hotline: 1-888-984-0363</li>
+      <li>Veteran’s Crisis Line: 1-800-273-8255, select 1</li>
+    </ul>
   </div>
 </template>
 
