@@ -1,18 +1,10 @@
 <template>
   <div>
-    <h1>About Us</h1>
-    <p> 
-      <b-img class="content-img" src="https://studentaffairs.duke.edu/sites/default/files/styles/medium/public/2017-08/wellness_tree_seal_rgb.png?itok=X5LOgZRK" right fluid rounded></b-img>
-      CAPS helps Duke Students enhance strengths and develop abilities to successfully live, grow and learn in their personal and academic lives. We offer many services to Duke undergraduate, graduate, and professional students, including brief individual and group counseling, couples counseling and more. CAPS staff also provide outreach to student groups, particularly programs supportive of at-risk populations, on a wide range of issues impacting them in various aspects of campus life.
+    <h1>When Can I Be Seen?</h1>
+    <p>CAPS is open 9:00 am to 4:00 pm, Monday through Friday. You can drop by, no appointment necessary.
     </p>
-    <p>
-      CAPS is designed as a short-term care clinic. Therefore, we are limited in our ability to provide care for students needing long-term or more open-ended care.
-    </p>
-    <p>
-      There are certain specialized services such as ADD/ADHD and treatment for Substance Use Disorders that are not available through CAPS.
-    </p>
-    <p>
-      We do recognize that several our students will need longer term or a more specialized type of care and we have a strong network with area community providers for these.
+    <p>If this is an <b-link to="/resources/emergency">emergency situation</b-link> in which your or another's immediate safety is at risk, please call Duke Police at 919-684-2444. If calling off campus, dial 9-1-1.</p>
+    <p>If you have an urgent concern about yourself or another student after 5:00pm call the Dean on Call at 919-970-4169 or call 984-974-6303 and let the Health-link staff member know you were referred by Duke-CAPS.
     </p>
   </div>
 </template>
@@ -38,7 +30,7 @@ export default {
     transition: 0.3s;
 }
 
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
   .section-content .content-img {
       width: 50%;
       margin: 0 0 32px 32px;

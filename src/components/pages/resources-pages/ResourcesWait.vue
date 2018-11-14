@@ -1,19 +1,13 @@
 <template>
   <div>
-    <h1>About Us</h1>
+    <h1>While You Wait</h1>
     <p> 
-      <b-img class="content-img" src="https://studentaffairs.duke.edu/sites/default/files/styles/medium/public/2017-08/wellness_tree_seal_rgb.png?itok=X5LOgZRK" right fluid rounded></b-img>
-      CAPS helps Duke Students enhance strengths and develop abilities to successfully live, grow and learn in their personal and academic lives. We offer many services to Duke undergraduate, graduate, and professional students, including brief individual and group counseling, couples counseling and more. CAPS staff also provide outreach to student groups, particularly programs supportive of at-risk populations, on a wide range of issues impacting them in various aspects of campus life.
+      If you are waiting for a CAPS appointment, feel free to check out our articles on <b-link to="/resources/student-wellbeing">student wellbeing</b-link> and <b-link to="/resources/mental-health">mental health.</b-link>
     </p>
-    <p>
-      CAPS is designed as a short-term care clinic. Therefore, we are limited in our ability to provide care for students needing long-term or more open-ended care.
-    </p>
-    <p>
-      There are certain specialized services such as ADD/ADHD and treatment for Substance Use Disorders that are not available through CAPS.
-    </p>
-    <p>
-      We do recognize that several our students will need longer term or a more specialized type of care and we have a strong network with area community providers for these.
-    </p>
+
+    <h4><a href="http://screening.mentalhealthscreening.org/dukeed">Anonymous Screening Test</a></h4>
+    <p>To gain more insight into whether you would benefit from mental health services, <a href="http://screening.mentalhealthscreening.org/dukeed">click here</a>. This brief screening is purely educational, not diagnostic, but it may give you the validation and confidence you need to set up an appointment with CAPS.</p>
+
   </div>
 </template>
 
