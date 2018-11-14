@@ -1,122 +1,122 @@
 {
-    "articles": {
-        "adjusting-to-college": {
-            "id": "adjusting-to-college",
-            "title": "Adjusting to College",
-            "image": "",
-            "description": "College is an exciting time of life, one filled with many profound transitions in preparation for an exciting and fulfilling future. Sometimes, the challenges of adjusting to college can be stressful and require new life strategies.",
-            "type": "student",
-            "component": "ArticleAdjustCollege"
-        },
-        "being-emotional": {
-            "id": "being-emotional",
-            "title": "Being Emotional",
-            "image": "",
-            "description": "Since there is often such a tendency to avoid or suppress anything that might bring about some emotional vulnerability, we think it's important to inform students about how that might impact your lives and your campus.",
-            "type": "mental-health",
-            "component": "ArticleBeingEmotional"
-        },
-        "semester-survival-guide": {
-            "id": "semester-survival-guide",
-            "title": "CAPS Survival Guide to the End of the Semester",
-            "image": "",
-            "description": "Another semester is coming to an end, which means that many of you see cramming and all-nighters in your future. Although this might seem like the best or only approach, there are others techniques that can yield better results. It’s time to shift the culture and think about an approach that enhances brain function through better wellness practices.",
-            "type": "student",
-            "component": "ArticleSemesterSurvivalGuide"
-        },
-        "relationships-grad-school": {
-            "id": "relationships-grad-school",
-            "title": "Committed Relationships & Grad School",
-            "image": "",
-            "description": "Maintaining a committed relationship while attending graduate or professional school can be complex and challenging. To minimize relationship threats and actually grow closer during demanding times, it’s important to keep some main goals in mind.",
-            "type": "student",
-            "component": "ArticleRelationshipsGradSchool"
-        },
-        "first-year-concerns": {
-            "id": "first-year-concerns",
-            "title": "Common First-Year Concerns & Strategies",
-            "image": "",
-            "description": "Most students navigate all of the new experiences of their first year at Duke without significant problems. It is also not uncommon for many students to find the transition to college more challenging than they expected. Even those that do struggle, initially, usually end up adjusting in their first year and enjoy success at Duke.",
-            "type": "student",
-            "component": "ArticleFirstYearConcerns"
-        },
-        "conflict": {
-            "id": "conflict",
-            "title": "Confronting Conflict",
-            "image": "",
-            "description": "When dealing with conflict, avoidance is not the answer. If we don’t attend to issues that cause conflict, those issues can infect and spread throughout our relationships and even into other areas of our lives. So, the first thing to realize about conflict is that we are better off if we confront it and contain it before it spreads.",
-            "type": "student",
-            "component": "ArticleConflict"
-        },
-        "coping-stress": {
-            "id": "coping-stress",
-            "title": "Coping with Critical Incident Stress",
-            "image": "",
-            "description": "You may have experienced a traumatic event or a critical incident. The reactions you have to these abnormal events or incidents are normal and can overwhelm your natural ability to cope. It is very common, in fact quite normal, for people to experience emotional aftershocks when they have passed through a horrible event.",
-            "type": "mental-health",
-            "component": "ArticleCopingStress"
-        },
-        "depression": {
-            "id": "depression",
-            "title": "Depression",
-            "image": "",
-            "description": "The word has become so commonly used in our language, it is often difficult to know just how serious a person’s struggle may be. This article is devoted to helping you understand both phenomena so you know best how to get support to those who may face depression, whether it's you or someone you know and care about.",
-            "type": "mental-health",
-            "component": "ArticleDepression"
-        },
-        "disordered-eating": {
-            "id": "disordered-eating",
-            "title": "Disordered Eating",
-            "image": "",
-            "description": "Struggles with eating issues are are about more than just food, though if you are suffering from these issues you may not be able to explain what else is happening. What you do know is that you struggle a lot more than you want to with eating or not eating, gaining weight, keeping your current weight, or losing weight. What is this disordered eating all about, then?",
-            "type": "mental-health",
-            "component": "ArticleDisorderedEating",
-            "children": {
-                "terms-and-diagnosis": "ArticleDisorderedEatingTerms",
-                "understand": "ArticleDisorderedEatingUnderstand",
-                "how-to-help": "ArticleDisorderedEatingHowHelp",
-                "what-to-say": "ArticleDisorderedEatingWhatSay"
-            }
-        },
-        "grief-and-loss": {
-            "id": "grief-and-loss",
-            "title": "Grief and Loss",
-            "image": "",
-            "description": "At some point in our lives we all experience loss, and with it a time of grief and mourning. Whether through the death of a loved one, divorce or relationship breakup, loss of physical mobility due to illness, loss of a sense of home due to geographic relocation, losses are a part of life. Understanding these emotions is important to moving on.",
-            "type": "mental-health",
-            "component": "ArticleGriefLoss"
-        },
-        "living-life-values": {
-            "id": "living-life-values",
-            "title": "Living Your Life-Values",
-            "image": "",
-            "description": "What guides you? What are your personal priorities that influence the decisions you make in your day-to-day life? This article can help you to understand  the things in life that you value enough that you want these values to guide your living.",
-            "type": "student",
-            "component": "ArticleLivingLifeValues"
-        },
-        "anti-depressant-medications": {
-            "id": "anti-depressant-medications",
-            "title": "All About Anti-Depressants",
-            "image": "",
-            "description": "Medicines most commonly prescribed to deal with emotional pain are called antidepressants, though they are used to treat many kinds of anxiety problems as well as depression. The idea of taking a medicine to help restore emotional balance is one that typically raises many questions for students, so we've put together these answers as a starting point.",
-            "type": "mental-health",
-            "component": "ArticleAntiDepressants"
-        },
-        "parenting-distance": {
-            "id": "parenting-distance",
-            "title": "Parenting from a Distance",
-            "image": "",
-            "description": "The years that your child attends college away from home are often as much a growing experience for parents as they are for the college student. This page is offered to help you better understand some of the steps along the way and to give you some suggestions on how to navigate these exciting years.",
-            "type": "parent",
-            "component": "ArticleParentingDistance"
-        },
-        "parenting-international": {
-            "id": "parenting-international",
-            "title": "Parenting International Students",
-            "image": "",
-            "description": "Being the parent of an international college student comes with both rewards and challenges. This pamphlet is offered by Counseling and Psychological Services (CAPS) to help you better understand what we have to offer and to give you some suggestions on how to navigate these exciting years.",
-            "type": "parent",
-            "component": "ArticleParentingInternational"
-        }
+  "articles": {
+    "adjusting-to-college": {
+      "id": "adjusting-to-college",
+      "title": "Adjusting to College",
+      "image": "",
+      "description": "College is an exciting time of life, one filled with many profound transitions in preparation for an exciting and fulfilling future. Sometimes, the challenges of adjusting to college can be stressful and require new life strategies.",
+      "type": "student",
+      "component": "ArticleAdjustCollege"
+    },
+    "being-emotional": {
+      "id": "being-emotional",
+      "title": "Being Emotional",
+      "image": "",
+      "description": "Since there is often such a tendency to avoid or suppress anything that might bring about some emotional vulnerability, we think it's important to inform students about how that might impact your lives and your campus.",
+      "type": "mental-health",
+      "component": "ArticleBeingEmotional"
+    },
+    "semester-survival-guide": {
+      "id": "semester-survival-guide",
+      "title": "CAPS Survival Guide to the End of the Semester",
+      "image": "",
+      "description": "Another semester is coming to an end, which means that many of you see cramming and all-nighters in your future. Although this might seem like the best or only approach, there are others techniques that can yield better results. It’s time to shift the culture and think about an approach that enhances brain function through better wellness practices.",
+      "type": "student",
+      "component": "ArticleSemesterSurvivalGuide"
+    },
+    "relationships-grad-school": {
+      "id": "relationships-grad-school",
+      "title": "Committed Relationships & Grad School",
+      "image": "",
+      "description": "Maintaining a committed relationship while attending graduate or professional school can be complex and challenging. To minimize relationship threats and actually grow closer during demanding times, it’s important to keep some main goals in mind.",
+      "type": "student",
+      "component": "ArticleRelationshipsGradSchool"
+    },
+    "first-year-concerns": {
+      "id": "first-year-concerns",
+      "title": "Common First-Year Concerns & Strategies",
+      "image": "",
+      "description": "Most students navigate all of the new experiences of their first year at Duke without significant problems. It is also not uncommon for many students to find the transition to college more challenging than they expected. Even those that do struggle, initially, usually end up adjusting in their first year and enjoy success at Duke.",
+      "type": "student",
+      "component": "ArticleFirstYearConcerns"
+    },
+    "conflict": {
+      "id": "conflict",
+      "title": "Confronting Conflict",
+      "image": "",
+      "description": "When dealing with conflict, avoidance is not the answer. If we don’t attend to issues that cause conflict, those issues can infect and spread throughout our relationships and even into other areas of our lives. So, the first thing to realize about conflict is that we are better off if we confront it and contain it before it spreads.",
+      "type": "student",
+      "component": "ArticleConflict"
+    },
+    "coping-stress": {
+      "id": "coping-stress",
+      "title": "Coping with Critical Incident Stress",
+      "image": "",
+      "description": "You may have experienced a traumatic event or a critical incident. The reactions you have to these abnormal events or incidents are normal and can overwhelm your natural ability to cope. It is very common, in fact quite normal, for people to experience emotional aftershocks when they have passed through a horrible event.",
+      "type": "mental-health",
+      "component": "ArticleCopingStress"
+    },
+    "depression": {
+      "id": "depression",
+      "title": "Depression",
+      "image": "",
+      "description": "The word has become so commonly used in our language, it is often difficult to know just how serious a person’s struggle may be. This article is devoted to helping you understand both phenomena so you know best how to get support to those who may face depression, whether it's you or someone you know and care about.",
+      "type": "mental-health",
+      "component": "ArticleDepression"
+    },
+    "disordered-eating": {
+      "id": "disordered-eating",
+      "title": "Disordered Eating",
+      "image": "",
+      "description": "Struggles with eating issues are are about more than just food, though if you are suffering from these issues you may not be able to explain what else is happening. What you do know is that you struggle a lot more than you want to with eating or not eating, gaining weight, keeping your current weight, or losing weight. What is this disordered eating all about, then?",
+      "type": "mental-health",
+      "component": "ArticleDisorderedEating",
+      "children": {
+        "terms-and-diagnosis": "ArticleDisorderedEatingTerms",
+        "understand": "ArticleDisorderedEatingUnderstand",
+        "how-to-help": "ArticleDisorderedEatingHowHelp",
+        "what-to-say": "ArticleDisorderedEatingWhatSay"
+      }
+    },
+    "grief-and-loss": {
+      "id": "grief-and-loss",
+      "title": "Grief and Loss",
+      "image": "",
+      "description": "At some point in our lives we all experience loss, and with it a time of grief and mourning. Whether through the death of a loved one, divorce or relationship breakup, loss of physical mobility due to illness, loss of a sense of home due to geographic relocation, losses are a part of life. Understanding these emotions is important to moving on.",
+      "type": "mental-health",
+      "component": "ArticleGriefLoss"
+    },
+    "living-life-values": {
+      "id": "living-life-values",
+      "title": "Living Your Life-Values",
+      "image": "",
+      "description": "What guides you? What are your personal priorities that influence the decisions you make in your day-to-day life? This article can help you to understand  the things in life that you value enough that you want these values to guide your living.",
+      "type": "student",
+      "component": "ArticleLivingLifeValues"
+    },
+    "anti-depressant-medications": {
+      "id": "anti-depressant-medications",
+      "title": "All About Anti-Depressants",
+      "image": "",
+      "description": "Medicines most commonly prescribed to deal with emotional pain are called antidepressants, though they are used to treat many kinds of anxiety problems as well as depression. The idea of taking a medicine to help restore emotional balance is one that typically raises many questions for students, so we've put together these answers as a starting point.",
+      "type": "mental-health",
+      "component": "ArticleAntiDepressants"
+    },
+    "parenting-distance": {
+      "id": "parenting-distance",
+      "title": "Parenting from a Distance",
+      "image": "",
+      "description": "The years that your child attends college away from home are often as much a growing experience for parents as they are for the college student. This page is offered to help you better understand some of the steps along the way and to give you some suggestions on how to navigate these exciting years.",
+      "type": "parent",
+      "component": "ArticleParentingDistance"
+    },
+    "parenting-international": {
+      "id": "parenting-international",
+      "title": "Parenting International Students",
+      "image": "",
+      "description": "Being the parent of an international college student comes with both rewards and challenges. This pamphlet is offered by Counseling and Psychological Services (CAPS) to help you better understand what we have to offer and to give you some suggestions on how to navigate these exciting years.",
+      "type": "parent",
+      "component": "ArticleParentingInternational"
     }
+  }
 }
