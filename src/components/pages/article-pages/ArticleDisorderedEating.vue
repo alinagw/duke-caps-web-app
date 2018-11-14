@@ -35,7 +35,7 @@ export default {
     font-family: "Montserrat", "sans-serif";
     font-size: 14px;
     letter-spacing: 1px;
-    padding: 12px 16px;
+    padding: 20px 28px;
     border: none;
     border-radius: 8px;
     transition: 0.3s;

@@ -1,6 +1,6 @@
 <template>
     <b-row no-gutters>
-        <b-col cols="3" class="scroll-spy-col">
+        <b-col cols="3">
             <b-list-group v-scroll-spy-active v-scroll-spy-link tag="ul" class="article-scroll-menu">
                 <b-list-group-item v-for="(title, index) in titles" :key="index" tag="li" class="article-scroll-menu-item">
                     <a>{{ title }}</a>
@@ -9,137 +9,8 @@
         </b-col>
         <b-col cols="9">
             <div v-scroll-spy="{data: 'section', offset: 80}" class="article-scroll-content">
-             <div>
-                <h1>Disordered Eating</h1>
-                <p>Struggles with eating issues are are about more than just food, though if you are suffering from these issues you may not be able to explain what else is happening. What you do know is that you struggle a lot more than you want to with eating or not eating, gaining weight, keeping your current weight, or losing weight. All this holds so much of your attention that it's hard to get to what these eating issues are really about. So what is this "disordered eating" all about, then?</p>
-            </div>
             <div>
-                <h2>Disordered Eating - Terms And Diagnosis</h2>
-                <p>A lot of terms are used among people who address eating related concerns. Those who are less familiar with the issues related to disordered eating may not immediately understand many of these terms.  This brief introduction to those terms will help you navigate information that you collect on eating disorders through those various resources you may have identified.</p>
-            </div>
-            <div>
-                <h4>Binge Eating</h4>
-                <p>A binge is defined as eating an amount of food that is definitely larger than most individuals would eat under similar circumstances.  Although a binge is defined as occurring within a specific period of time, it can occur in different places but still be part of the same binge episode.   For example, an individual may begin a binge in a grocery store or restaurant, and then still be on the binge upon returning home.  Another defining feature of a binge is that the eating is experienced as out of the person's control. While this usually means that an impulsive act takes place with no planning, there are times when the binge is planned because the urge originates and accumulates over a period of time when there is no access to food.  Once the eating begins, however, and during the anticipation of the episode, the inevitable and uncontrollable sensation still occurs.   If, for some reason the planned binge cannot occur (somebody stops by, for example), the urge becomes complicated by a lot of nervousness.   Immediately following the binge, there is a period of relief or even of feeling intensely satisfied.  However, this is typically followed by strong shame and feeling disgusted with one's self.   Because of this shame reaction, there is a wish and full intention to never behave in this manner again.  However, much of the binging is a reaction to a troubled self-image, so this reaction may actually play a role in the next binge occurring.  For many individuals, especially those who have been struggling for a long time with binging, depression eventually develops as the person realizes she/he has become trapped within a cruel binge-cycle.</p>
-            </div>
-            <div>
-                <h4>Purging</h4>
-                <p>A purge is defined as self-induced actions on the body with the intentional goal of avoiding the weight gain that is feared from having just eaten.   The most common form of purging is self-induced vomiting. The purge is usually experienced as an uncontrollable urge that comes from the fear of weight gain.   However, individuals who have been struggling with disordered eating for longer periods may have grown so accustomed to having the urge that they don't feel the urgency; rather the act of purging becomes a necessary or  matter-of-fact task that is decided upon almost automatically.   Phrases such as "taking care of it" or "dealing with it" or "getting rid of it" are often used to describe purging.</p>
-                <p>Because disordered eating has become more widespread and most people immediately associate purging with disordered eating, there is often a great deal of shame associated with purging.   Persons struggling often report intense shame the first time they ever made themselves vomit and yet they still find themselves unable to refrain from doing it again when the emotional turmoil returns.</p>
-            </div>
-            <div>
-                <h4>Diagnosis</h4>
-                <p>A diagnosis is a name or term used by professionals in order to communicate with each other and organize the different problems experienced by all those they serve.  When certain patterns of problems begin to emerge in individuals, mental health professionals can recognize them when they occur in enough different people that it appears to be the same problem.  Sometimes, it feels helpful for the person with the problem to have a name for what they struggle with, as well.  However, having a diagnosis of an Eating Disorder does not mean you cannot overcome it.  It may make sense to view it as an illness because it helps to emphasize how important it is to get help to overcome it.  However, simply knowing what the name of a person's problem is does not solve it.  Therefore, it might be more helpful to focus less on the diagnosis or on whether a person "really has" an eating disorder.  In fact, it may be even more helpful to think less in terms of "an eating disorder" and more in terms of "disordered eating."   The reason for this shift is that people often become passive when they think of "having a disorder" and they come to view themselves as "defective"; if they think in terms of "disordered eating" they are dealing with a behavior, a set of actions and reactions to life's challenges.  From there it is easier to shift toward learning a new set of actions and reactions without the identity of a defective person.</p>
-                <p>Nevertheless, it is unavoidable that most people struggling with disordered eating (either themselves or through someone they love who is struggling) will eventually come across diagnostic terms.  Therefore, we'd like to include some information so you know what these somewhat familiar terms actually refer to.</p>
-            </div>
-            <div>
-                <h4>Anorexia (or Anorexia Nervosa)</h4>
-                <p>The term Anorexia Nervosa is a diagnosis applied to an individual who meets very specific criteria. The defining feature of anorexia is that the individual refuses to maintain a minimally normal body weight. (Specifically, to be assigned a diagnosis of anorexia, an individual must be at 85% of their normal body weight or lower).  The person with anorexia or similar difficulties is extremely focused on a pursuit of thinness.   She (or he) is intensely afraid of gaining weight.  Much of the fear is linked to another defining feature of anorexia: a distorted view of how one's body actually is, perceiving fat where there is clear emaciation or viewing the less "thin" parts of their body as indicative that they are entirely fat. This perception keeps the need to lose weight or prevent weight gain in control of the individual’s priorities.  A final feature that defines anorexia as a diagnosis is (for women who have already begun having their menstrual period) an absence of at least 3 consecutive menses.</p>
-                <p>There are many misconceptions around Anorexia, among the more common is that if a person does not employ self-induced vomiting, then they're "not anorexic."   In fact, these misconceptions are based on confusion between bulimia nervosa and anorexia nervosa.  Anorexia can be diagnosed if the individual uses purging methods to prevent weight gain (and these individuals often struggle with binge episodes which make the purging behaviors feel absolutely mandatory).  This is regarded as the Binge Eating/Purging Type of Anorexia.  Anorexia Nervosa can also be diagnosed even if the person never engages in purge behaviors, relying on a strict low calorie diet.  This is regarded as Anorexia Nervosa, Restricting Type.</p>
-                <p>Another unfortunate misconception is that those suffering from Anorexia simply have a desirable level of self-discipline to not eat.  Sometimes, individuals with severe body image concerns will profess a wish that they could be anorexic.  The mechanism that maintains the behaviors associated with anorexia is not discipline.  It’s fear.  What those with such misconception-based envy don't realize is that they are also wishing for the extreme fear and painful confusion that comes from struggling with a completely kidnapped way of life that those with anorexia experience.</p>
-            </div>
-            <div>
-                <h4>Bulimia Nervosa</h4>
-                <p>There are two fundamental indicators needed for a formal diagnosis of Bulimia Nervosa:</p>
-                <ol>
-                    <li>Binge eating (defined as eating amounts of food that are clearly larger than what most folks would eat) with a "beyond control" quality to the eating episodes, and</li>
-                    <li>A Behavior that aims to compensate for the expected weight gain that, naturally, would result from eating more than is usual.</li>
-                </ol>
-                <p>A problem in making the diagnosis of bulimia nervosa is that many people eat “more than usual” from time to time, yet they do not meet the criteria for a diagnosis of bulimia nervosa. For example, many people "binge" eat at holiday dinners. Even closer to "bulimic" behavior, many of us find ourselves eating more when we are feeling very down. Yet, we don't meet the criteria for a bulimia diagnosis. The difference between those of us with such common excessive-eating episodes and someone who has bulimia nervosa is that the latter binge-eat frequently (more than twice a week) and have lost control over their eating behaviors. For them, what we experience on occasion is more of an ongoing struggle.  Their lives typically begin to revolve around concerns about food. Often, they divide their days into ‘good' days when they have no desire to binge and ‘bad' days when the compulsion to binge becomes irresistible.  Before a person will be diagnosed with bulimia, she/he will have had at least an average of two binge-eating episodes a week for at least three months, and she/he will have experienced these eating episodes as uncontrollable (unable to stop even though she/he knows it's excessive eating). Additionally, a person struggling with bulimia regularly engages in either strict dieting (or simply not eating), excessive exercising between these binges episodes, self-induced vomiting, and/or use of  laxatives and diuretics to lose weight. All of these behaviors operate under a persistent concern with body shape and weight. Because of the awareness that these binge episodes are not normal, there is typically a great deal of shame that leads to keeping the difficulty a secret.</p>
-            </div>
-            <div>
-                <h4>Disordered Eating Which Does Not Meet Diagnostic Criteria</h4>
-                <p>Perhaps the single most important thing to keep in mind about the diagnoses of disordered eating is that anyone who is struggling to a degree that does not meet the criteria for a specific eating disorder is in a struggle that is as legitimate as any diagnosis could ever be.  Diagnostic criteria are constantly changing as mental health professionals learn more and more about the struggles we all face, and they are still learning about disordered eating.  Therefore, diagnostic criteria and terminology may also change. For example, there is a condition referred to as Binge Eating Disorder still undergoing research before being included as a formal diagnosis.  Binge Eating Disorder involves uncontrollable eating episodes but does not consistently involve a behavior to compensate.  This struggle impacts a great many people, a significant number of whom struggle with obesity.  These individuals often seek help  toward weight loss and the underlying issues leading to the frequent binges are not attended to because they’re not thought of has having disordered eating.</p>
-                <p>Many individuals suffer from some level or type of eating behavior that is disrupting their lives.  They are struggling with a confusing problem that feels both absurd and easy to fix but carries an intensity and a depth that makes it hard to place aside.  For some, disordered eating is about a different kind of hunger… and for others, it’s about a painful sense of being too full of some of life’s vulnerabilities.  For others, it’s both.  Either way, the difficulty is real and the availability of help is there.</p>
-                <br>
-            </div>
-            <div>
-                <h2>Understanding Disordered Eating</h2>
-            </div>
-            <div>
-                <h4>A Different Kind of Hunger</h4>
-                <p>If you are struggling with eating issues, you probably already know that it’s not just about food you may not be able to explain what else it's about, but you know that food is not the main thing happening with you. What you do know is that you struggle a lot more than you want to with eating or not eating, gaining weight, keeping your current weight, or losing weight.  All this holds so much of your attention that it's hard to get to what these "eating issues" are really about. So what is this "disordered eating" all about, then?</p>
-            </div>
-            <div>
-                <h4>Emotional Upheaval and Powerful Feelings</h4>
-                <p>Eating issues are about emotional upheaval and powerful feelings. This is important to keep in mind because it is something you have in common with everyone else, whether they are struggling with eating issues or not. When it comes to working through the difficulties you're having with food, this will have a big impact because your feelings and the connections they provide to others will feed you more than the disordered eating ever can. Why? Because others have emotional upheaval and powerful feelings, too, and they're hungry for connection, too.</p>
-                <p>So, how is it that you struggle with eating issues if they don't? Although there may be different backgrounds and experiences, one common factor is that those who struggle with disordered eating have powerful emotions in an upheaval because those feelings have gone unexpressed. In short, you keep much of your feelings inside, perhaps so far inside that even you have lost touch with them.  More than likely, you were keeping them inside before the eating difficulties began, and you may have done this for various reasons. Perhaps, there was a time that you did show your feelings, but they went ignored. those who you needed to listen were busy or not as tuned in to you at the time. Perhaps, your feelings weren't ignored but they were treated as unimportant. you were told not to worry about it, to get over it, or that everyone feels that way. Maybe these messages were intended to help and make you feel better, but you were left carrying these feelings. alone and out on a limb.  Unfortunately, for some of you, these feelings were made fun of. or you saw others that were mocked and you became afraid the same would happen to you if you showed your feelings. You didn't want to be viewed as "weak" or "silly" or "crybaby" or "complaining all the time", so you just kept them inside. where they still are.</p>
-                <p>Whatever you do in your struggle with food, whether it is binge uncontrollably, make yourself throw up, exercise compulsively, or deprive yourself of food when you are wanting to enjoy something to eat look inside, and there they are, those feelings waiting like children for someone (hopefully you) to pick them up and hold them.</p>
-            </div>
-            <div>
-                <h4>Feeling Hurt and Scared when Trying to Relate to Others</h4>
-                <p>Disordered eating is also about feeling hurt and scared when trying to connect with others or develop relationships with them.  It's about being hungry for approval, for this sense that others think you're good enough to be with, that they consider you as compatible with them.  More than that, though, you want to be accepted.</p>
-                <p>Disordered eating often goes even deeper than that.  It's a different kind of hunger than what you usually think of.  It's a hunger for understanding, for this sense that other people see things the way you do, that they "get it" when it comes to the way life feels sometimes, the way you want it to be, but it's hard to take a chance when everyone else seems to be on the same page one that seems terribly different than yours.</p>
-                <p>And disordered eating is about being hungry for company.  You're a human being. by definition you are a social being and being connected with others who are actively in your life is a natural and healthy need. Sometimes, though, it's easy to get bogged down by doubts that others want to have you around so you withdraw or you may even start to push them away. None of this changes the fact that you're often lonely and just wish you had a group of people to call your friends, to hang out with, and to turn to when all of life's hunger pains start to hurt more. Sometimes the hunger for company is even more subtle. You may actually have a lot of people in your life and enjoy a good social circle, but you know, deep inside, that they don't really know you, so you end up feeling alone or vulnerable. and just with all these emotional hungers, you do one of two things or both of them: feed the hunger by eating more food than your body needs or starve the person who's hungry so she doesn't bother you anymore.</p>
-            </div>
-            <div>
-                <h4>Feeling Like a Failure When it Seems You Have to be Perfect</h4>
-                <p>Even though you may know, in your head, that nobody is perfect, struggling with disordered eating usually means struggling with the things about you that are not perfect. It's hard not to struggle with those things. We live in a culture that says you can be perfect if you just do the right things: usually this is related to buying products, but the end result is a media-influenced perception that makes it appear that others are much closer to some idea of "perfect" than you are. This, of course, leads you to want to get closer to a distorted idea of who you are supposed to be: attractive enough, self-disciplined enough, smart enough, social enough, and whatever enough's you come up with on your own. Often, this involves seeking to be perfectly thin because much of the ideas of thinness in our culture are equated with being desirable. It becomes easy to believe that if you are thin enough, you'd be closer to being perfectly pretty.  Other things also get into the picture. It becomes important to have perfect grades or evaluations and you build your life around these things because, at the end of all the logic and perceptions, they seem to be the path to having others like you and, hopefully, love you. These things seem to be the way to get others to accept you with no reason to reject you.</p>
-            </div>
-            <div>
-                <h4>It Is All About Control</h4>
-                <p>All of these pursuits are related to a need for control. We all live in a world where anything can happen, a world where the opinion of others sometimes has an impact on you, and so you find yourself vulnerable in a world where, no matter how hard you try, it may not seem like enough. but you try and keep trying.  If you could be perfectly thin, and perfectly pretty, and perfectly disciplined, with perfect grades and a perfect attitude, then it seems there will be no room for doubt about your effort and ability and worth.  There would be no doubt about your being okay, and you could rest. But that time hasn't come yet. Perhaps it never will because, as human beings, we will always have shortcomings that make us feel less than that version of ourselves that feels like it would be good enough.</p>
-                <p>When you feel these "good enough" versions of you slipping away, you feel powerless about whether life is going to turn out okay, and you need something to feel back in control of that.  Eating or resisting the natural need to eat gives you that sense of control for a little while, anyway. And since you know how to use food or starving to give you that sense of control, you hold onto it like the only friend you have in this whole wide scary world.</p>
-                <p><i>&emsp;"If I can control what I eat!"<br>
-                    &emsp;"Then I can control my weight."<br>
-                    &emsp;"Then I can control how good I can feel about myself."<br>
-                    &emsp;"Then everything will be okay."</i></p>
-            </div>
-            <div>
-                <h4>So It Also IS About Food?</h4>
-                <p>If all of these issues from being loved and accepted and needing greater control are what disordered eating is about, then why eating?  Why does it seem to be about food? Although there are no complete explanations, it does seem like a somewhat logical choice as a coping device when a few commonly accepted ideas are considered.</p>
-                <p>1.  Food keeps us alive - physically. First of all, we need food to stay alive. At a basic physiological level, food is a good coping device for survival. Thinking from a more holistic perspective, it seems our body knows food is about survival and this awareness shows up psychologically. So, when we feel vulnerable it makes sense that we try to deal with it using food.</p>
-                <p>2.  Food is a symbol of nurturing. In many cultures throughout the world, including the United States, food is a symbol of caring and loving.  Simply examine our holiday rituals and you'll find Thanksgiving Dinner, Valentine Chocolates, Halloween Candy, and other celebrations that revolve around sharing meals.  Further, we tend to cook dinner or prepare breakfast as part of romantic experiences and we take ourselves out for a food treat when we've had a bad day.</p>
-                <p>3.  Eating, food, and weight are weaved into our emotional experiences.
-                The cultural impact of food, eating, and weight are clear on more subtle levels as well. They are linked to emotions in many ways in which we express ourselves. In terms of language alone, we use phrases that reflect this link.</p>
-                <p><i>&emsp;She's/He's just starving for affection.<br>
-                    &emsp;He's/She's hungry for love.<br>
-                    &emsp;He's/She's just feeding his/her lies.<br>
-                    &emsp;She/He just eats up all that flattery.<br>
-                    &emsp;That's a hard fact to swallow.</i></p>
-                <p>Often so much attention is paid to disordered eating that we neglect the very normal and common link between eating and emotional experiences.  Consider going to the movies. Typically, if there is popcorn in your lap, you're eating it much faster during the scary scenes, the scenes where the romance is finally about to come alive, and the scenes where the sad ending is clearly on its way.</p>
-                <p>So, keep in mind that, even though you may realize your eating and your concerns about weight have evolved into problems, you are struggling with an extreme experience and you aren't as "abnormal" as you may fear. You, as a person, are okay. It's the perceptions and assumptions you've developed and the feelings and behaviors that come from these perception that need adjusting. It may be very difficult to start adjusting your way of understanding yourself and your life. But you can do it. One of the things you can do to begin making these adjustments is to ask yourself a question regarding the role eating plays in your life.</p>
-            </div>
-            <div>
-                <h4>What Are You Really Hungry For?</h4>
-                <p>We're all human, and although your unique life situations leave you with different needs and different intensities of those needs, one thing we all have in common to some extent is that we are interpersonal beings. In other words, many of our needs involve how others regard us or how we believe they do. Therefore, it is important to not simply ask what role eating plays in your life but also how is it linked to some of our interpersonal needs, fears, and hurts.</p>
-                <p>So, if you are struggling with disordered eating, chances are high that--in your unique personal way--you are hungry for love, approval and acceptance.  It is difficult, even painful, when you can't know for certain that you will be fed these nurturing experiences. You then become very hungry for control. You want to be loved in a way that shows you’re truly special, a way that doesn't leave you worried that others have some qualities that are so bright you won't be noticed and valued, too.   You're hungry for approval, being told in many different ways that you’re already good enough!  You crave acceptance, because sometimes it is hard to feel like you really belong and that you actually and completely deserve to be a part of it all!</p>
-                <p>Sometimes, you simply feel like you don't have these things or that you may lose them if you do. Other times you know you have these things and you feel foolish for worrying, but you only know them in logical terms. You can see that others care for you so you don't know why you should struggle so much. You may know that you have love, approval, and acceptance, but you don't believe it.  Knowing and Believing are two different things. One is logical and based on fact. The other is more intuitive and based on faith and trust.  When you know you are loved, you may not believe it emotionally. The emotional doubts then leave you wanting a greater sense of Control.</p>
-                <p>So much of life seems out of your control or authority. Whether it's parents or peers, coaches or teachers, or the larger social culture, it often seems that others determine whether you receive the acceptance and approval you need to feel good about being who you are! Life seems like a series of questions that are so complicated, whose answers are so unpredictable, that life becomes scary and it hurts!!!</p>
-                <p><i>&emsp;What clothes do I have to wear?<br>
-                    &emsp;Will I fall in love with someone?<br>
-                    &emsp;Where do I go after I'm done with school?<br>
-                    &emsp;What if I fail?<br>
-                    &emsp;How do I get people to like me?<br>
-                    &emsp;Will someone fall in love with me?<br>
-                    &emsp;What if I don't get good grades?<br>
-                    &emsp;Who do my parents expect me to be?</i></p>
-            </div>
-            <div>
-                <h4>Trying to Make Life More Simple</h4>
-                <p>And for each of these questions, you can add another hundred every day, leaving you feeling overwhelmed to the point where you just need to make life simple!  The need to keep things simple then impacts your way of thinking about things. One of the ways you may try to make life seem a little more manageable is thinking in extremes. You keep your world black and white because all the different shades of gray are too hard to define and you're struggling enough with how to define yourself as it is. As this way of thinking takes over, then most of your life  becomes a matter of all or nothing. You only leave yourself two choices.  So there is only fat or thin--with nothing in between, beautiful or ugly--with nothing in between, and then perfect or worthless--with nothing in between.</p>
-                <p>Eating, then, becomes the one thing that can be controlled in all of these aspects!  But there is help available.  Contact CAPS if you'd like to talk to someone who may know how to help you live your life more completely and with more comforting self-acceptance than the eating issues that have become  the problem instead of a solution.</p>
-                <br>
-            </div>
-            <div>
-                <h2>Disordered Eating: How To Help?</h2>
-            </div>
-            <div>
-                <h4>Let Them Know They're Not Alone</h4>
-                <p>Often, individuals struggling with disordered eating carry a strong sense of shame about their struggle. They, strive to keep their difficulty a secret. Also, there is a strong belief, often accurately so, that others will not understand the struggle they have with eating and food.  Therefore, individuals who struggle with disordered eating often feel terribly alone.  Even if they have friends, the eating issues consume so much of their life that there's a big part of them that few, if any people, even know exists. and this is very, very lonely.  So, the first thing to do as an ally to someone struggling with disordered eating is to assure the friend or loved one that they are not alone.  The best way to convey this is to listen.  Let them know that, if they want or need to just talk out some of their fears, hurt, or even anger, that you will be there so they can have someone to say these things out loud to.   It may not seem like much, but there is a big difference between having all sorts of painful and confusing feelings swimming around inside and having them uttered out loud where someone else hears them.  It is not the response that helps so much as the fact that someone hears.  When someone hears, one of the most painful aspects of struggling with disordered eating is diminished: feeling alone.</p>
-            </div>
-            <div>
-                <h4>Encourage Them to Seek Help</h4>
-                <p>In helping someone struggling with disordered eating issues, it's often important to first know the ways in which you cannot help.  If you find yourself as the only person that is consistently there to help, you are likely assuming more roles than you have sufficient strength and understanding to really give the person struggling what she (or he) needs.  In sharing your support, it's important to also share your limitations. Emphasize that your support is one important aspect of their healing, but that others are also needed. Because a defining feature of any struggle with disordered eating issues is a reduction of the person into one dimension, it is important the healing occur at the various levels of the person’s life which have been neglected as a result of the disordered eating. Each friend or loved one in a person's life probably meets different needs and highlights different qualities in that person's life.  So, gradually, helping the person struggling to realize that trusting others (at a pace that feels safe) is as important as your support. Usually personal and professional help is needed. A mental health professional, a physician, and a nutritionist are typically involved in a professional team approach, each with expertise to address the forgotten or neglected dimensions of the intricate human being who is struggling.</p>
-            </div>
-            <div>
-                <h4>Be Yourself</h4>
-                <p>They are just two simple but very important words: Be Yourself.  The first word is critical because often loved ones of someone struggling with disordered eating become frustrated  because they want to DO something to make things better.  However, it's who you are that matters more than what you can actually do.  If you are a friend, a parent, a roommate, a romantic partner, or a teacher, be who you are with them instead of trying to do things for them.  Often, individuals who are struggling with disordered eating become frustrated because loved ones trying to help end up approaching them more like therapists or physicians or nutritionists rather than the close personal connection that they are. It's important to resist the inclination to analyze, interpret, or direct the behaviors of the person who is struggling.  Often those trying to help feel the urge to say things like, "I think you do this because of the way." or "There are serious medical repercussions that you are bringing on to yourself when you." or "You need to eat more of." However well intentioned, such statements are seldom helpful because none of these are within the role that you are most needed for: a loved one who loves and listens., Remember, it's most important to be a source of support and not a source of suggestions.</p>
-                <p>It is okay to acknowledge the full range of your feelings, not just the "positive" ones like loving and caring and patient.   Sometimes you will feel anger, fear or frustration and it is okay to acknowledge these.  It seems scary to think of telling someone who seems so fragile that you are angry or frustrated because you don't want to hurt him (or her).  Of course, there are times that a person is too fragile to hear these things and you need to use the best judgment you have.  Generally speaking, however, you play an important role when you can be genuinely loving and frustrated, genuinely caring and angry.  The reason that this is so important is that most people who struggle with disordered eating have entered a world where most things are EITHER/OR.  They have forgotten that people can be loving and frustrated at the same time.  So, when they see their loved ones able to be complex, to carry some seemingly contradictory feelings, it helps them see that they too can be complex individuals rather than the single dimension-being that disordered eating creates.</p>
-                <p>So, in the end, being helpful to someone struggling with disordered eating is, ultimately,  just being a genuine person in such a way that shows them it's okay for them to be who they genuinely are right now: someone struggling; someone needing to know it's okay to need support and get it from those who care.</p>
-                <br>
-            </div>
-            <div>
-                <h2>Disordered Eating: What To Say?</h2>
+                <h1>Disordered Eating: What To Say?</h1>
             </div>
             <div>
                 <h4>What To Say To Someone You're Concerned About</h4>
@@ -203,7 +74,7 @@
 
 <script>
 export default {
-    name: 'ArticleDisorderedEating',
+    name: 'ArticleDisorderedEatingWhatSay',
     components: {
 
     },
@@ -211,27 +82,6 @@ export default {
         return {
             section: 0,
             titles: [
-            'Disordered Eating',
-            'Disordered Eating - Terms And Diagnosis',
-            'Binge Eating',
-            'Purging',
-            'Diagnosis',
-            'Anorexia (or Anorexia Nervosa)',
-            'Bulimia Nervosa',
-            'Disordered Eating Which Does Not Meet Diagnostic Criteria',
-            'Understanding Disordered Eating',
-            'A Different Kind of Hunger',
-            'Emotional Upheaval and Powerful Feelings',
-            'Feeling Hurt and Scared when Trying to Relate to Others',
-            'Feeling Like a Failure When it Seems You Have to be Perfect',
-            'It Is All About Control',
-            'So It Also IS About Food?',
-            'What Are You Really Hungry For?',
-            'Trying to Make Life More Simple',
-            'Disordered Eating: How To Help?',
-            'Let Them Know They’re Not Alone',
-            'Encourage Them to Seek Help',
-            'Be Yourself',
             'Disordered Eating: What To Say?',
             'What To Say To Someone You’re Concerned About',
             'When and Where To Approach?',
