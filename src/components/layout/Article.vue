@@ -43,7 +43,9 @@ export default {
         ArticleGriefLoss: () => import("./../pages/article-pages/ArticleGriefLoss"),
         ArticleLivingLifeValues: () => import("./../pages/article-pages/ArticleLivingLifeValues"),
         ArticleRelationshipsGradSchool: () => import("./../pages/article-pages/ArticleRelationshipsGradSchool"),
-        ArticleSemesterSurvivalGuide: () => import("./../pages/article-pages/ArticleSemesterSurvivalGuide")
+        ArticleSemesterSurvivalGuide: () => import("./../pages/article-pages/ArticleSemesterSurvivalGuide"),
+        ArticleParentingDistance: () => import("./../pages/article-pages/ArticleParentingDistance"),
+        ArticleParentingInternational: () => import("./../pages/article-pages/ArticleParentingInternational")
     },
     data() {
         return {

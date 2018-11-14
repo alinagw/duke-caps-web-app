@@ -101,6 +101,22 @@
             "description": "Medicines most commonly prescribed to deal with emotional pain are called antidepressants, though they are used to treat many kinds of anxiety problems as well as depression. The idea of taking a medicine to help restore emotional balance is one that typically raises many questions for students, so we've put together these answers as a starting point.",
             "type": "mental-health",
             "component": "ArticleAntiDepressants"
+        },
+        "parenting-distance": {
+            "id": "parenting-distance",
+            "title": "Parenting from a Distance",
+            "image": "",
+            "description": "The years that your child attends college away from home are often as much a growing experience for parents as they are for the college student. This page is offered to help you better understand some of the steps along the way and to give you some suggestions on how to navigate these exciting years.",
+            "type": "parent",
+            "component": "ArticleParentingDistance"
+        },
+        "parenting-international": {
+            "id": "parenting-international",
+            "title": "Parenting International Students",
+            "image": "",
+            "description": "Being the parent of an international college student comes with both rewards and challenges. This pamphlet is offered by Counseling and Psychological Services (CAPS) to help you better understand what we have to offer and to give you some suggestions on how to navigate these exciting years.",
+            "type": "parent",
+            "component": "ArticleParentingInternational"
         }
     }
 }
