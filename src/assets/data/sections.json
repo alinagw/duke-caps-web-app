@@ -47,7 +47,7 @@
             "id": "get-started",
             "tags": [],
             "title": "Get Started",
-            "image": "",
+            "image": "https://www.10wallpaper.com/wallpaper/medium/1508/Simple_nature_landscape_HD_wallpaper_medium.jpg",
             "tabs": {
                 "home": {
                     "id": "get-started_home",
@@ -76,7 +76,7 @@
             "id": "services",
             "tags": [],
             "title": "Our Services",
-            "image": "",
+            "image": "http://www.ox.ac.uk/sites/files/oxford/styles/ow_medium_feature/public/field/field_image_main/Helping%20banner.jpg?itok=HeTnO9bw",
             "tabs": {
                 "home": {
                     "id": "services_home",
@@ -126,7 +126,7 @@
             "id": "resources",
             "tags": [],
             "title": "Resources",
-            "image": "https://studentaffairs.duke.edu/sites/default/files/styles/carousel_a_image_xwide/public/2017-12/IMG_0483_5.jpg?itok=hFp3X1Pf",
+            "image": "https://www.vipfamilydentistry.com/assets/images/slideshow/slide5.jpg",
             "tabs": {
                 "home": {
                     "id": "resources_home",
